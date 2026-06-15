@@ -15,17 +15,29 @@
 </head>
 <body class="p-6">
     <div class="max-w-7xl mx-auto">
-        <header class="flex justify-between items-center mb-8 bg-white p-6 rounded-xl shadow-sm">
-            <div>
-                <h1 class="text-2xl font-bold text-gray-800"><i class="fa-solid fa-gamepad text-blue-500 mr-2"></i> 글로벌 게임 순위 모니터링</h1>
-                <p class="text-sm text-gray-500 mt-1">Google Play Store & Steam Top 100</p>
+    <!-- 상단 헤더 -->
+    <header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <h1 class="text-2xl font-black text-gray-900 tracking-tight flex items-center">
+                <i class="fa-solid fa-trophy text-yellow-500 mr-3 text-3xl"></i>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+                    Game Rank Dashboard
+                </span>
+            </h1>
+            <div class="flex items-center gap-4">
+                <div class="flex items-center bg-gray-50 rounded-lg px-3 py-1.5 border border-gray-200">
+                    <i class="fa-regular fa-calendar-alt text-gray-500 mr-2"></i>
+                    <select id="history-selector" class="bg-transparent border-none text-sm font-semibold text-gray-700 focus:ring-0 cursor-pointer outline-none">
+                        <option value="latest">최신 (오늘)</option>
+                    </select>
+                </div>
+                <div class="text-sm font-medium text-gray-500 bg-gray-50 px-4 py-2 rounded-full border border-gray-100 flex items-center">
+                    <i class="fa-regular fa-clock mr-2 text-indigo-500"></i>
+                    <span id="last-updated">업데이트 확인중...</span>
+                </div>
             </div>
-            <div class="flex gap-3">
-                <button onclick="fetchRankings()" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-medium transition-colors shadow-sm">
-                    <i class="fa-solid fa-rotate mr-2"></i>순위 업데이트
-                </button>
-            </div>
-        </header>
+        </div>
+    </header>
 
         <div id="loading" class="hide flex flex-col items-center justify-center py-20">
             <div class="spinner mb-4"></div>
@@ -35,10 +47,10 @@
         <!-- 2개 분류로 나뉜 대시보드 -->
         <div id="dashboard" class="grid grid-cols-1 lg:grid-cols-2 gap-6 hide">
             
-            <!-- 1. Steam (전체) -->
+            <!-- 1. Steam (한국) -->
             <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col h-[500px]">
                 <div class="bg-slate-800 p-4 text-white flex items-center justify-between">
-                    <h2 class="font-bold text-lg"><i class="fa-brands fa-steam mr-2"></i>Steam (전체)</h2>
+                    <h2 class="font-bold text-lg"><i class="fa-brands fa-steam mr-2"></i>Steam (한국)</h2>
                     <span class="text-xs bg-slate-700 px-2 py-1 rounded">Top 100</span>
                 </div>
                 <div class="overflow-y-auto flex-1 p-0">
@@ -79,7 +91,40 @@
     </div>
 
     <script>
-        async function fetchRankings() {
+        document.addEventListener("DOMContentLoaded", () => {
+            loadHistoryList();
+            
+            // 드롭다운 변경 시 해당 날짜 데이터 로드
+            document.getElementById('history-selector').addEventListener('change', (e) => {
+                if (e.target.value === 'latest') {
+                    fetchRankings('./data.json');
+                } else {
+                    fetchRankings(`./history/${e.target.value}.json`);
+                }
+            });
+        });
+
+        async function loadHistoryList() {
+            try {
+                const res = await fetch('./history/history_list.json?t=' + new Date().getTime());
+                if (!res.ok) throw new Error("No history");
+                const dates = await res.json();
+                
+                const selector = document.getElementById('history-selector');
+                dates.forEach(date => {
+                    const option = document.createElement('option');
+                    option.value = date;
+                    option.textContent = date;
+                    selector.appendChild(option);
+                });
+            } catch (e) {
+                console.log("히스토리 목록이 아직 없습니다.");
+            }
+            // 최초 실행 시 최신 데이터 로드
+            fetchRankings('./data.json');
+        }
+
+        async function fetchRankings(url) {
             document.getElementById('dashboard').classList.add('hide');
             document.getElementById('loading').classList.remove('hide');
             
@@ -90,24 +135,24 @@
             Object.values(lists).forEach(el => el.innerHTML = '');
 
             try {
-                // crawler.js가 생성한 로컬 data.json 파일 읽기
-                // 주의: 브라우저 보안 정책(CORS)으로 인해 file:// 로 열면 작동하지 않을 수 있습니다. 
-                // VS Code의 Live Server 등으로 열어주세요.
-                const res = await fetch('./data.json?t=' + new Date().getTime());
+                const res = await fetch(url + '?t=' + new Date().getTime());
                 if (!res.ok) {
-                    throw new Error("data.json 파일을 찾을 수 없습니다. 먼저 crawler.js를 실행해주세요.");
+                    throw new Error("데이터 파일을 찾을 수 없습니다.");
                 }
                 const data = await res.json();
 
+                // 날짜 업데이트
+                document.getElementById('last-updated').textContent = data.lastUpdated + ' 기준';
+
                 renderPlayStoreTable(lists.playKr, data.playKr || generateMockData('Play Store (한국)'));
-                renderSteamTable(lists.steamGlobal, data.steamGlobal || generateMockData('Steam (전체)'));
+                renderSteamTable(lists.steamGlobal, data.steamGlobal || generateMockData('Steam (한국)'));
 
                 document.getElementById('loading').classList.add('hide');
                 document.getElementById('dashboard').classList.remove('hide');
 
             } catch (error) {
                 console.error("대시보드 로딩 에러:", error);
-                alert("데이터를 불러오지 못했습니다. 파이썬/Node 크롤러가 먼저 실행되어 data.json이 생성되었는지 확인해주세요.");
+                alert("해당 날짜의 데이터를 불러오지 못했습니다.");
                 document.getElementById('loading').classList.add('hide');
                 document.getElementById('dashboard').classList.remove('hide');
             }
