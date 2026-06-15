@@ -12,17 +12,17 @@
       "developer": "PUBG Corporation"
     },
     {
-      "name": "Eternal Return",
+      "name": "이터널 리턴",
       "appId": "1049590",
       "developer": "Nimble Neuron"
     },
     {
-      "name": "Blue Archive",
+      "name": "블루 아카이브",
       "appId": "3557620",
       "developer": "NEXON Games"
     },
     {
-      "name": "DAVE THE DIVER",
+      "name": "데이브 더 다이버",
       "appId": "1868140",
       "developer": "MINTROCKET"
     },
@@ -57,17 +57,17 @@
       "developer": "CAPCOM Co., Ltd."
     },
     {
-      "name": "DAVE THE DIVER - In the Jungle Content Pack",
+      "name": "데이브 더 다이버 - 인 더 정글 Content Pack",
       "appId": "4394810",
       "developer": "MINTROCKET"
     },
     {
-      "name": "Where Winds Meet",
+      "name": "연운",
       "appId": "3564740",
       "developer": "Everstone Studio"
     },
     {
-      "name": "Road to Empress Ⅱ",
+      "name": "성세천하: 여제의 탄생 II",
       "appId": "4148240",
       "developer": " New One Studio"
     },
@@ -82,7 +82,7 @@
       "developer": "EA Canada"
     },
     {
-      "name": "Destiny 2",
+      "name": "데스티니 가디언즈",
       "appId": "1085660",
       "developer": "Bungie"
     },
@@ -92,17 +92,17 @@
       "developer": "Paradox Development Studio"
     },
     {
-      "name": "Crimson Desert",
+      "name": "붉은사막",
       "appId": "3321460",
       "developer": "Pearl Abyss"
     },
     {
-      "name": "Palworld",
+      "name": "Palworld / 팰월드",
       "appId": "1623730",
       "developer": "Pocketpair"
     },
     {
-      "name": "Apex Legends™",
+      "name": "Apex 레전드™",
       "appId": "1172470",
       "developer": "Respawn"
     },
@@ -112,7 +112,7 @@
       "developer": "Sports Interactive"
     },
     {
-      "name": "Heartopia",
+      "name": "두근두근타운",
       "appId": "4025700",
       "developer": "XD"
     },
@@ -122,7 +122,7 @@
       "developer": "TEAM GWYF"
     },
     {
-      "name": "The Adventures of Elliot: The Millennium Tales",
+      "name": "모험가 엘리엇의 천 년 이야기",
       "appId": "3483510",
       "developer": "Square Enix"
     },
@@ -167,7 +167,7 @@
       "developer": "Klei Entertainment"
     },
     {
-      "name": "Resident Evil Requiem",
+      "name": "BIOHAZARD requiem",
       "appId": "3764200",
       "developer": "CAPCOM Co., Ltd."
     },
@@ -187,12 +187,12 @@
       "developer": "Ludeon Studios"
     },
     {
-      "name": "Resident Evil 4",
+      "name": "BIOHAZARD RE:4",
       "appId": "2050650",
       "developer": "CAPCOM Co., Ltd."
     },
     {
-      "name": "Lies of P",
+      "name": "P의 거짓 (Lies of P)",
       "appId": "1627720",
       "developer": "NEOWIZ"
     },
@@ -202,22 +202,22 @@
       "developer": "Lizard Smoothie"
     },
     {
-      "name": "Overwatch®",
+      "name": "오버워치™",
       "appId": "2357570",
       "developer": "Blizzard Entertainment, Inc."
     },
     {
-      "name": "Call of Duty®: Modern Warfare® 4",
+      "name": "콜 오브 듀티®: 모던 워페어 4",
       "appId": "4435490",
       "developer": "Infinity Ward"
     },
     {
-      "name": "Burglin' Gnomes",
+      "name": "노움 강도단",
       "appId": "3844970",
       "developer": "Fobri"
     },
     {
-      "name": "Grand Theft Auto V Enhanced",
+      "name": "Grand Theft Auto V 인핸스드",
       "appId": "3240220",
       "developer": "Rockstar North"
     },
@@ -227,17 +227,17 @@
       "developer": "semiwork"
     },
     {
-      "name": "Subnautica 2",
+      "name": "서브노티카 2",
       "appId": "1962700",
       "developer": "Unknown Worlds Entertainment"
     },
     {
-      "name": "007 First Light",
+      "name": "007 퍼스트 라이트",
       "appId": "3768760",
       "developer": "IO Interactive A/S"
     },
     {
-      "name": "The First Descendant",
+      "name": "퍼스트 디센던트",
       "appId": "2074920",
       "developer": "NEXON Games Co., Ltd."
     },
@@ -247,7 +247,7 @@
       "developer": "Wargaming Group Limited"
     },
     {
-      "name": "Clair Obscur: Expedition 33",
+      "name": "클레르 옵스퀴르: 33 원정대",
       "appId": "1903340",
       "developer": "Sandfall Interactive"
     },
@@ -257,22 +257,22 @@
       "developer": "Battlestate Games"
     },
     {
-      "name": "Rina's Undercover Train Operation",
+      "name": "미끼 수사관 리나",
       "appId": "4260530",
       "developer": "Metamorphose"
     },
     {
-      "name": "Digimon Story Time Stranger",
+      "name": "디지몬 스토리 타임 스트레인저",
       "appId": "1984270",
       "developer": "Media.Vision Inc."
     },
     {
-      "name": "DYNASTY WARRIORS: ORIGINS",
+      "name": "진・삼국무쌍: ORIGINS",
       "appId": "2384580",
       "developer": "KOEI TECMO GAMES CO., LTD."
     },
     {
-      "name": "Destiny 2: Renegades",
+      "name": "데스티니 가디언즈: 저항자",
       "appId": "3186540",
       "developer": "Bungie"
     },
@@ -287,7 +287,7 @@
       "developer": "Ghost Town Games Ltd."
     },
     {
-      "name": "TEKKEN 8",
+      "name": "철권 8",
       "appId": "1778820",
       "developer": "Bandai Namco Studios Inc."
     },
@@ -297,12 +297,12 @@
       "developer": "Obsidian Entertainment"
     },
     {
-      "name": "Heroes of Might and Magic: Olden Era",
+      "name": "Heroes of Might and Magic: Olden Era 히어로즈 오브 마이트 앤 매직: 올든 에라",
       "appId": "3105440",
       "developer": "Unfrozen"
     },
     {
-      "name": "Tom Clancy's Rainbow Six Siege",
+      "name": "톰 클랜시의 레인보우식스 시즈",
       "appId": "359550",
       "developer": "Ubisoft Montreal"
     },
@@ -347,7 +347,7 @@
       "developer": "VRChat Inc."
     },
     {
-      "name": "Pratfall",
+      "name": "프랫폴",
       "appId": "4244510",
       "developer": "Quad Head"
     },
@@ -397,12 +397,12 @@
       "developer": "Studio MDHR Entertainment Inc."
     },
     {
-      "name": "Destiny 2: The Edge of Fate",
+      "name": "데스티니 가디언즈: 운명의 경계",
       "appId": "3186490",
       "developer": "Bungie"
     },
     {
-      "name": "Road to Empress I",
+      "name": "성세천하: 여제의 탄생 I",
       "appId": "3478050",
       "developer": " New One Studio"
     },
@@ -412,12 +412,12 @@
       "developer": "Triiodide Studios"
     },
     {
-      "name": "Teamfight Manager 2",
+      "name": "팀파이트 매니저 2",
       "appId": "3009300",
       "developer": "Team Samoyed"
     },
     {
-      "name": "Assassin's Creed Black Flag Resynced",
+      "name": "어쌔신 크리드 블랙 플래그 리싱크드",
       "appId": "3751950",
       "developer": "Ubisoft Singapore"
     },
@@ -427,17 +427,17 @@
       "developer": "Hunter Studio"
     },
     {
-      "name": "ROMANCE OF THE THREE KINGDOMS 8 REMAKE",
+      "name": "삼국지8  REMAKE",
       "appId": "2288150",
       "developer": "KOEI TECMO GAMES CO., LTD."
     },
     {
-      "name": "ACE COMBAT 8: WINGS OF THEVE",
+      "name": "에이스 컴뱃 8: 시브의 날개 (ACE COMBAT 8: WINGS OF THEVE)",
       "appId": "2288340",
       "developer": "Bandai Namco Aces Inc."
     },
     {
-      "name": "Stellar Blade™",
+      "name": "스텔라 블레이드™",
       "appId": "3489700",
       "developer": "SHIFT UP Corporation"
     },
@@ -467,7 +467,7 @@
       "developer": "Lunarch Studios"
     },
     {
-      "name": "Escape Simulator 2",
+      "name": "방 탈출 시뮬레이터2",
       "appId": "2879840",
       "developer": "Pine Studio"
     },
@@ -477,7 +477,7 @@
       "developer": "CAPCOM Co., Ltd."
     },
     {
-      "name": "Marvel Rivals",
+      "name": "마블 라이벌즈",
       "appId": "2767030",
       "developer": "NetEase Games"
     },
@@ -487,7 +487,7 @@
       "developer": "Klei Entertainment"
     },
     {
-      "name": "No Rest for the Wicked",
+      "name": "노 레스트 포 더 위키드",
       "appId": "1371980",
       "developer": "Moon Studios GmbH"
     },
@@ -497,7 +497,7 @@
       "developer": "Novatetsu Games"
     },
     {
-      "name": "Street Fighter™ 6",
+      "name": "Street Fighter 6",
       "appId": "1364780",
       "developer": "CAPCOM Co., Ltd."
     }
@@ -514,7 +514,7 @@
       "free": true,
       "summary": "오픈월드 액션 RPG 『명조:워더링 웨이브』에서는 높은 자유도의 액션과 다양한 오픈월드 어드벤처를 즐길 수 있으며, 플레이어는 오랜 잠에서 깨어난 &#39;방랑자&#39;가 되어, 스스로의 기억과 이야기를 찾는 여정에 올라 다양한 파트너들과 함께 이 세상을 바꾸기 위한 여정을 떠나게 됩니다.<br><br>◆The Game Awards 2025 Players&#39; Voice 수상 ◆<br>◆The Game Awards 2025 Best Mobile Game 노미네이션◆<br>◆The Game Awards 2024 Players&#39; Voice 노미네이션◆<br>◆The Game Awards 2024 Best Mobile Game 노미네이션◆<br><br>◆게임 소개◆<br>방랑자님! 이곳에서 깨어나신 것을 환영합니다.<br>소리 없는 조수가 우리 세계의 많은 것을 휩쓸고 갔습니다.<br>비명의 강림 앞에 인류는 과거의 법칙만을 남겼으며, 문명은 비명의 발아래 묻혔습니다.<br>그러나 침묵의 정적이 끝난 지금, 인류는 새로운 시작을 위해 나아가고자 합니다.<br>파멸과 함께 나타난 이상 현상은 새로운 삶을 가져왔고, 인류는 그들과 함께 새로운 시대를 열어가고 있습니다.<br>그리고…… 방랑자의 여행도 이제 막 시작되려 합니다.<br>함께 싸워 줄 친구를 만나 상상을 뛰어넘는 적과 마주할 수도 있고, 자신을 변화시키는 힘을 받아들여 모든 것을 뒤엎는 진실을 파헤칠 수도 있고, 미처 보지 못한 기묘한 광경을 탐험하게 될 수도 있습니다. 물론 모든 길은 방랑자의 선택에 달려 있습니다.<br>방랑자가 어떤 선택을 하게 될지는 알 수 없으나, 자신만의 답을 찾고 이 재난의 아픔을 이겨 나갈 수 있을 것이라 믿습니다.<br>어쩌면, 정체된 문명이라는 배를 출항시킬 수 있는 사람은 방랑자 뿐일지도 모릅니다.<br>조수의 흐름이 순환되듯, 인류의 문명도 끊임없이 순환됩니다.<br>이제, 자신의 답을 찾기 위한 여행길에 오르세요.<br><br>◆게임 특색◆<br>——세계의 질서: 「비명」과 함께 시작된 문명 / 탐색 자유도 높은 오픈월드<br>『명조:워더링 웨이브』는 오픈월드 게임으로, 높은 자유도를 가지고 있습니다. 스태미나 제한 감소, 파쿠르 액션, 자유로운 활공, 민첩한 탐사 바이크 등을 활용해 가며 구속받지 않는 오픈 월드를 맘껏 탐색합니다. 솔라리스 세계에서 깨어난 방랑자로서, 당신은 기억과 자아를 되찾기 위해 여정을 떠나게 됩니다.<br><br>——자연스러운 액션: 빠르고 부드러운 전투를 느껴라 / 극한의 액션 경험<br>액션 게임으로서 『명조:워더링 웨이브』는 시원하고 짜릿한 전투 체험을 가지고 있고, 전투에서 저스트 회피, 패링, 에코, QTE 등 플레이로 극한의 컨트롤을 체험할 수 있습니다.<br><br>——섬세한 디테일: 모두에게 주어진 감동적인 서사 / 몰입감 넘치는 스토리 연출<br>『명조:워더링 웨이브』는 유저에게 최상의 시청각적 체험을 선사하는 것을 목표로 삼아, 훌륭한 스토리와 음악, 애니메이션 연출 등을 통해 모든 방랑자 여러분께서 『명조:워더링 웨이브』의 솔라리스 속 감동적인 이야기들에 깊이 몰입할 수 있도록 합니다.<br><br>——공명 각성 : 공명자들과 함께하는 여정  / 공명자들과의 만남<br>『명조:워더링 웨이브』 세계에서 잔상을 격파하면 에코를 획득할 수 있고, 획득한 에코는 전투에서 활용됩니다. 방랑자여, 광활한 오픈 월드에서 에코를 수집하여 다양한 어빌리티를 해제해 보세요!<br><br>◆공식 커뮤니티◆<br>공식 홈페이지: https://wutheringwaves.kurogames.com/kr/<br>공식 트위터: https://twitter.com/WW_KR_Official<br>공식 유튜브: https://www.youtube.com/@WW_KR_Official<br>공식 라운지: https://game.naver.com/lounge/WutheringWaves/home<br>공식 디스코드: https://discord.com/invite/wutheringwaves<br><br>【앱 접근 권한 관련】<br>앱을 사용하는 동안 다음과 같은 서비스를 제공하기 위해 앱 접근 권한을 요청합니다.<br><br>【선택적 접근 권한】<br>- 사진첩: 사진 업로드, 다운로드 또는 공유(예: 사진을 기기 앨범에 저장)에 사용됩니다.<br>- 마이크: 음성 메시지 전송 및 동영상 녹화 등의 방식으로 문제를 신고하는 데 사용됩니다.<br>- 카메라: 사진 촬영, 녹화 등의 방식으로 문제를 신고하거나 QR 코드를 스캔하는 데 사용됩니다.<br>* 선택적 접근 권한은 동의하지 않아도 앱을 정상적으로 이용할 수 있습니다.<br><br>【접근 권한 철회 방법】<br>설정→개인정보보호→해당 앱 선택→접근권한 동의 또는 철회 선택",
       "scoreText": "4.6",
-      "score": 4.6132965
+      "score": 4.614686
     },
     {
       "title": "WOS: 화이트아웃 서바이벌",
@@ -553,7 +553,7 @@
       "free": true,
       "summary": "인류는 패배했다.<br>조금의 전조도 없이 시작된 [랩쳐]의 침공은, 무자비하며, 압도적이었다.<br>목적 불명. 협상 불가…<br><br>랩쳐는 마치 자신들이 인류의 천적이라고 포효하듯, 삽시간에 지상을 불바다로 만들었다.<br>끝없이 쏟아지는 그들의 공세 앞에 지금껏 쌓아놨던 기술은 무의미했고,<br>인류는 말 그대로 유린당하기만 할 뿐이었다.<br><br>마지막 수단으로 개발중이던 인형병기에 희망을 걸었으나,<br>조금의 효과만 보았을 뿐, 전황을 뒤집는 기적을 일으키진 못했다.<br>그야말로 완벽한 패배…<br>인류는 그렇게, 지상을 랩쳐에게 빼앗기고 지하 깊숙한 곳으로 터전을 옮기게 되었다.<br><br>그로부터 수십 년 후, 인류의 새 터전 [방주]에서,<br>지하로 내쫓긴 인류가 모든 기술을 집약하여 만들어낸 [대 랩쳐용 결전 인형병기]가 되어 눈을 뜬 소녀들은,<br>그렇게 수십 년간 단 한 번도 열리지 않은 지상으로 향하는 엘리베이터에 몸을 실었다.<br><br>인류는 기도했다.<br>소녀들이 자신들의 화살이 되어주기를.<br>그리고, 복수의 칼날이 되어주기를…<br><br>그 절박한 염원들이 담긴 이름과 함께, 소녀들은 지상으로 향했다.<br>그 이름은 [니케].<br>인류에게 승리를 가져다줄, 마지막 희망.<br><br><br>▶ 개성있고 매력적인 캐릭터<br>일러스트 원화 그대로 직접 전투에 참여하는<br>다양한 매력의 캐릭터들을 플레이하세요!<br><br>▶ 독보적인 퀄리티의 그래픽<br>고퀄리티의 일러스트,<br>그리고 물리엔진과 컨텍스트 기반 오토 립 모션 등 최신기술이 적용되어<br>차별화된 캐릭터와 그래픽을 선사합니다.<br><br>▶ 아케이드 슈팅 전투로 극대화된 재미<br>독특한 백 뷰 시점으로 진행되는 실시간 슈팅 게임!<br>한 손 플레이가 가능한 조작성으로 누구나 손쉽게<br>오락실에 온 것처럼 신나게 슈팅을 즐길 수 있습니다.<br><br>▶ 방대한 세계관과 시나리오<br>포스트 아포칼립스 세계관을 기반으로 하는<br>장편 소설 이상의 방대한 시나리오 분량!<br>몰입감 있는 심오한 세계관을 풀보이스 더빙으로 즐겨보세요.",
       "scoreText": "4.8",
-      "score": 4.825119
+      "score": 4.8250628
     },
     {
       "title": "킹샷:Kingshot",
@@ -566,7 +566,7 @@
       "free": true,
       "summary": "은 전략과 방치형이 결합된 중세 시대 서바이벌 게임입니다. 독특한 게임성, 풍부한 디테일이 당신을 기다리고 있습니다.<br><br>갑작스러운 반란은 왕조의 운명 자체를 바꿔버렸습니다. 이어서 일어난 전쟁으로 많은 사람들은 보금자리를 잃었습니다. 붕괴된 사회, 반군의 침입, 전염병, 호시탐탐 강도짓을 벌이려는 폭도들. 사람들은 어떻게 살아가야 하고, 이 문명의 불씨를 어떻게 기어가야 할까요? 오직 당신만이 이 사람들을 도울 수 있습니다! 이 어려움 가득한 시대에 당신은 영주로서 사람들을 이끌고 열악한 환경을 헤쳐 나가야 하며, 각종 내정 문제, 외교 전략을 수립해 문명의 불꽃을 다시 일으켜야 합니다.<br><br><br>[주요 특징]<br><br><br>침입 방어<br>당신은 반군의 침입을 막기 위해 만전을 준비해야 합니다. 도시는 사람들의 마지막 삶의 터전으로, 많은 사람들의 희망이 걸려있는 곳입니다. 자원을 수집하고, 건물을 업그레이드하고, 모든 돌발 전투에 대비하세요. 이 모든 것을 해내야만 험난한 시대를 살아 나갈 수 있습니다.<br><br><br>인력 분배<br>작업자, 사냥꾼, 요리사 등등. 독특한 생존자 업무 분배 콘텐츠를 즐겨보세요. 생존자들의 건강 상태와 행복지수를 체크하고, 더 효율적으로 일할 수 있게 하세요. 만약 생존자가 병에 걸려도 걱정하진 마세요. 제때 치료하면 됩니다.<br><br>법전 배포<br>법전은 문명을 확립하고 지속하는 중요한 수단입니다. 물론 도시 국가를 발전시키는 주요 요소이기도 하죠.<br><br>[전략 콘텐츠]<br><br>너무 갑작스러운 정권의 붕괴 탓에 대륙에는 아직 사용할 만한 물자가 많이 남아있습니다. 유랑민과 반군, 그리고 다른 유능한 영주들이 호시탐탐 노리고 있습니다... 싸움을 피할 수 없는 상황입니다. 그렇다면 모든 수단을 동원해 가로막는 것들을 쓰러트리고 자원을 쟁탈하세요!<br><br>왕권 쟁탈<br>모든 플레이어와 함께 최강 영주라는 영광을 쟁탈하고, 이 위대한 전략 게임에서 왕권을 쟁탈해 모든 것을 통치하세요!<br><br>동맹 수립<br>혼자서 모든 생존 압박을 견딜 필요는 없습니다. 연맹을 만들거나 또는 연맹에 가입해 연맹원와 함께 힘을 합쳐 문명을 재건하세요!<br><br>조력자 모집<br>특별한 영웅이 당신의 모집을 기다리고 있습니다. 다른 재능 스킬을 가진 영웅을 많이 모집해야 이 재난 속에서 더 많은 주도권을 가질 수 있게 됩니다. 물론 더 안전하게 살아남을 수도 있죠.<br><br>다른 영주와 경기<br>영웅의 스킬을 익히고 적절하게 소대를 배치한 후, 다른 도시와 겨루어 보세요! 승리로 푸짐한 포인트를 획득 수 있을 뿐만 아니라, 포인트로 레어 아이템을 교환할 수도 있습니다. 당신의 도시를 이끌고 당당하게 경기장 랭크에 진입해 보세요. 모든 사람들이 이 위대한 마을의 탄생 배경을 보게 될 것입니다.<br><br>과학 기술 발전<br>이 반란으로 인해 거의 모든 과학 기술이 사라졌습니다. 즉시 과학 기술 시스템을 재건해 문명의 파편을 쌓아 올리세요. 첨단 기술을 더 손에 빨리 넣는 사람이 이 세상을 지배할 수 있습니다!<br><br>[팔로우하세요!]<br>Discord: https://discord.com/invite/5cYPN24ftf",
       "scoreText": "4.6",
-      "score": 4.578655
+      "score": 4.578381
     },
     {
       "title": "라스트 워: 서바이벌",
@@ -579,7 +579,7 @@
       "free": true,
       "summary": "좀비로 물든 이 종말의 세계에서 당신의 전략으로 생존해 보세요!<br><br>· 빠르게 전략을 수립하고 움직여라!<br>종말에서 절망적인 생존에 도전해 보세요! 대규모 좀비들의 쓰나미를 피하고 퇴치하며, 생존을 위한 빠른 사고 능력과 전투 능력은 필수예요!<br><br>· 자신만의 방어 셸터를 건설하라!<br>지휘관님의 방어 셸터를 구축하고 좀비들의 침입으로부터 자신을 보호해 보세요! 지휘관님의 방어 셸터는 이 종말의 세상에서 희망의 불꽃과 같아요. 자신의 셸터를 전략적으로 구성하고 업그레이드해서 이 종말에서 생존해 보세요! <br><br>· 자신만의 전략으로 팀을 편성하라!<br>영웅을 모집하고 자신만의 개성 강한 팀을 구성할 수 있어요! 최대 4개의 팀을 구성할 수 있고, 각 영웅들은 자신만의 스킬로 전장을 누빌 거예요. 그들과 함께 종말의 세상에서 좀비를 상대로 조금 더 쉽게 승리를 쟁취해 보세요!<br><br>· 신뢰할 수 있는 연맹을 구축하라!<br>보스 좀비와 같은 강력한 좀비를 만났을 때는 혼자서는 싸울 수 없어요. 자신의 등을 맡길 수 있는 믿음직한 동료와 함께 연맹을 개설하고 싸워 보세요!<br><br>좀비가 우굴거리는 이 종말의 세계에서 당신은 살아남을 수 있을까요?<br><br>※ 접근 권한 안내 ※<br>애플리케이션 이용 시 아래와 같은 서비스를 제공하기 위해 접근 권한을 요청하고 있습니다.<br> [필수 접근 권한]<br> - 없음<br>[선택적 접근 권한]<br>- 알림:  게임 내의 중요 알림 수신<br>- 카메라 : 게임 내의 프로필 사진 촬영<br>※ 선택적 접근권한의 허용에는 동의하지 않아도 서비스의 이용이 가능합니다.<br>[접근권한 철회 방법]<br>- 접근 권한 동의 후, 다음과 같이 접근 권한을 재설정하거나 철회할 수 있습니다.<br>- 안드로이드6.0 이상 : 설정 &gt; 애플리케이션 관리 &gt; 라스트 워: 서바이벌 &gt; 권한 선택 &gt; 접근권한 동의 또는 철회<br>- 안드로이드6.0 미만 : 운영체제를 업그레이드하여 접근권한을 철회하거나, 앱을 삭제<br>※ 안드로이드 6.0 미만 버전을 사용하시는 경우에는 선택적 접근권한을 개별적으로 설정하실 수 없어 6.0 이상의 버전으로 업데이트하는 것을 권장 드립니다.",
       "scoreText": "4.8",
-      "score": 4.8135667
+      "score": 4.813576
     },
     {
       "title": "리니지M",
@@ -644,7 +644,7 @@
       "free": true,
       "summary": "ROBLOX | 다양한 장르의 인기 게임을 무료로 플레이<br> <br>Roblox에서는 비교할 수 없을 만큼 폭넓은 장르의 게임을 즐길 수 있습니다. 요리, 건설, 시뮬레이터 게임을 플레이하며 여유를 즐기거나, 레이싱, 슈팅 게임, 격렬한 서바이벌 게임에 도전해 보세요. 장대한 RPG 세계로 모험을 떠나고, 타이쿤 게임에서 제국을 건설하고, 스포츠 게임에서 경쟁하고, 친구들과 함께 호러, 애니메이션, 멀티플레이어 게임에 푹 빠져보세요.<br><br>글로벌 개발자 커뮤니티의 스튜디오, 인디 팀 및 솔로 크리에이터가 야심차게 선보이는 다양한 장르의 새로운 게임이 매일 Roblox에 출시됩니다. 항상 새로운 재미로 가득합니다.<br><br>오늘 바로 포지, 픽셀 퀘스트, 세계//제로, Scary Shawarma, NFL 유니버스 풋볼, 총격전 경기장, 케이팝 데몬 헌터스 등 Roblox에서 가장 인기 있는 게임을 플레이해 보세요.<br><br>Roblox에서 만나볼 수 있는 컨텐츠<br><br>◆온라인 멀티플레이어 게임 만나보기◆<br>- 어드벤처, 롤플레잉 게임, 시뮬레이터, 장애물 코스 등을 즐겨보세요<br>- 매일 인기 있는 체험과 재미있고 새로운 게임을 찾아 보세요<br>- 멀티플레이어 전투에서 경쟁하거나, 나만의 비즈니스를 운영하고, 장대한 퀘스트를 시작해 보세요<br><br>◆나만의 아바타 만들기◆<br>- 내 마음에 쏙 드는 복장과 장신구, 헤어스타일로 아바타를 마음껏 꾸며보세요<br>- 마켓플레이스에서 사용자가 제작한 수천 개의 아바타 아이템을 만나보세요<br>- 독특한 애니메이션과 감정 표현으로 개성을 표출하세요<br><br>◆언제 어디서나 함께 즐기기◆<br>- 모바일, 태블릿, PC, 콘솔 및 VR 헤드셋에서 플레이하세요<br>- 모든 기기에서 친구들과 함께 멀티플레이어 게임을 즐겨보세요<br><br>◆지인들과 채팅하며 플레이하기◆<br>- 파티에 참가하여 함께 체험에 참여하세요<br>- 연령 인증된 사용자는 음성 또는 텍스트로 채팅할 수 있습니다<br><br>◆제작하고, 구축하고, 공유하세요◆<br>- Windows 또는 Mac에서 Roblox Studio를 사용하여 게임 및 가상 공간을 설계하세요<br>- 체험을 게시하고 수백만 명의 플레이어와 공유하세요<br><br>◆업계 최고의 안전 및 디지털 시민의식◆<br>- 고급 콘텐츠 필터링 및 관리 기능을 제공합니다<br>- 맞춤형 자녀 보호 기능으로 제한 사항 설정<br>- 상호 존중하는 소통을 장려하기 위한 명확한 가이드라인<br>- 24시간 근무 중인 전담 신뢰 및 안전 팀<br><br>◆ROBLOX에서 플레이하고 제작하기◆<br>- 몰입감 있는 3D 멀티플레이어 게임 및 체험<br>- 모두를 위한 안전하고 포용적인 환경<br>- 누구나 크리에이터가 될 수 있는 플랫폼<br>- 글로벌 커뮤니티에서 매일 추가되는 새로운 콘텐츠<br><br>나만의 체험을 만들기: https://www.roblox.com/develop<br>고객 지원: https://en.help.roblox.com/hc/ko<br>문의: https://about.roblox.com/ko/문의/<br>개인정보 처리방침: https://en.help.roblox.com/hc/ko/articles/115004630823-Roblox-개인정보-처리방침-및-쿠키-정책<br>부모 가이드: https://about.roblox.com/ko/parental-controls<br>이용 약관: https://en.help.roblox.com/hc/ko/articles/115004647846-Roblox-이용-약관<br><br>참고: 네트워크 연결이 필요합니다. Roblox는 Wi-Fi 이용 시 가장 원활하게 작동합니다.",
       "scoreText": "3.8",
-      "score": 3.7568936
+      "score": 3.756927
     },
     {
       "title": "운빨존많겜",
@@ -683,7 +683,7 @@
       "free": true,
       "summary": "좀비가 창궐한 아포칼립스 월드에서 인류의 생존 공간은 계속 줄어들고 인류의 존속이 위태롭습니다. 당신은 우리가 간절히 찾고 있는 인류의 운명을 바꿀 수 있는 영웅이 될 수 있을까요? &quot;라스트 Z: 서바이벌 슈터&quot;의 모험 여정에 올라 당신의 운명의 여행을 시작하세요!<br><br>회피 &amp; 사격<br>좀비 떼가 가득한 아포칼립스 월드에서 생존은 선택이라기보다는 회피와 사격 기술을 시험하는 무대입니다. 끊임없이 밀려오는 좀비 무리 속에서 그들의 맹공을 절묘하게 피하며 사격 정확도를 높이세요. 매번의 회피와 명중은 승리에 한 걸음 더 가까워지게 하며, 스킬과 반응 속도를 시험하는 이 스릴 넘치는 게임에서 풍성한 보상을 얻게 될 것입니다.<br><br>탐험 &amp; 확장<br>아드레날린이 솟구치는 이 여정에서 아포칼립스 월드는 당신의 탐험과 세력 확장을 위한 놀이터가 됩니다. 버려진 지역을 탐험하고 숨겨진 보물을 발굴하며, 전투를 통해 성장하고 신뢰할 수 있는 동료들과 깊은 유대를 쌓아 함께 어려움을 헤쳐나가세요. 이 모든 것이 당신만의 아포칼립스 셸터를 빨리 건설하는 데 도움이 될 것입니다.<br><br>생존 &amp; 번영<br>&quot;라스트 Z: 서바이벌 슈터&quot;에서는 단순히 생존하는 것을 넘어 삶을 살아가야 합니다. 끊임없는 탐험, 확장, 성장을 통해 척박한 아포칼립스 월드는 당신의 손에서 기회와 발전의 공간이 됩니다. 경제, 과학 기술, 군사 분야에서 당신의 힘은 날로 강해지고 잠재력은 무한합니다. 번창하는 당신의 셸터는 결국 인류 문명의 희망의 등불이 될 것입니다.<br><br>이 흥미진진한 전설적인 여정에서 탐험하고 발전하며 생존의 의미를 새로 쓰세요. 지금 바로 &quot;라스트 Z: 서바이벌 슈터&quot;를 다운로드하여 궁극의 생존 시험을 시작하고 용기의 한계에 도전하며 아포칼립스 여정을 정복하세요!<br><br>※ 접근 권한 안내 ※<br>애플리케이션 이용 시 아래와 같은 서비스를 제공하기 위해 접근 권한을 요청하고 있습니다.<br>[필수 접근 권한]<br>- 없음<br>[선택적 접근 권한]<br>- 알림: 게임 내의 중요 알림 수신<br>- 카메라 : 게임 내의 프로필 사진 촬영<br>※ 선택적 접근권한의 허용에는 동의하지 않아도 서비스의 이용이 가능합니다.<br>[접근권한 철회 방법]<br>- 접근 권한 동의 후, 다음과 같이 접근 권한을 재설정하거나 철회할 수 있습니다.<br>- 안드로이드6.0 이상 : 설정 &gt; 애플리케이션 관리 &gt; 라스트 Z: 서바이벌 슈터 &gt; 권한 선택 &gt; 접근권한 동의 또는 철회<br>- 안드로이드6.0 미만 : 운영체제를 업그레이드하여 접근권한을 철회하거나, 앱을 삭제<br>※ 안드로이드 6.0 미만 버전을 사용하시는 경우에는 선택적 접근권한을 개별적으로 설정하실 수 없어 6.0 이상의 버전으로 업데이트하는 것을 권장 드립니다.",
       "scoreText": "4.8",
-      "score": 4.752246
+      "score": 4.7522984
     },
     {
       "title": "블루 아카이브",
@@ -696,7 +696,7 @@
       "free": true,
       "summary": "마음 속 담고 싶은 이야기<br>청춘X학원X밀리터리 RPG &quot;블루 아카이브&quot;<br><br>수많은 학교가 모여있는 거대 학원도시 &#39;키보토스&#39;에 연방 수사 동아리 &#39;샬레&#39;의 고문 교사로 부임한 당신.<br>개성 넘치는 매력적인 학생들과 키보토스의 끊이지 않는 사건 사고를 해결하며, 함께 쌓아가는 특별한 추억들!<br><br>■ 귀여운 캐릭터가 활약하는 3D 전투<br>디테일한 모션&amp;스킬 컷신으로 눈을 뗄 수 없는 3D 실시간 전투!<br>학생들의 능력과 지형, 상성을 고려한 전략적인 지휘로 승리로 이끌어주세요!<br><br>■ 알면 알수록 매력 넘치는 학생들<br>함께하는 시간이 늘어갈수록, 학생들과 당신의 인연은 깊어져 갑니다.<br>인게임 메신저 &#39;모모톡&#39;으로 학생들과 교류하며 새로운 매력에 눈뜨게 될 거에요!<br>더 친해지면 고퀄리티 2D 애니메이션으로 생생하게 움직이는 학생들이 선생님을 맞이한답니다!<br><br>■ 점점 더 전개가 궁금해지는 흥미진진한 스토리<br>소녀들의 우정과 사랑, 감동의 밀리터리 액션 모험을 그려낸 예측 불허의 메인 스토리!<br>학생들의 속마음을 엿볼 수 있는 인연 스토리, 다양한 동아리들의 일상을 담은 서브 스토리까지 더해, 소녀들의 좌충우돌 일상 속에서 기적을 찾아나가세요!<br><br>■ 공식 채널<br>공식 채널에서 최신 정보를 받아 보실 수 있습니다.<br>▶ 브랜드 페이지: https://bluearchive.nexon.com/<br>▶ 공식 커뮤니티: https://forum.nexon.com/bluearchive/<br>▶ 공식 트위터: https://twitter.com/KR_BlueArchive<br>▶ 공식 유튜브: https://www.youtube.com/channel/UCj0iColXMAjPA92rH-AXVGQ<br><br>■ 디바이스 권장 사양<br>Android OS 9.0 이상 / 갤럭시 노트8 이상 / 6GB RAM 이상 필요<br><br>[스마트폰 앱 접근권한 안내]<br>앱 이용 시 아래와 같은 서비스를 제공하기 위해 접근 권한을 요청하고 있습니다.<br><br>[선택적 접근권한]<br>사진/미디어/파일: 게임 실행 파일 및 영상 저장, 사진 및 동영상 업로드하는데 필요합니다.<br>카메라: 사진 및 동영상 업로드를 위한 촬영하는데 필요합니다.<br>전화: 광고성 문자 전송을 위한 휴대폰번호를 수집하는데 필요합니다.<br>알림: 앱이 서비스와 관련된 알람을 게시하도록 허용합니다.<br>* 선택적 접근권한 허용에 동의하지 않아도 서비스 이용이 가능합니다.<br><br>[접근권한 철회 방법]<br>▶ 안드로이드 6.0 이상: 설정 &gt; 앱 &gt; 권한 항목 선택 &gt; 권한 목록 &gt; 접근권한 동의 또는 철회 선택<br>▶ 안드로이드 6.0 미만: 운영체제를 업그레이드하여 접근권한을 철회하거나, 앱을 삭제<br>※ 앱이 개별 동의 기능을 제공하지 않을 수 있으며 위의 방법으로 접근 권한을 철회할 수 있습니다.<br>----<br>개발자 연락처 :<br>Nexon Korea Corporation 판교로256번길 7 (삼평동)<br>분당구, 성남시, 경기도 13487<br>South Korea 220-87-17483 2013-경기성남-1659 성남시청",
       "scoreText": "4.1",
-      "score": 4.1418886
+      "score": 4.141501
     },
     {
       "title": "한게임 포커",
@@ -748,7 +748,7 @@
       "free": true,
       "summary": "Lục địa Teyvat rộng lớn, nơi vô số sinh vật sinh sôi và hội tụ.<br>Đây chính là thế giới do bảy vị Thần thống trị, cũng là nơi bảy loại nguyên tố tụ hội...<br><br>Dưới bầu trời xa lạ, có người thiếu niên và thiếu nữ đang đứng trong gió bụi.<br>Các bạn chính là cặp song sinh đến từ vùng đất xa lạ. Người thân của bạn bị vị Thần lạ mặt bắt đi, và bạn cũng bị Thần phong ấn chìm vào giấc ngủ sâu...<br>Đến khi tỉnh lại, mọi thứ xung quanh đều đã thay đổi...<br><br>Genshin Impact là một game nhập vai phiêu lưu thế giới mở. Bạn sẽ khám phá một thế giới giả tưởng có tên là &quot;Lục địa Teyvat&quot; trong trò chơi.<br>Trong thế giới rộng lớn này, bạn có thể du hành qua bảy vương quốc, gặp gỡ những người bạn đồng hành với những tính cách và năng lực độc đáo khác nhau, cùng chiến đấu chống lại kẻ thù mạnh và bước vào con đường tìm kiếm người thân, hoặc bạn có thể đi lang thang không mục đích và đắm mình trong một thế giới đầy sức sống. Hãy để sự tò mò thúc đẩy bản thân khám phá mọi bí mật trong thế giới này nào...<br>Cho đến khi bạn đoàn tụ với người thân và chứng kiến sự lắng đọng của mọi thứ ở điểm đến cuối cùng.<br><br>〓Thế Giới Mở, Tự Do Khám Phá〓<br>Genshin Impact là một game nhập vai phiêu lưu thế giới mở, chỉ cần bạn sử dụng thể lực hợp lý, thì sẽ có thể chu du đến mọi vùng núi cao biển rộng, khám phá những cảnh vật kỳ bí. Hãy cùng nhau thám hiểm xem sẽ có những gì đang đợi bạn phía trước nào!<br><br>〓Phản Ứng Nguyên Tố, Chiến Lược Chiến Đấu〓<br>Thế giới trong game được hình thành bởi bảy loại nguyên tố: Phong, Lôi, Thủy, Hỏa, Băng, Thảo, Nham. Nhân vật có Vision sẽ có thể dùng sức mạnh của nguyên tố để chiến đấu và thám hiểm. Thủy gặp Hỏa sẽ bốc hơi, Hỏa gặp Lôi sẽ quá tải, Lôi gặp Thủy sẽ nhiễm điện... Đối mặt với kẻ địch khác nhau, có thể dùng kỹ năng kích hoạt hiệu quả nguyên tố thích hợp để giành chiến thắng.<br><br>〓Đồ Họa Và Âm Nhạc Chất Lượng Cao〓<br>Genshin Impact có phong cách nghệ thuật mới mẻ, chuyển động của nhân vật được thực hiện thông qua việc nắm bắt cử động và điều chỉnh chi tiết, mang đến hiệu ứng trình diễn chất lượng cao. Ngày đêm thay đổi 24 giờ, thời tiết và âm nhạc cũng thay đổi linh hoạt, dù bạn ở đâu, bạn cũng sẽ luôn nghe thấy những màn trình diễn đặc trưng của dàn nhạc giao hưởng hàng đầu thế giới như London Philharmonic Orchestra và Shanghai Symphony Orchestra.<br><br>〓Tập Hợp Đồng Đội, Cùng Nhau Thám Hiểm〓<br>Trong quá trình thám hiểm, còn có thể kết giao được với những đồng đội có khả năng đặc biệt, hãy thử kết hợp đội hình mạnh nhất, thu thập nguyên liệu cường hóa nhân vật để chinh phục bí cảnh nào. Rất nhiều điều mới mẻ đang chờ bạn khám phá, cùng bắt đầu thôi nào.<br><br>〓Du Ngoạn Thiên Tinh, Cùng Tạo Kỳ Vực〓<br>Thiên Tinh Kỳ Vực là thiên đường giải trí do Nhà Lữ Hành chỉ đạo. Bạn sẽ nhận được hai Người Mẫu, tự do kết hợp ngoại hình. Vào Đại Sảnh gặp gỡ bạn mới, chọn ải để mạo hiểm... Còn có thể trở thành Kỳ Tài để sáng tạo cách chơi độc đáo với Sandbox Thiên Tinh.<br><br>SUPPORT<br>Nếu gặp bất cứ vấn đề nào, vui lòng phản hồi thông qua trung tâm CSKH trong game.<br>Email CSKH: genshin_cs@hoyoverse.com<br>Trang chủ chính thức: https://genshin.hoyoverse.com/<br>Diễn đàn chính thức: https://www.hoyolab.com/<br>Facebook: https://www.facebook.com/Genshinimpact/<br>Instagram: https://www.instagram.com/genshinimpact/<br>Twitter: https://twitter.com/GenshinImpact<br>YouTube: http://www.youtube.com/c/GenshinImpact <br>Discord: https://discord.gg/genshinimpact<br>Reddit: https://www.reddit.com/r/Genshin_Impact/",
       "scoreText": "3.9",
-      "score": 3.8847482
+      "score": 3.8846495
     },
     {
       "title": "협타디: 협동 타워 디펜스",
@@ -761,7 +761,7 @@
       "free": true,
       "summary": "친구랑 같이 해도, 혼자서 즐겨도!<br>쉽게 배우고 오래 즐기는 국민 협동 타워 디펜스, 협타디🏰<br><br>⚔️ <b>버튼 몇 번이면 끝! 초간단 플레이</b><br>버튼만 눌러도 랜덤 소환에 빠른 합성까지!<br>처음 플레이해도 금방 익숙해지는 디펜스 게임!<br><br>⚔️ <b>다양한 모드, 다양한 콘텐츠</b><br>협동, 솔로, 보스 러시까지 한 게임에 다 있다!<br>짧게 한 판도 OK, 연속 플레이도 OK.<br><br>⚔️ <b>함께 머리 맞대는 전략 플레이</b><br>누가 막고 누가 공격? 역할 나눠서 깔끔하게 디펜스!<br>같이 고민하는 순간, 전략의 재미가 살아나요!<br><br>⚔️ <b>한계 없는 성장 맛집</b><br>하면 할수록 강해지고, 도전할 단계는 끝이 안 보여요!<br>성장하는 맛에 계속 “한 판만 더…”를 외치게 될 거예요!<br><br>⚔️ <b>수상하게 귀여운 마물 수집</b><br>취향대로 골라 모으는 귀엽고 수상한 마물들!<br>최애 마물만 쏙쏙 모아서 끝까지 더 강해지세요!<br><br>끝없이 밀려오는 웨이브를 막기 위해 시작된 운명의 디펜스!<br>협동 타워 디펜스의 모든 재미, 지금 ‘협타디’에서 직접 경험해보세요.<br><br>공식 커뮤니티👉https://cafe.naver.com/cooptd<br><br>※ 유료 아이템을 구매하면 별도의 요금이 부과됩니다. (확률형 아이템 포함)<br>※ 결제금액 및 방법: 상품 별 별도 고지 된 결제금액 및 결제 방법에 따릅니다.<br>※ 외화 결제 시 환율 및 수수료 등으로 인해 실제 청구금액과 다를 수 있습니다.<br>※ 인 앱 결제 시 부가세가 부과됩니다.<br><br>**[약관 안내]**<br><br>- 이용약관: https://www.supermagic.io/base-policy/index.html?category=terms-of-service<br>- 개인정보처리방침: https://www.supermagic.io/base-policy/index.html?category=privacy-policy<br><br>**[개발자 연락처]**<br><br>- 주소 : 50, Seongsui-ro 16-gil, Superfast Seongsu, Seongdong-gu, Seoul, Korea<br>- 전화번호: 070-7775-8560<br>- 전자우편주소 : [help@supermagic.io](mailto:help@supermagic.io)<br>----<br>개발자 연락처 :<br>슈퍼매직 주식회사 성동구 성수이로16길 50<br>성동구, 서울특별시 04786<br>South Korea 366-88-02551 2022-서울강남-00794 강남구청",
       "scoreText": "4.5",
-      "score": 4.54824
+      "score": 4.548427
     },
     {
       "title": "라스트 어사일럼: 페스트",
@@ -774,7 +774,7 @@
       "free": true,
       "summary": "종말의 흑사병 속에서, 새부리 의사가 되어 행동으로 삶의 희망을 되찾으세요!<br>갑작스러운 흑사병이 마을 전체를 집어삼켰습니다. 의료 체계는 붕괴되고 치안은 무너졌으며, 쥐떼가 코앞까지 몰려오고 있습니다. 당신은 새부리 의사로서 환자를 돌보고 약을 제작하며, 경비대를 지휘해 피난소를 세워야 합니다. 위험이 도사리는 황폐한 땅에서 매 순간 중대한 결단을 내려, 생존자들을 위한 새로운 질서를 재건하세요!<br><br>[종말 병원: 희망을 치료하다]<br>당신만의 종말 시대 병원을 운영하세요. 운영부터 진료, 확장까지—모든 선택은 당신의 손에 달려 있습니다!<br>새부리 의사로서, 당신은 진료 접수부터 증상 판단, 약제 조제와 치료까지 직접 지휘해야 합니다. 병실과 의료 장비를 관리하고 진료 구역을 확장해 의료 역량을 끌어올리세요. 의료를 생존의 돌파구로 만들어야 합니다!<br><br>[영웅 레벨업, 쥐떼에 맞서다]<br>영웅을 육성하고 타워 디펜스 배치를 강화하여 쥐떼 앞에서 마지막 방어선을 지켜내세요!<br>쥐떼와 쥐왕이 언제든 공격해 올 수 있습니다. 영웅을 육성하고, 스킬을 강화하여 함정과 타워 디펜스를 업그레이드해 더 강력한 쥐떼와 &#39;쥐왕&#39; 보스 전에 도전하세요. 흑사병의 침공을 막아내야 합니다!<br><br>[자원 수집 및 피난처 재건]<br>생존자들을 파견하여 자원을 모으고, 황폐한 땅에서 생존 거점을 강화하세요!<br>생존자들을 파견해 목재, 약초, 식량 등 핵심 물자를 확보하세요. 생산 시설을 건설하고 창고를 확장하며 피난소를 업그레이드해 생존 기반을 다지세요. 생존자들이 다시 삶을 꾸릴 수 있도록 돕고, 잃어버린 질서를 다시 되찾으세요!<br><br>[자원 약탈 및 폐허 쟁탈]<br>영웅 팀을 선택하고, 흑사병이 휩쓸고 간 황무지에서 자신만의 지배권을 쟁취하세요!<br>영웅을 선별해 최강의 조합을 꾸리고, 편성 시너지를 강화하세요. 부대가 폐허의 전장에서 압도적인 전력을 발휘하도록, 전략과 전술로 다른 영주들을 제압하고 혼란한 종말의 지도 위에서 영지를 한 걸음씩 넓혀 나가세요!",
       "scoreText": "4.8",
-      "score": 4.816548
+      "score": 4.816004
     },
     {
       "title": "브롤스타즈",
@@ -878,7 +878,7 @@
       "free": true,
       "summary": "리그 오브 레전드를 만든 라이엇 게임즈가 선보이는 전략적 팀 전투는 팀 구성을 새로운 단계로 격상시키는 멀티플레이어 PvP 오토 배틀러입니다.<br><br>챔피언을 모집 및 배치하고 유연하게 대응하며 8인 자동 전투 난투전에서 기발한 전략을 펼쳐 보세요. 팀 조합이 수백 가지에 달하고 메타가 끊임없이 변화하는 만큼, 과감한 전략으로 큰 승리를 거둘 수 있습니다. 모두를 제치고 끝까지 살아남는다면 말이죠.<br><br>세트마다 펼쳐지는 새로운 세계<br>전략적 팀 전투 광장은 상상이 실제로 구현되며 끝없이 진화하는 차원입니다. 즉, 세트마다 완전히 새로운 테마와 체계가 도입된다는 뜻이죠! <br>마법 학교부터 괴수들이 출몰하는 도시, 심장을 울리는 음악 축제까지, 언제나 흥미진진하고 새로운 세계에서 전투를 펼칠 수 있습니다.<br><br>혼돈 활용하기<br>공동으로 이루어지는 멀티플레이어 챔피언 선택을 통해 꿈의 팀을 구성하세요. 과감한 선택, 마지막 순간의 조합 전환 그리고 뜻밖의 행운이 전장의 판도를 뒤집습니다. 라운드마다 격돌하여 최후의 전략가가 되어보세요. 창의력과 기지를 발휘해 예측 불가능한 챔피언 선택과 게임을 뒤흔드는 변수로 필승 전략을 만들어 보세요.<br><br>친구와 함께 플레이<br>PC, Mac, 모바일 상관없이 친구들과 함께 치열한 경쟁을 펼칠 수 있습니다. 친구와 함께 플레이하며 누가 기발한 전략(또는 기막힌 행운)으로 정상을 차지하는지 확인해 보세요.<br><br>랭크 등반<br>경쟁 모드에 대한 전적인 지원과 PvP 대전 검색 덕분에 플레이어님의 조합을 시험에 들게 할 강력한 상대가 언제나 기다리고 있습니다. 압도적인 전략으로 아이언부터 챌린저까지 등반하고, 세트가 종료될 때마다 주어지는 랭크 보상을 획득하세요!<br><br>화려한 개성 표현<br>전장에서 가장 좋아하는 꼬마 전설이를 자랑하고, 화려한 펑펑 효과와 종결자 효과로 적을 제압하며, 차원문을 타고 다채로운 세계를 멋지게 누비세요. 게임을 플레이하며 패스 또는 패스+ 보상 획득하거나 전략적 팀 전투 상점에서 직접 구매해 새로운 외형을 만나볼 수 있습니다.<br><br><br>지금 전략적 팀 전투를 다운로드하고 플레이해 보세요!<br><br>고객지원: RiotMobileSupport@riotgames.com<br>개인정보 처리방침: https://legal.kr.riotgames.com/privacy<br>서비스 약관: https://legal.kr.riotgames.com/tos",
       "scoreText": "4.4",
-      "score": 4.428055
+      "score": 4.428131
     },
     {
       "title": "세븐나이츠 리버스",
@@ -904,7 +904,7 @@
       "free": true,
       "summary": "<strong><font color=\"#FF0000\">▶가정의 달, 인페르노와 따뜻한 추억을 만드세요!◀</font></strong><br><br><font color=\"#FF0000\">■업데이트: 신규 클래스 &#39;소울이터&#39; 출시! 가족과 함께 즐기는 새로운 모험! </font><br><font color=\"#FF0000\">■한정 이벤트: 사랑의 출석, 가정의 달 특별 던전 등 다양한 콘텐츠 준비! 인페르노에서 사랑과 웃음 가득한 시간을 보내세요!</font><br><br>라운지 이벤트: https://game.naver.com/lounge/Inferno_Nine/home<br><br><strong>2025년, 새로운 차세대 리얼 MMORPG가 강력하게 등장!</strong><br><br>《I9: 인페르노 나인》은 MMO 팬들을 위해 제작된 하드코어 전투 모바일 게임입니다! 게임은 중세 북유럽을 배경으로, 최신 언리얼 엔진을 사용해 모바일 게임의 한계를 넘는 최고의 그래픽 경험을 제공합니다! 게임의 핵심은 다인간 경쟁, 대규모 전장, 대규모 성 공격 전투 등의 PVP 시스템으로, 최대 1000명 이상의 플레이어가 함께 전투할 수 있으며, 플레이어들에게 깊이 있고 몰입감 있는 고품질의 판타지 세계를 경험하게 합니다.<br><br>전설에 따르면, 세계수(이그드라실)는 세상 만물을 품고 낳았으며, 그 열매인 신의 불꽃은 범접하지 못할 힘을 지니고 있습니다. 신의 불꽃의 빛은 세상의 번영과 광명을 가져왔지만, 동시에 사람들의 마음 깊은 곳에 있는 탐욕과 야망도 비추게 했습니다. 여러 세력, 신족, 엘프, 인간, 오크, 심지어 지하의 어두운 종족까지 신의 불꽃 열매를 차지하려고 눈을 떴습니다. 신의 불꽃을 쟁탈하는 전쟁은 끝없이 계속되었고, 결국 열매의 힘은 대지를 뒤틀어 아홉 개의 대륙으로 나누어졌으며, 그곳에서 무한한 학살과 증오가 퍼져나갔습니다.<br><br>플레이어는 세계수 이그드라실에 의해 선택된 각성자로, 모험의 여정에서 점차 힘을 깨우며 아홉 개의 대륙에 평화를 되찾기 위한 여정을 떠나게 됩니다!<br><br>각성자들이여, 새로운 세계로의 여행을 떠날 준비가 되셨습니까?<br><br><strong>■게임 특징</strong><br><br><font color=\"#f58220\">새로운 차세대 리얼 북유럽 판타지 세계관</font><br>- 수백만 자에 달하는 방대한 메인 스토리로 중세 북유럽으로 돌아가 어둠과 아름다움이 공존하는 잔혹한 세계를 몰입감 있게 체험하세요!<br>- 언리얼 엔진으로 제작된 최고 수준의 아트 품질, 세밀하고 현실감 넘치는 캐릭터와 세계 환경 모델링으로 영화 같은 눈의 즐거움을 선사합니다!<br><br><font color=\"#f58220\">광활하고 무한한 오픈 월드</font><br>- 진정한 심리스(Seamless) 오픈 월드! 자유롭게 이동하며 로딩 없이 매끄러운 몰입형 탐험을 경험하세요!<br>- 바다 속, 하늘, 산 정상까지 눈에 보이는 모든 곳을 탐험할 수 있는 진정한 자유로운 오픈 월드를 만끽하세요!<br><br><font color=\"#f58220\">한계를 뛰어넘는 대규모 전쟁</font><br>- 월드 전체가 하나의 전장입니다! 영토 전쟁, 성채 공성전, 군주 전쟁까지, 최대 1,000명의 플레이어가 한곳에서 전투를 벌일 수 있는 월드가 준비 되어 있습니다!<br>강해지세요! 승리자만이 부, 명예, 권력을 누릴 수 있습니다! 이 잔혹하면서도 웅장한 혈전에서 마음껏 싸워보세요!<br><br><font color=\"#f58220\">진정한 월드 클래스 MMO</font><br>- 글로벌 천만 다운로드를 돌파한 인기 MMO! 전 세계 수많은 플레이어들과 함께 전투할 준비가 되셨나요?!<br>- 현실 세계 각 지역과 국가에서 온 각성자들이 하나의 서버에서 단 하나의 왕좌를 두고 경쟁합니다!<br><br><font color=\"#f58220\">다양한 종족과 클래스</font><br>- 엘프, 야만인, 신족, 인간 등 상상하는 모든 것이 여기 있습니다! 100가지가 넘는 직업 중 마음껏 선택하세요!<br>- 고사양 3D 인체 스캔 및 모션 캡처 기술로 캐릭터를 자유롭게 커스터마이징할 수 있으며, 천 명이면 천 가지 개성 넘치는 외모를 구현할 수 있습니다!<br><br>■접근 권한 안내<br><br>[필수 접근 권한]<br>- 없음<br><br>[선택 접근 권한]<br>- 마이크: 게임 내 채팅 기능을 제공하기 위해 사용<br>- 사진 및 동영상: 게임 내 고객센터 서비스 및 버그 제보 기능을 제공하기 위해 사용<br>- 카메라: 게임 내 고객센터 서비스 및 버그 제보 기능을 제공하기 위해 사용<br>- 알림: 게임 내 콘텐츠 및 이벤트 소식 푸시 알림 전송에 사용<br>- 위치: 인앱(In-App) 구매 시 해당 국가 통화로 결제하기 위해 위치 정보 필요<br>- 전화: 기기의 인증 상태를 유지하기 위해 사용<br><br>*선택적 접근권한은 해당 기능을 사용할때 허용이 필요하며, 비허용 시에도 해당 기능 외 서비스 이용이 가능합니다.",
       "scoreText": "4.5",
-      "score": 4.5357018
+      "score": 4.535619
     },
     {
       "title": "이환",
@@ -920,19 +920,6 @@
       "score": 4.6736245
     },
     {
-      "title": "FC 모바일",
-      "appId": "com.nexon.fmk",
-      "url": "https://play.google.com/store/apps/details?id=com.nexon.fmk",
-      "icon": "https://play-lh.googleusercontent.com/pxACCpiBnSpylUL5a0tlXP-S2_7twcd0Uu4dzHvTbwgOzKtCFNlIuSgul5d2R9_W2Aldcq33h8VqdySvTSX8_qc",
-      "developer": "NEXON Company",
-      "currency": "KRW",
-      "price": 0,
-      "free": true,
-      "summary": "Play Every Moment, FC 모바일<br><br>오랜 시간 전 세계에서 사랑받아온 FC 시리즈를 모바일에서 즐기세요!<br>19,000명 이상의 선수, 700개 이상의 팀, 30개 이상의 리그를 내 손 안에서 만나보실 수 있습니다.<br><br>FC 모바일이 어느덧 6주년을 맞이했습니다. <br>이번 [THE WORLD&#39;S GAME] 업데이트에는 세계 정상에 도전하는 새로운 토너먼트, 한층 깊어진 게임플레이, 그리고 6주년을 함께 축하하는 역대급 보상까지 모두 담았습니다.<br>지금 바로, 더욱 풍성해진 FC 모바일을 경험해 보세요.<br><br>[핵심 업데이트 안내]<br>1. THE WORLD&#39;S GAME TOURNAMENT 오픈<br>- 세계 정상을 향한 도전! 글로벌 무대를 배경으로 한 신규 토너먼트 컨텐츠가 새롭게 오픈됩니다.<br>- 각국을 대표하는 감독님들과 정상의 자리를 두고 겨루며, 전 세계 축구의 열기를 직접 체감해 보세요.<br><br>2. 신규 컨텐츠 업데이트 <br>- 퀵 매치 : 친구와 빠르게 한 판! 간소화된 매칭 흐름으로 친선 경기를 더욱 손쉽게 즐기실 수 있습니다.<br>- 햅틱 피드백 : 피치 위의 진동을 손끝 그대로! 슛, 태클, 골 세리머니 등 주요 순간의 강화된 몰입감을 AOS에서도 제공합니다. <br><br>3. 다양해지는 플레이 메타<br>- 플레이스타일 : 새롭게 추가되는 플레이 스타일 컨텐츠를 통해 차별화된 경기 운영이 가능해집니다.<br><br>4. 6주년 &amp; 월드 게임 토너먼트 기념 보상<br>- FC 모바일 6주년과 월드 게임 토너먼트 개막을 함께 축하하는 역대급 보상 라인업이 출격합니다.<br>- 다양한 기념 이벤트와 미션을 통해 모든 감독님께 풍성한 혜택을 제공합니다.<br><br>5. 상시 컨텐츠 보상 개선<br>- 일상적으로 즐기시는 상시 컨텐츠의 보상이 전반적으로 상향되어, 파밍이 보다 쉽고 효율적으로 변경됩니다.<br>- 꾸준히 플레이하는 감독님들이 더 명확하게 성장의 보람을 느끼실 수 있도록 개선했습니다.<br><br>[공식 커뮤니티]<br>FC 모바일의 가장 빠른 소식을 접해보세요!<br>공식 커뮤니티: https://forum.nexon.com/fcmobile<br>공식 홈페이지: https://fcmobile.nexon.com/<br>공식 유튜브 채널: https://www.youtube.com/@EASFCMOBILEKR<br><br>■ 스마트폰 앱 접근권한 안내<br>앱 이용 시 아래와 같은 서비스를 제공하기 위해 접근 권한을 요청하고 있습니다. <br> <br>[선택적 접근권한]<br>저장공간: 영상 저장, 사진 및 동영상을 업로드하는데 필요합니다.<br>카메라: 사진 또는 동영상을 촬영하여 참고자료를 고객센터 등에 첨부, 제출하기 위해 필요합니다.<br>알림: 앱이 서비스와 관련된 알림을 게시하도록 허용합니다.<br>* 선택적 접근권한 허용에 동의하지 않아도 서비스 이용이 가능합니다.<br> <br>[접근권한 철회 방법]<br>- 안드로이드 6.0 이상: 설정 &gt; 애플리케이션 &gt; 해당 애플리케이션 선택 &gt; 권한 &gt; 철회할 권한 선택 &gt; 허용 안함 선택<br>- 안드로이드 6.0 미만: 운영체제를 업그레이드하여 접근권한을 철회하거나, 앱을 삭제<br>※ 앱이 개별 동의 기능을 제공하지 않을 수 있으며 위의 방법으로 접근 권한을 철회할 수 있습니다.<br> <br>-------------<br>개발자 연락처:<br>1588-7701<br>service_mobile@nexon.co.kr<br>----<br>개발자 연락처 :<br>Nexon Korea Corporation 판교로256번길 7 (삼평동)<br>분당구, 성남시, 경기도 13487<br>South Korea 220-87-17483 2013-경기성남-1659 성남시청",
-      "scoreText": "3.1",
-      "score": 3.0655897
-    },
-    {
       "title": "붕괴: 스타레일",
       "appId": "com.HoYoverse.hkrpgoversea",
       "url": "https://play.google.com/store/apps/details?id=com.HoYoverse.hkrpgoversea",
@@ -943,7 +930,7 @@
       "free": true,
       "summary": "이 은하계에는 「에이언즈」라고 불리는 존재가 있습니다. 그들은 현실을 만들고 별들을 소멸시키며, 수많은 세계에 자신의 흔적을 남기죠. 특별한 여행자인 당신과 개척의 뜻을 이어받은 동료들은 한때 「에이언즈」가 여행했던 길을 따라 은하열차를 타고 은하계를 여행하게 됩니다. 이제 당신은 새로운 문명을 탐색하고 새로운 동료를 만나며, 무수하고 신비로운 「세계」를 모험할 예정이죠. 당신이 찾는 해답은 모두 별들 사이에서 찾을 수 있습니다.<br>자, 이 「개척」의 여정을 떠날 준비가 되셨나요?<br><br>〈붕괴: 스타레일〉은 HoYoverse가 출시한 은하 판타지 RPG 게임입니다.<br>「은하열차」를 타고 은하계의 신비롭고 환상적인 풍경을 경험하며, 모험과 짜릿함이 가득한 여정의 선율을 즐겨보세요.<br>플레이어는 여러 세계에서 새로운 친구를 만나고 반가운 친구와 재회하며 함께 「스텔라론」으로 인한 분쟁을 해결하고 비밀을 파헤치게 됩니다. 여정의 끝이 뭇별에 닿길!<br><br>□ 다양한 세계에서 즐기는 탐험 - 자유 탐사, 인터랙티브 수수께끼<br>3, 2, 1 워프 개시! 기물이 봉인된 우주정거장, 얼음으로 뒤덮인 기이한 행성, 흉물을 수렵하는 거대 함대, 좋은꿈 속의 축제의 별, 운명이 정해지지 않은 영원의 땅, 한때 그림 속에 빠졌던 낙원…. 열차가 정차하는 역마다 새로운 은하 세계가 펼쳐집니다! 기묘하고 환상적인 문명과 세계를 자유롭게 탐색하고 수상한 배후에 숨겨진 수수께끼를 풀어보세요!<br><br>□ 보는 재미와 듣는 즐거움 - 영화같이 몰입감 넘치는 체험<br>실시간 렌더링으로 고퀄리티 스토리 표현, 신규 개발 캐릭터 표정 시스템으로 실감 나는 감정 묘사, 자체 사운드 제작팀 HOYO-MiX의 전력을 다한 BGM, 당신의, 당신에 의한, 당신을 위한 은하 판타지, 지금 바로 여정에 올라 갈등과 협력 사이에서 자신의 의지로 선택하고 이야기의 결말에 도달하세요!<br><br>□ 개성 넘치는 캐릭터 - 교차하는 운명의 길과 다양한 캐릭터<br>별바다를 누비다 보면 끝없는 모험뿐 아니라 무수한 만남도 겪습니다. 극한의 땅에서 고난을 함께 겪으며 우정을 쌓고, 선주의 위기 속에서 어깨를 나란히 하고 싸우며, 황금빛 좋은꿈에서의 우연한 만남을 갖고, 환월이 차올랐을 때의 에이언즈 게임도 펼쳐지죠…… 외계의 행성에서 다른 운명의 길을 걷는 동료를 만나고, 함께 이 신기한 여정에 올라 웃음과 눈물이 뒤섞인 현재, 과거, 미래를 써 내려가 보세요.<br><br>□ 턴제 전략 전투의 묘미 - 독특한 전투 조합과 다양한 콘텐츠<br>지휘 전투 시스템, 각양각색의 전투 파티 구성. 적의 속성에 따라 특색 있는 파티를 조합하고 최적의 행동 타이밍을 잡아 적을 쓰러트리세요! 「약점 격파」 「추가 공격」 「지속 피해」…… 그리고 완전히 새로운 「아하 타임」까지! 다양한 전투 전략이 당신을 기다립니다. 자신만의 극적인 전략을 구축하고 잇따라 찾아오는 새로운 도전을 맞이해보세요. 긴장감 넘치고 짜릿한 턴제 전투 외에 경영 시뮬레이션, 캐주얼 매치3, 수수께끼 탐사 등 다양한 콘텐츠를 마음껏 탐색하고 무한한 가능성을 체험하세요!<br><br>□ 한국어 풀 보이스 더빙 지원 - 시청각의 향연 속에 빠져드는 은하 모험<br>&quot;말에 온도가 생기고, 이야기에 선택지가 생기고, 캐릭터에 영혼이 깃듭니다. 수많은 감정과 표정, 그리고 밀도 있는 스토리와 깊이 있는 4개국어 더빙으로 캐릭터는 단지 캐릭터가 아닌 당신의 진정한 동료가 되어 함께 새로운 이야기를 만들어 가게 됩니다.<br><br>※ 확률형 아이템 포함.<br><br>고객센터 메일: hsrcs_kr@hoyoverse.com<br>개발자 연락처: +65 6871 7902<br>공식 사이트: https://hsr.hoyoverse.com/ko-kr/home<br>인스타그램: https://www.instagram.com/honkaistarrail/ <br>트위터: https://twitter.com/honkaisr_kr<br>유튜브: https://www.youtube.com/@Honkaistarrail_kr<br>디스코드: https://discord.gg/honkaistarrail<br>네이버 카페: https://cafe.naver.com/honkaistarrail<br>틱톡: https://www.tiktok.com/@honkaistarrail_official  <br>레딧: https://www.reddit.com/r/HonkaiStarRail/<br>HoYoLAB: https://www.hoyolab.com/accountCenter/postList?id=172534910 <br>카카오톡: http://pf.kakao.com/_SKlsxj<br>트위치: https://twitch.com/honkaistarrail",
       "scoreText": "3.7",
-      "score": 3.6878307
+      "score": 3.6854875
     },
     {
       "title": "뮤 모나크2",
@@ -959,6 +946,19 @@
       "score": 4.1663365
     },
     {
+      "title": "FC 모바일",
+      "appId": "com.nexon.fmk",
+      "url": "https://play.google.com/store/apps/details?id=com.nexon.fmk",
+      "icon": "https://play-lh.googleusercontent.com/pxACCpiBnSpylUL5a0tlXP-S2_7twcd0Uu4dzHvTbwgOzKtCFNlIuSgul5d2R9_W2Aldcq33h8VqdySvTSX8_qc",
+      "developer": "NEXON Company",
+      "currency": "KRW",
+      "price": 0,
+      "free": true,
+      "summary": "Play Every Moment, FC 모바일<br><br>오랜 시간 전 세계에서 사랑받아온 FC 시리즈를 모바일에서 즐기세요!<br>19,000명 이상의 선수, 700개 이상의 팀, 30개 이상의 리그를 내 손 안에서 만나보실 수 있습니다.<br><br>FC 모바일이 어느덧 6주년을 맞이했습니다. <br>이번 [THE WORLD&#39;S GAME] 업데이트에는 세계 정상에 도전하는 새로운 토너먼트, 한층 깊어진 게임플레이, 그리고 6주년을 함께 축하하는 역대급 보상까지 모두 담았습니다.<br>지금 바로, 더욱 풍성해진 FC 모바일을 경험해 보세요.<br><br>[핵심 업데이트 안내]<br>1. THE WORLD&#39;S GAME TOURNAMENT 오픈<br>- 세계 정상을 향한 도전! 글로벌 무대를 배경으로 한 신규 토너먼트 컨텐츠가 새롭게 오픈됩니다.<br>- 각국을 대표하는 감독님들과 정상의 자리를 두고 겨루며, 전 세계 축구의 열기를 직접 체감해 보세요.<br><br>2. 신규 컨텐츠 업데이트 <br>- 퀵 매치 : 친구와 빠르게 한 판! 간소화된 매칭 흐름으로 친선 경기를 더욱 손쉽게 즐기실 수 있습니다.<br>- 햅틱 피드백 : 피치 위의 진동을 손끝 그대로! 슛, 태클, 골 세리머니 등 주요 순간의 강화된 몰입감을 AOS에서도 제공합니다. <br><br>3. 다양해지는 플레이 메타<br>- 플레이스타일 : 새롭게 추가되는 플레이 스타일 컨텐츠를 통해 차별화된 경기 운영이 가능해집니다.<br><br>4. 6주년 &amp; 월드 게임 토너먼트 기념 보상<br>- FC 모바일 6주년과 월드 게임 토너먼트 개막을 함께 축하하는 역대급 보상 라인업이 출격합니다.<br>- 다양한 기념 이벤트와 미션을 통해 모든 감독님께 풍성한 혜택을 제공합니다.<br><br>5. 상시 컨텐츠 보상 개선<br>- 일상적으로 즐기시는 상시 컨텐츠의 보상이 전반적으로 상향되어, 파밍이 보다 쉽고 효율적으로 변경됩니다.<br>- 꾸준히 플레이하는 감독님들이 더 명확하게 성장의 보람을 느끼실 수 있도록 개선했습니다.<br><br>[공식 커뮤니티]<br>FC 모바일의 가장 빠른 소식을 접해보세요!<br>공식 커뮤니티: https://forum.nexon.com/fcmobile<br>공식 홈페이지: https://fcmobile.nexon.com/<br>공식 유튜브 채널: https://www.youtube.com/@EASFCMOBILEKR<br><br>■ 스마트폰 앱 접근권한 안내<br>앱 이용 시 아래와 같은 서비스를 제공하기 위해 접근 권한을 요청하고 있습니다. <br> <br>[선택적 접근권한]<br>저장공간: 영상 저장, 사진 및 동영상을 업로드하는데 필요합니다.<br>카메라: 사진 또는 동영상을 촬영하여 참고자료를 고객센터 등에 첨부, 제출하기 위해 필요합니다.<br>알림: 앱이 서비스와 관련된 알림을 게시하도록 허용합니다.<br>* 선택적 접근권한 허용에 동의하지 않아도 서비스 이용이 가능합니다.<br> <br>[접근권한 철회 방법]<br>- 안드로이드 6.0 이상: 설정 &gt; 애플리케이션 &gt; 해당 애플리케이션 선택 &gt; 권한 &gt; 철회할 권한 선택 &gt; 허용 안함 선택<br>- 안드로이드 6.0 미만: 운영체제를 업그레이드하여 접근권한을 철회하거나, 앱을 삭제<br>※ 앱이 개별 동의 기능을 제공하지 않을 수 있으며 위의 방법으로 접근 권한을 철회할 수 있습니다.<br> <br>-------------<br>개발자 연락처:<br>1588-7701<br>service_mobile@nexon.co.kr<br>----<br>개발자 연락처 :<br>Nexon Korea Corporation 판교로256번길 7 (삼평동)<br>분당구, 성남시, 경기도 13487<br>South Korea 220-87-17483 2013-경기성남-1659 성남시청",
+      "scoreText": "3.1",
+      "score": 3.0655897
+    },
+    {
       "title": "나이트 크로우",
       "appId": "com.wemade.nightcrows",
       "url": "https://play.google.com/store/apps/details?id=com.wemade.nightcrows",
@@ -970,6 +970,19 @@
       "summary": "나이트 크로우 3주년: 물의 도시 탈라시온이 업데이트 되었습니다!<br><br>태세를 변경하여 예측 불가한 공세를 펼치는 신규 클래스 권갑으로 전장의 흐름을 지배하고 부와 모험이 교차하는 신규 지역 물의 도시: 탈라시온을 탐험해보세요!<br>1년 이상의 독립 기간을 보장 받는 장기 독립 서버 필리푸스에서 거대한 전쟁이 시작됩니다.<br>필리푸스에서 게임을 시작하시는 단원님들에겐 &#39;필리푸스의 모험 가이드&#39;를 통해 성장만해도 최대 15만 미스틱 다이아 외 다양한 추가 보상이 주어지며<br>특히 필리푸스의 증표를 모으면 최대 신화 탈것, 무기 외형 그리고 전설 기술서부터, 지금까지 없던 혜택들을 얻으실 수 있습니다. <br><br>신규 격전지 아스포델에서 &#39;아마실&#39;을 획득하여 신규 장비 &#39;코이프&#39;를 획득하세요!<br><br>지금껏 없던 새로운 힘, &#39;공명 카드&#39;를 장착하여 단원님을 한 층 성장시킬 수 있습니다.<br>나이트 크로우 역사 속의 전설적인 용병단과 수 많은 보스 몬스터들의 초상화는 그 자체로 강해질 수 있는 기회를 제공합니다.<br>새로운 힘을 얻어 전장의 승자가 되어보세요.<br><br>▶ 지금 바로 접속하여 나이트 크로우를 즐겨보세요!<br>https://nightcrows.co.kr/<br><br>세계 최초, 언리얼 엔진 5로 출시되는 모바일 MMORPG. ‘나이트 크로우’<br><br>◈게임 소개◈ <br><br>마법이 공존하는 13세기를 배경으로 새롭게 창조된 유럽 대륙, <br>“Deus vult”, 신의 이름으로 시작되는 그 거대한 전쟁의 역사로 초대합니다. <br><br>▣”Creatio Mundi” (Creation of the world)▣ <br>마법이 공존하는 13세기 유럽. 판타지와 현실이 함께하는 새로운 세상을 창조하였습니다.  <br>낮과 밤, 밝음과 어둠, 질서와 혼돈, 권력과 반란까지, 모든 것들이 충돌하는 중세 유럽.<br>언리얼 엔진 5로 그려낸 가장 현실적인 역사 속 유럽 대륙을 경험할 수 있습니다. <br><br>▣”Modus Vivendi” (Way of life)▣<br>RPG에서의 캐릭터는 또 다른 “나”입니다. <br>이제 운과 우연에 의지하지 않고, 나의 시간, 노력, 그리고 선택에 따른 승급과 전직을 통해 나의 캐릭터는 성장하며, 나이트 크로우 단원으로서 주어진 역할을 수행해 나갑니다. 이것이 바로 나이트 크로우가 추구하는 RPG 본연의 성장이자 삶의 방식입니다. <br><br>▣”Alta Volare” (Fly high)▣<br>이제 땅과 하늘, 그 사이 모든 공간이 전장이 됩니다. <br>나이트 크로우의 이야기 속  유럽 대륙에서는 &quot;글라이더&quot;를 통해 드디어 하늘을 품게 되었습니다. 글라이더는 고저차를 이용한 단순한 활강에 그치지 않고, 활공과 호버링 그리고 상승 기류를 이용한 다양한 전략적인 전투까지 가능하게 하며, 평면적인 전투에서 벗어난 입체적인 전투의 경험을 선사합니다.   <br><br>▣”Verum Actio” (True action)▣<br>나이트 크로우에서의 전투 쾌감은 전투 그 자체에 대한 사실적 묘사와 성장에 대한 강력한 체감을 통해 극대화 됩니다.  한손검, 양손검, 활, 지팡이 등 각 클래스별 무기에 따라 차별적으로 적용된 타격감과 몬스터의 피격 액션의 조합을 통해 모든 감각을 자극하는 “진짜 액션”을 경험하게 될 것입니다. <br><br>▣”Ingens Bellum” (A huge war)▣<br>신의 이름으로 이 거대한 전쟁이 시작됩니다. <br>세개의 서버가 만나는 인터서버 기반의 격전지는 서버간의 경계를 넘어, 1000명 이상이 맞붙는 대규모 전장은 규모의 한계를 넘었으며, 클래스마다 특화된 PvP 스킬의 강화, 글라이더와 필드 환경의 고저차를 활용한 입체적인 전장 등은 기존의 전투 경험을 뛰어 넘었습니다. 이제 나이트 크로우를 통해 “유럽 대륙의 대규모 전장 그 한복판”에 서게 됩니다. <br><br>▣”Unum Forum” (One market)▣<br>나이트 크로우의 세상 속에서는 모든 것들이 하나로 연결됩니다. <br>인터서버로 연결된 세개의 서버들과, 그 속의 모든 개인들은 더 나은 이권과 더 빠른 성장을 위해 갈등하고 경쟁하는 것과 동시에, “월드 거래소”와 “1:1 개인거래”라는 경제적 연결을 통해 서로 교류하고 협력을 하게 됩니다. 갈등과 협력이 공존하는 하나의 시장, 그리고 하나의 경제, 그리고 하나의 세상. 그것이 바로 나이트 크로우의 세계입니다.<br><br>▣ 앱 접근 권한 안내<br>[선택]<br>- 사진/미디어/파일 저장: 리소스 다운로드 및 게임 데이터 저장과 고객센터, 커뮤니티, 플레이 스크린샷 저장 시 사용합니다.<br><br>[접근권한 철회 방법]<br>Android 6.0 이상<br>- 접근권한별 철회: 단말기 설정 &gt; 앱 &gt; 더보기(설정 및 제어) &gt; 앱 설정 &gt; 앱 권한 &gt; 해당 접근권한 선택 &gt; 접근권한 동의 또는 철회 선택<br>- 앱별 철회: 단말기 설정 &gt; 앱 &gt; 해당 앱 선택 &gt; 권한 선택 &gt; 접근권한 동의 또는 철회 선택 <br>Android 6.0 미만<br>-  운영체제를 업그레이드 하여 접근권한을 철회하거나, 앱을 삭제하여 철회 <br><br>개발자 연락처 :<br>주소: 경기도 성남시 분당구 대왕판교로644번길 49 위메이드타워<br>이메일: support@wemade.com<br>----<br>개발자 연락처 :<br>(주)위메이드 분당구 대왕판교로644번길 49(삼평동, 코리아벤처타운업무시설비블럭 위메이드타워)<br>성남시, 경기도 13493<br>South Korea 209-81-24419 제 2013-경기성남-0245 호 본인 직접 신고",
       "scoreText": "3.2",
       "score": 3.2305245
+    },
+    {
+      "title": "뱀피르",
+      "appId": "com.netmarble.thered",
+      "url": "https://play.google.com/store/apps/details?id=com.netmarble.thered",
+      "icon": "https://play-lh.googleusercontent.com/bpiLHv_Nvsa4Iv_KIfboxKBtKM6B5n19ftEdLq8iPFvSLSvgS_xjTrf4GMMmVE28hQ",
+      "developer": "Netmarble",
+      "currency": "KRW",
+      "price": 0,
+      "free": true,
+      "summary": "뱀파이어들의 MMORPG. 뱀피르: 피의 계승자!<br><br><br>■ 금기를 찢고, 욕망을 드러내다<br>피, 공포, 섹슈얼리티를 기반으로 빚어진 잔혹하면서도 매혹적인 세계. <br>아름다움과 잔혹함이 교차하는 순간을 경험하라!<br><br><br>■ 피로 물든, 압도적인 타격감<br>전투의 시작과 끝에서 보여지는 피의 욕망<br>뱀파이어 본능이 살아 숨쉬는 전장의 감각을 경험하라!<br><br><br>■ 안전한 성장, 치열한 전쟁<br>서로 다른 목적으로 무한 경쟁이 이뤄지는 이 곳, <br>끊임없이 재편되는 셔플링 시스템으로 <br>승자는 권력을, 패자는 의미 있는 보상을 거머쥔다!<br><br><br>■ 노력과 과금, 모두가 빛나는 경제 구조<br>다이아 파밍이 가능한 필드, 아이템 제작부터 거래까지 이어지는 핵심 재화 트리니티!<br>무과금은 노력한 만큼, 과금은 투자한 만큼 반드시 성장하는 <br>공정하고 지속 가능한 경제 시스템을 경험하라!<br><br><br>지금, 문을 열고 피로 물든 뱀파이어 세상의 주인이 되어라!<br><br><br><br><br><br><br>※ 유료 아이템 구매 시 별도의 요금이 부과됩니다. (확률형 아이템 포함) <br><br>- 공급자: 넷마블㈜ 대표이사 김병규 <br>- 이용조건 및 기간: 게임 내 별도 고지된 내용에 따름 <br>(사용기간이 표시되지 않은 경우, 서비스의 종료일까지를 사용기간으로 간주) <br>- 결제금액 및 방법: 상품 별 별도 고지된 결제금액 및 결제방법에 따름 <br>(외화 결제 시 환율 및 수수료 등으로 인해 실제 청구금액과 다를 수 있음) <br>- 상품지급방식: 게임 내 구매한 아이디(캐릭터)로 즉시 지급 <br>- 최소OS사양: Android 11<br>- 주소: 서울특별시 구로구 디지털로 26길 38, G-Tower 넷마블 <br>- 사업자 번호: 105-87-64746 <br>- 통신판매업 번호: 제 2014-서울구로-1028 호<br><br><br><br><br><br><br>[접근권한 안내]<br>■  필수적 접근 권한<br>- 없음<br><br>■  선택적 접근 권한<br>- 알림 (Android 13이상) : 푸시 알림 수신 시 사용합니다.<br>※ 접근 권한에 동의하지 않아도 서비스 이용이 가능합니다.<br><br>■  접근 권한 철회 방법<br>- Android 6.0 이상 : 설정 &gt; 애플리케이션 관리자 &gt; 앱 선택 &gt; 권한 &gt; 접근권한 철회 가능<br><br><br><br><br><br><br>■ 게임물 등급 분류 번호 : 제 CC-NP-250515-001호<br><br>- 이용약관 : https://help.netmarble.com/terms/terms_of_service_ko?lcLocale=ko<br>- 개인정보 처리방침 : https://help.netmarble.com/terms/privacy_policy_ko?lcLocale=ko<br>- 서비스 운영 정책 : https://help.netmarble.com/ko/web/thered/policy<br>- 고객센터: 1588-3995 (평일 오전10시~오후7시 상담가능)<br>- 사업자 이메일 : netmarbles@igsinc.co.kr<br>- 사업자정보 확인/문의하기: https://help.netmarble.com/<br>----<br>개발자 연락처 :<br>넷마블(주) 구로구 디지털로26길 38(구로동, 지타워)<br>구로구, 서울특별시 08393<br>South Korea 557819606 제 2014-서울구로-1028 호 구로구청",
+      "scoreText": "4.3",
+      "score": 4.3166986
     },
     {
       "title": "피망 포커 : 카지노 로얄 - 홀덤, 7포커, 바둑이",
@@ -1008,7 +1021,7 @@
       "free": true,
       "summary": "지금이 바로 성장할 절호의 기회!<br>게임 플레이만 해도 8성 미지의 룬(장신구·방어구·무기·엠블럼) 획득 가능!<br><br>■ 업데이트 소개 ■<br><br>▶ 마이홈 업데이트<br>특대형 마이홈, 공동 소유 기능까지 새롭게 추가됐습니다.<br>새로 추가된 데코 아이템 약 140종과 함께, 더 넓어진 공간을 친구와 함께 채워 보세요!<br><br>▶ 신규 사이드 게임<br>새로운 사이드 게임이 오픈됩니다.<br>다양한 컨셉의 사이드 게임을 즐겨 보세요!<br><br>▶ 고양이 상인의 특별 판매다옹!<br>에린에 접속한 시간에 따라 냥 쿠폰과 룬 보물 상자를 드려요.<br>냥 쿠폰으로 신규 헤어 쿠폰과 시즌2 업데이트 이후 사용 가능한 룬 보물 상자까지 교환해 보세요!<br><br>▶ 골든 체스트, 차원 열쇠<br>&#39;골든 체스트, 차원 열쇠&#39; 이벤트 미션을 달성하고<br>8성 미지의 룬을 부위 별로, 미스틱 던전 차원 열쇠 최대 100개와 함께 받아 보세요!<br><br>▶ 새로운 모험은 정령의 날개를 타고!<br>55레벨 이하라면 정령의 날개 소비 없이 자유롭게 이동할 수 있어요.<br>오랜만에 돌아오신 모험가분들도, 새로 시작하시는 모험가분들도 부담 없이 에린을 누벼 보세요!<br> <br>■ 게임 특징 ■<br> <br>▶ 새롭게 펼쳐지는 에린의 이야기<br>마비노기 IP의 이야기가 마비노기 모바일에서 새롭게 펼쳐집니다.<br>여신의 부름에서 시작되는 여정, 당신만의 새로운 이야기를 만들어 가세요.<br> <br>▶ 쉽고 간편한 성장과, 나만의 조합으로 전투 클리어!<br>레벨업 카드로 고민 없이 간편하게 성장!<br>룬 각인에 따라 바뀌는 스킬을 통해 나만의 조합으로 전투를 헤쳐나가 보세요.<br> <br>▶ 감성 가득한 생활 콘텐츠<br>에린에서의 생활을 더욱 풍성하게 만들어주는 다양한 생활 콘텐츠를 경험해 보세요.<br>낚시, 요리, 채집 등 힐링 가득한 생활 콘텐츠가 여러분을 기다리고 있어요.<br> <br>▶ 함께하는 낭만<br>캠프파이어 앞에서 함께 춤을 추고 악기를 연주하며 시간을 보내는 건 어떨까요?<br>다양한 소셜 활동을 통해 새로운 인연과 함께하는 만남과 모험을 즐겨 보세요.<br> <br>▶ 또 다른 나를 만나는 시간<br>에린에서는 내가 원하는 모습을 자유롭게!<br>다양한 패션 아이템과 섬세한 염색으로 나만의 개성 있는 룩을 완성시켜 보세요!<br><br>■ 스마트폰 앱 접근 권한 안내 ■<br>앱 이용 시 아래와 같은 서비스를 제공하기 위해 접근 권한을 요청하고 있습니다. <br><br>▶ 선택적 접근 권한<br>- 사진/미디어/파일: 고객센터 문의에 필요한 사진 및 동영상을 업로드하는데 필요합니다.<br>- 카메라: 고객센터 문의에 필요한 사진 및 동영상을 촬영하는데 필요합니다.<br>- 전화: 광고성 문자 전송을 위한 핸드폰 번호를 수집하는데 필요합니다.<br>- 알림: 게임 내 정보에 대한 알림에 필요합니다.<br>※ 선택적 접근 권한에 동의하지 않아도 게임 서비스를 이용하실 수 있습니다.<br><br>▶ 접근 권한 철회 방법<br>- 설정 &gt; 애플리케이션 &gt; 해당 애플리케이션 선택 &gt; 권한 &gt; 허용 안함 선택 <br>※ 앱이 개별 동의 기능을 제공하지 않을 수 있으며 위의 방법으로 접근 권한을 철회할 수 있습니다.<br>----<br>개발자 연락처 :<br>Nexon Korea Corporation 판교로256번길 7 (삼평동)<br>분당구, 성남시, 경기도 13487<br>South Korea 220-87-17483 2013-경기성남-1659 성남시청",
       "scoreText": "2.4",
-      "score": 2.3567612
+      "score": 2.35638
     },
     {
       "title": "탑 히어로즈",
@@ -1034,20 +1047,7 @@
       "free": true,
       "summary": "■ 게임 특징<br>1. 전세계 최고의 리그와 유명 구단 및 월드클래스의 선수가 모바일로!<br>- 전세계 40여개의 리그, 600여개의 클럽, 18,000여명 실제 선수들을 모바일에서도 만나보세요!<br>- 이제 모바일에서도 구단주가 되어 나만의 구단을 만들어 세계 정상에 도전해보세요!<br><br>2. EA SPORTS FC Online 데이터 100% 연동!<br>- EA SPORTS FC Online과의 100% 데이터 연동으로 이제 언제 어디서든 EA SPORTS FC Online을 즐겨보세요!<br><br>3. 실시간으로 즐기는 PVP 모바일 감독모드!<br>- 나만의 대표팀으로 다른 구단주님들과 실시간으로 공식 감독 경기를 플레이하세요!<br>- 다양한 전술을 통해 매 시즌 최고에 도전하고, 푸짐한 보상도 받아가세요!<br><br>4. 실시간으로 진행되는 선수 영입!<br>- EA SPORTS FC Online M에서 실시간으로 원하는 선수를 영입하고 나만의 강력한 스쿼드를 구성해보세요!<br><br>■ 스마트폰 앱 접근권한 안내<br>앱 이용 시 아래와 같은 서비스를 제공하기 위해 접근 권한을 요청하고 있습니다. <br>[선택적 접근권한]<br>전화 : 광고성 문자 전송을 위한 휴대폰번호 수집에 필요합니다.<br>알림 : 앱이 서비스와 관련된 알림을 게시하도록 허용합니다.<br>* 선택적 접근권한 허용에 동의하지 않아도 서비스 이용이 가능합니다<br><br>[접근권한 철회 방법]<br>▶ 안드로이드 6.0 이상: 설정 &gt; 앱 &gt; 권한 항목 선택 &gt; 권한 목록 &gt; 접근권한 동의 또는 철회 선택<br>▶ 안드로이드 6.0 미만: 운영체제를 업그레이드하여 접근권한을 철회하거나, 앱을 삭제<br>※ 앱이 개별 동의 기능을 제공하지 않을 수 있으며 위의 방법으로 접근 권한을 철회할 수 있습니다.<br><br>----<br>개발자 연락처 :<br>1588-7701<br>----<br>개발자 연락처 :<br>Nexon Korea Corporation 판교로256번길 7 (삼평동)<br>분당구, 성남시, 경기도 13487<br>South Korea 220-87-17483 2013-경기성남-1659 성남시청",
       "scoreText": "2.3",
-      "score": 2.2605305
-    },
-    {
-      "title": "뱀피르",
-      "appId": "com.netmarble.thered",
-      "url": "https://play.google.com/store/apps/details?id=com.netmarble.thered",
-      "icon": "https://play-lh.googleusercontent.com/bpiLHv_Nvsa4Iv_KIfboxKBtKM6B5n19ftEdLq8iPFvSLSvgS_xjTrf4GMMmVE28hQ",
-      "developer": "Netmarble",
-      "currency": "KRW",
-      "price": 0,
-      "free": true,
-      "summary": "뱀파이어들의 MMORPG. 뱀피르: 피의 계승자!<br><br><br>■ 금기를 찢고, 욕망을 드러내다<br>피, 공포, 섹슈얼리티를 기반으로 빚어진 잔혹하면서도 매혹적인 세계. <br>아름다움과 잔혹함이 교차하는 순간을 경험하라!<br><br><br>■ 피로 물든, 압도적인 타격감<br>전투의 시작과 끝에서 보여지는 피의 욕망<br>뱀파이어 본능이 살아 숨쉬는 전장의 감각을 경험하라!<br><br><br>■ 안전한 성장, 치열한 전쟁<br>서로 다른 목적으로 무한 경쟁이 이뤄지는 이 곳, <br>끊임없이 재편되는 셔플링 시스템으로 <br>승자는 권력을, 패자는 의미 있는 보상을 거머쥔다!<br><br><br>■ 노력과 과금, 모두가 빛나는 경제 구조<br>다이아 파밍이 가능한 필드, 아이템 제작부터 거래까지 이어지는 핵심 재화 트리니티!<br>무과금은 노력한 만큼, 과금은 투자한 만큼 반드시 성장하는 <br>공정하고 지속 가능한 경제 시스템을 경험하라!<br><br><br>지금, 문을 열고 피로 물든 뱀파이어 세상의 주인이 되어라!<br><br><br><br><br><br><br>※ 유료 아이템 구매 시 별도의 요금이 부과됩니다. (확률형 아이템 포함) <br><br>- 공급자: 넷마블㈜ 대표이사 김병규 <br>- 이용조건 및 기간: 게임 내 별도 고지된 내용에 따름 <br>(사용기간이 표시되지 않은 경우, 서비스의 종료일까지를 사용기간으로 간주) <br>- 결제금액 및 방법: 상품 별 별도 고지된 결제금액 및 결제방법에 따름 <br>(외화 결제 시 환율 및 수수료 등으로 인해 실제 청구금액과 다를 수 있음) <br>- 상품지급방식: 게임 내 구매한 아이디(캐릭터)로 즉시 지급 <br>- 최소OS사양: Android 11<br>- 주소: 서울특별시 구로구 디지털로 26길 38, G-Tower 넷마블 <br>- 사업자 번호: 105-87-64746 <br>- 통신판매업 번호: 제 2014-서울구로-1028 호<br><br><br><br><br><br><br>[접근권한 안내]<br>■  필수적 접근 권한<br>- 없음<br><br>■  선택적 접근 권한<br>- 알림 (Android 13이상) : 푸시 알림 수신 시 사용합니다.<br>※ 접근 권한에 동의하지 않아도 서비스 이용이 가능합니다.<br><br>■  접근 권한 철회 방법<br>- Android 6.0 이상 : 설정 &gt; 애플리케이션 관리자 &gt; 앱 선택 &gt; 권한 &gt; 접근권한 철회 가능<br><br><br><br><br><br><br>■ 게임물 등급 분류 번호 : 제 CC-NP-250515-001호<br><br>- 이용약관 : https://help.netmarble.com/terms/terms_of_service_ko?lcLocale=ko<br>- 개인정보 처리방침 : https://help.netmarble.com/terms/privacy_policy_ko?lcLocale=ko<br>- 서비스 운영 정책 : https://help.netmarble.com/ko/web/thered/policy<br>- 고객센터: 1588-3995 (평일 오전10시~오후7시 상담가능)<br>- 사업자 이메일 : netmarbles@igsinc.co.kr<br>- 사업자정보 확인/문의하기: https://help.netmarble.com/<br>----<br>개발자 연락처 :<br>넷마블(주) 구로구 디지털로26길 38(구로동, 지타워)<br>구로구, 서울특별시 08393<br>South Korea 557819606 제 2014-서울구로-1028 호 구로구청",
-      "scoreText": "4.3",
-      "score": 4.3166986
+      "score": 2.2608113
     },
     {
       "title": "캔디크러쉬사가 (Candy Crush Saga)",
@@ -1099,7 +1099,7 @@
       "free": true,
       "summary": "🎒가방 속 픽셀 아이템을 머지하고 조합하는 픽셀 가방 키우기 게임!<br>🎒가방에 아이템을 배치하고 전략적으로 머지하여 강력한 조합을 완성하세요. <br><br>템빨용사 플레이 꿀팁! <br>전투에서 이기기 위해서 장비 배치가 매우 중요합니다! <br>펫 키우기를 게을리 하지 마세요. 펫이 역할을 톡톡히 한답니다.<br>템빨을 올리기 위해서는 에픽 아이템은 필수! 전설 캐릭터 전용 에픽 아이템을 절대 놓치지 마세요.<br><br>🎒 머지와 조합이 핵심인 픽셀 게임<br>템빨용사의 전투는 단순하지 않습니다.<br>아이템을 단순히 장착하는 것이 아니라, 머지를 통해 상위 등급 장비로 성장시키고,<br>다양한 아이템을 전략적으로 조합하여 시너지를 만들어야 합니다.<br>1. 아이템을 머지하여 에픽 등급으로 진화 <br>2. 배치에 따라 달라지는 공격력과 방어력<br>3. 시너지 조합에 따라 완전히 달라지는 전투 스타일<br>이 픽셀 세계에서 머지와 조합은 곧 전투력입니다.<br><br>⚔️ 전략이 살아있는 오토 배틀러 RPG<br>템빨용사는 자동 전투 기반의 오토 배틀러이지만,<br>전투 결과는 오직 당신의 조합 전략에 달려 있습니다.<br>1. 아이템 배치에 따라 달라지는 방어력과 공격 시너지<br>2. 직업 특성에 맞춘 아이템 조합<br>3. 로그라이크 방식의 선택과 도전<br>단순한 픽셀 게임이 아닌, 깊이 있는 전략 RPG 경험을 제공합니다.<br><br>🧙 키우기와 장비수집의 재미<br>템빨용사는 키우기 요소가 결합된 픽셀 RPG입니다.<br>1. 에픽 아이템 머지를 통한 성장<br>2. 다양한 장비수집 콘텐츠<br>3. 펫 키우기 시스템으로 추가 능력 확보<br>4. 지속적인 강화와 진화<br>머지를 반복하고 조합을 최적화하며 나만의 빌드를 완성하는 키우기 게임의 재미를 느껴보세요.<br><br>🏆 경쟁과 도전의 로그라이크 시스템<br>템빨용사에서는 경쟁이 곧 성장입니다.<br>1. 다른 플레이어와의 전략 경쟁<br>2. 조합 차이에 따른 전투 결과 변화<br>3. 방어력과 공격력 밸런스를 고려한 설계<br>4. 반복 도전으로 완성되는 로그라이크 전투<br>머지를 통해 가방을 강화하고, 최적의 조합으로 경쟁에서 승리하세요.<br><br>🎮 레트로 감성 픽셀 세계<br>감성적인 픽셀 그래픽과 빠른 전투 템포.<br>템빨용사는 누구나 쉽게 시작할 수 있지만, 머지와 조합을 깊이 파고들수록 전략이 살아나는 게임입니다.<br>픽셀 스타일을 좋아하는 유저,<br>머지 게임을 선호하는 유저,<br>전략 게임과 경쟁 게임을 즐기는 유저라면 템빨용사는 최고의 선택이 될 것입니다.<br><br>지금 바로 템빨용사에서 머지하고 조합하라!<br>아이템을 머지하고, 조합하고, 키우고, 경쟁하라.<br>픽셀 로그라이크 오토 배틀러 템빨용사에서 최강의 전략을 완성하세요!<br>----<br>개발자 연락처 :<br>(주)5민랩 대한민국 서울특별시 마포구<br>마포구 양화로 19, 8층 1호 (합정동,합정오피스빌딩)<br>04027 2208866851 2019-000014 서울특별시 마포구청장",
       "scoreText": "4.8",
-      "score": 4.792771
+      "score": 4.793765
     },
     {
       "title": "Disney Solitaire",
@@ -1112,7 +1112,7 @@
       "free": true,
       "summary": "클래식 트라이피크스 솔리테어를 디즈니 마법처럼 흥미진진한 경험으로 바꿔주는 최고의 솔리테어 카드 게임, 디즈니 솔리테어에 오신 것을 환영합니다! <br><br>디즈니와 픽사의 명장면을 주제로 아름답게 만들어진 레벨을 즐기며, 어렵고도 재미있는 퍼즐을 풀어가세요.<br><br>모든 엽서가 디즈니와 픽사의 명장면을 재현해 내는, 매혹적인 디즈니 솔리테어로 들어오세요! <br>게임을 시작하는 순간부터, 버즈 라이트이어, 알라딘, 엘사, 모아나와 같은 인기 캐릭터들이 연출하는 화려한 장면들에 빠져들게 될 것입니다.<br><br>이것은 단지 또 하나의 솔리테어 게임이 아니라, 흥미진진함과 전략, 엉뚱한 매력으로 가득한 다채로운 경험입니다.<br>디즈니 솔리테어는 혁신적인 특징들로 솔리테어 카드 게임의 정의를 새롭게 내립니다. 개성 있는 파워업과 특수 카드를 모아 전략을 변화시키세요.<br><br>디즈니 솔리테어를 플레이해 모든 게임이 마법으로 이어지고, 승리할 때마다 매력적인 장면들이 개방되는 세상으로 오세요. 놀라운 비주얼과 즐거운 게임 플레이, 마음 따뜻한 순간들로 가득한 디즈니 솔리테어는 마법 같은 여행의 티켓입니다.<br>놓치지 마세요. 모험이 기다립니다!<br><br>🌟 디즈니 솔리테어가 당신에게 딱 맞는 이유 🌟<br>색다른 느낌의 솔리테어 카드 게임이나 디즈니와 픽사의 세계관을 좋아한다면, 이 게임은 그런 당신의 취향을 완벽하게 저격합니다. 재미난 트라이피크스 솔리테어 챌린지를 통과하며, 감동적인 이야기들을 재현하는 디즈니 명장면들을 개방하세요.<br>레벨마다 솔리테어 게임의 전략과 디즈니의 마법이 어우러져 즐거움과 몰입감을 선사합니다. 디즈니 솔리테어의 무한한 즐거움과 흥미 속에서, 느긋하게 시간을 보내거나 게임 실력을 테스트하세요.<br> <br>🎉 디즈니 솔리테어의 핵심 특징 🎉<br>✔ 혁신적인 솔리테어 게임 플레이: 재미난 파워업과 챌린지를 품은 트라이피크스 솔리테어를 즐기세요!<br>✔ 인기 디즈니 캐릭터들: 팬들이 사랑하는 엘사, 모아나, 심바와 같은 캐릭터들로 명장면을 재현하세요!<br>✔ 수집과 장식: 디즈니와 픽사에서 영감을 받은 아름다운 퍼즐과 엽서를 개방하세요.<br>✔ 일일 챌린지와 이벤트: 독점 보상을 제공하는 특별 이벤트에 참가해 더 재미있게 게임을 즐기세요.<br>✔ 즐기기는 쉽지만 마스터하기는 어려운 게임: 솔리테어 게임 초보자와 숙련자에게 모두 적합합니다.<br> <br>✨ 디즈니 솔리테어의 마법 속으로 ✨<br>기발함과 경이로움이 가득한 여정을 시작하세요. 추억에 잠기는 클래식 디즈니의 팬이든, 새로운 것을 찾는 사람이든, 디즈니 솔리테어는 당신이 사랑하는 솔리테어 카드 게임에 색다른 재미를 더해 선보일 것입니다.<br>지금 다운로드해 디즈니와 픽사의 유명한 장소를 방문하고, 매력적인 디즈니 퍼즐을 풀고, 트라이피크스 솔리테어 게임을 색다르게 즐기세요. 마법 같은 경험을 시작해요!<br> <br>💖 모든 연령의 디즈니 팬을 위한 게임 💖<br>디즈니 솔리테어는 매력적인 비주얼과 단순하면서도 빠져드는 게임 플레이로, 솔리테어 게임 팬, 디즈니를 사랑하는 사람, 퍼즐 게임광에게 딱 맞는 게임입니다. 잠시 쉬면서 끝없는 마법의 세계에서 긴장의 끈을 풀어보세요!<br> <br>오늘 마법 같은 여정을 시작하세요!<br>무엇을 기다리시나요? <br>지금 디즈니 솔리테어를 다운로드해 완전히 새로운 디즈니와 픽사의 마법을 경험하세요! 즐거운 솔리테어 카드 게임에 도전하고, 추억 속의 디즈니 명장면을 재현하며, 디즈니 퍼즐의 경이로움에 빠져드세요!<br><br>디즈니 솔리테어는 18세 이상을 대상으로 한 게임입니다. 디즈니 솔리테어의 다운로드와 플레이에는 유료 결제가 필요하지 않지만, 게임 안에서 무작위 아이템을 비롯한 가상 아이템을 선택적으로 유료 구매할 수 있습니다. 기기 설정에서 인 앱 구매를 차단할 수 있습니다. 또한 디즈니 솔리테어에는 광고가 포함될 수 있습니다.<br>디즈니 솔리테어를 플레이하고 소셜 기능을 사용하려면 인터넷에 연결해야 합니다. 또한 위의 설명과 앱 스토어의 추가 정보에서<br>디즈니 솔리테어의 기능과 호환성, 상호 운용성 정보를 더 자세히 확인할 수 있습니다.<br>이 게임은 민감한 사람의 발작을 유발하는 섬광 효과를 포함할 수 있습니다.",
       "scoreText": "4.8",
-      "score": 4.8038163
+      "score": 4.8041787
     },
     {
       "title": "토이 삼국",
@@ -1177,7 +1177,7 @@
       "free": true,
       "summary": "Playrix 꿈(SCAPES™) 시리즈 게임 중 하나인 꿈의 집으로 환영합니다! 매치3 퍼즐을 풀며 집안 곳곳을 편안하고 즐거운 공간으로 만들어 보세요.<br><br>흥미진진한 스토리가 있는 모든 챕터에서 퍼즐을 풀고, 방들을 복원하고, 새로운 친구들을 만나세요. 집사 오스틴이 놀라운 모험의 세계로 환영합니다!<br><br>게임 소개:<br>● 독창적인 게임 플레이: 매치3 퍼즐을 풀고 흥미진진한 스토리를 따라가며 집을 꾸미세요!<br>● 폭발적인 파워업, 유용한 부스터, 멋진 요소들이 있는 수천 개의 매혹적인 레벨.<br>● 흥미진진한 이벤트: 신나는 탐험을 시작하고, 여러 챌린지에서 다른 플레이어들과 겨루고, 멋진 상품을 획득하세요!<br>● 색다른 디자인의 독특한 방들: 오스틴의 침실부터 온실까지.<br>● 재미있는 캐릭터들: 오스틴의 친구들과 이웃들을 만나 보세요!<br>● 충실히 곁에 있어 줄 사랑스러운 동물 친구들!<br><br>Facebook 친구들과 함께 플레이하거나 게임 커뮤니티에서 새로운 친구들을 사귀세요!<br><br>꿈의 집은 무료로 플레이할 수 있지만, 일부 게임 아이템(랜덤 아이템 포함)은 유료로 구매할 수 있습니다.<br><br>Wi-Fi나 인터넷 연결 없이 플레이할 수 있습니다.<br> *대회 및 추가 기능을 사용하려면 인터넷 연결이 필요합니다.<br><br>꿈의 집이 마음에 드시나요? 소셜 미디어에서 팔로우하세요!<br>https://www.facebook.com/homescapes<br>https://www.instagram.com/homescapes_mobile/<br><br>문제가 발생했거나 질문이 있으신가요? 게임의 설정 &gt; 지원을 통해 지원팀에 문의하세요. 게임에 접속할 수 없는 경우, 다음 웹사이트 오른쪽 하단의 채팅 아이콘을 클릭해 웹 채팅으로 문의하세요: https://playrix.helpshift.com/hc/ko/14-homescapes/<br><br>개인정보 처리방침: https://playrix.com/privacy/index_ko.html<br>사용 약관: https://playrix.com/terms/index_ko.html",
       "scoreText": "4.7",
-      "score": 4.670894
+      "score": 4.6708584
     },
     {
       "title": "미스터리 타운: 합성 게임 (Mystery Town)",
@@ -1190,7 +1190,7 @@
       "free": true,
       "summary": "미스터리 타운에 오신 것을 환영합니다! 이곳에는 오랫동안 숨겨진 비밀이 잠들어 있습니다…🕵️‍♀️<br>오로라가 삼촌의 집에 도착했지만, 집이 불타고 있었습니다! 🔥 괴물 같은 존재가 도망치는 모습이 목격되었는데… 도대체 무엇일까요? 👀<br><br>오로라와 함께 흥미진진한 모험을 떠나 마을의 기이한 사건들을 해결하고, 갑자기 사라진 삼촌의 미스터리를 밝혀내세요! 그리고 마지막 &#39;최종 비밀&#39;을 풀어보세요.<br><br>다양한 캐릭터와 만나고 그들의 이야기를 들어보세요. 그들은 🤝 &quot;&quot;친구&quot;&quot;일 수도 있고, 👿 &quot;&quot;적&quot;&quot;일 수도 있습니다.<br><br>숨겨진 지역을 잠금 해제하고 🗝, 안개 낀 마을을 탐험하며 단서를 찾고, 진실을 향해 오로라를 안내하세요!<br><br>✨ 이 스릴 넘치는 여정에 참여하여 광고 없는 즐거운 머지(Merge) 게임을 경험하고 비밀을 🔍밝혀내세요!<br><br>게임 특징:<br><br>🧩 머지 &amp; 매치 🧩<br>- 보드에서 아이템을 자유롭게 드래그하고, 같은 아이템 2개를 합쳐 업그레이드하세요!<br>- 수백 개의 다양한 아이템을 합쳐 주문을 완료하고 스토리를 진행하세요.<br>- 단서가 아이템 속에 숨어 있을 수도 있습니다. 계속 합쳐서 발견해보세요!<br><br>🏠 마을 복구 &amp; 건설 🏠<br>- 주문을 완료해 건물을 업그레이드하고 마을을 재건하세요. 자신의 집부터 시작하세요!<br>- 새로운 지역의 잠금을 해제하고 곳곳의 놀라움을 발견하세요.<br><br>🔍 조사 &amp; 해결 🔍<br>- 중요한 캐릭터를 만나 이야기 속 정보를 모아보세요. 그들은 무엇을 폭로할까요?<br>- 아이템을 합쳐 퍼즐을 풀고, 숨겨진 단서를 찾아 저주를 풀고 마을의 평화를 되찾으세요!<br><br>오로라와 함께 미스터리 타운에서 최고의 머지 퍼즐, 매혹적인 미스터리, 그리고 모험을 경험하세요! 지금 다운로드하고 모험을 시작하세요! 🎉<br><br>Facebook 페이지를 팔로우하고 게임 소식과 보상을 받아보세요: https://www.facebook.com/MysteryTownGame  <br>Discord 커뮤니티에 참여해 함께 이야기해요: https://discord.gg/WNjR8VW3pJ  <br><br>문의하기: 게임 내 지도에서 피드백 아이콘 클릭 (게임 내 설정 &gt; 문의하기 메뉴를 통해 연락 가능)  <br>서비스 약관: https://cedargamestudio.com/tos.html  <br>개인정보 보호정책: https://cedargamestudio.com/pp.html  <br>문의 이메일: mysterytown-support@cedargamestudio.com",
       "scoreText": "4.9",
-      "score": 4.873823
+      "score": 4.8742967
     },
     {
       "title": "브라운더스트2 - 가슴 벅찬 RPG",
@@ -1245,19 +1245,6 @@
       "score": 4.7253127
     },
     {
-      "title": "Pokémon GO",
-      "appId": "com.nianticlabs.pokemongo",
-      "url": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo",
-      "icon": "https://play-lh.googleusercontent.com/N3ayE1feuNfItNVRR7m6tTk7Wqnn6tNy0elJ8kdV3ITwgKBvHH0dk1e_vup8yFfzvlwPclduzsB8ZsqFBMjJEw",
-      "developer": "Niantic, Inc.",
-      "currency": "KRW",
-      "price": 0,
-      "free": true,
-      "summary": "전 세계 트레이너들과 함께 포켓몬 세계를 탐험하고 새로운 포켓몬을 발견하세요. 세상의 게임 업계에서 혁명을 가져온 “Pokémon GO”는 10억 건 이상 다운로드되며,  「The Game Developers Choice Awards」의 「Best Mobile Game」을 수상했고, 「TechCrunch」의 「Best App of the Year」 등 수 많은 상을 받았습니다.<br>_______________<br><br>포켓몬 세계를 모험: 언제 어디서든 포켓몬을 찾아보세요!<br><br>포켓몬을 더 많이 잡고 「포켓몬 도감」을 완성하세요!<br> <br>파트너 포켓몬과 함께 여행하며 포켓몬을 강화하고 보상을 받으세요!<br><br>불꽃 튀는 「체육관 배틀」을 하거나...<br><br>다른 트레이너들과 협력하여 강력한 포켓몬이 등장하는 「레이드배틀」에 도전하세요!<br><br>지금이 바로 모험의 시간입니다! “Pokémon GO” 세계로 떠나요!<br>_______________<br><br>“Pokémon GO” 대응 환경:<br>- 이 앱은 무료로 즐길 수 있으며 앱 내 과금이 가능합니다. 스마트폰에 최적화되어 있습니다.<br>- 대응 OS 및 단말기: Android OS 6.0 ~ 10.0+ 버전, RAM 2GB 이상 탑재된 Android 단말기<br>- GPS 미탑재 단말기나 Wi-Fi 회선만 접속한 단말기의 동작은 보증하지 않습니다.<br>- 대응 단말 정보는 수시로 변경될 수 있습니다.<br>- 일부 단말기에서는 대응 OS버전 이상이어도 동작하지 않는 경우가 있습니다.<br>- 정확한 위치 정보를 얻기 위해 네트워크 연결이 안정된 곳에서 플레이하는 것을 권장합니다.<br>- 태블릿 단말기에서의 동작은 보증하지 않습니다.<br>- 자세한 대응 정보는 “Pokemon GO” 공식 사이트에서 확인하세요.<br>- 2020년 10월 20일 현재 대응 환경입니다.",
-      "scoreText": "3.8",
-      "score": 3.820933
-    },
-    {
       "title": "스톤에이지 키우기 - 100일 기념 대축제!",
       "appId": "com.netmarble.stonkey",
       "url": "https://play.google.com/store/apps/details?id=com.netmarble.stonkey",
@@ -1271,6 +1258,19 @@
       "score": 4.088981
     },
     {
+      "title": "Pokémon GO",
+      "appId": "com.nianticlabs.pokemongo",
+      "url": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo",
+      "icon": "https://play-lh.googleusercontent.com/N3ayE1feuNfItNVRR7m6tTk7Wqnn6tNy0elJ8kdV3ITwgKBvHH0dk1e_vup8yFfzvlwPclduzsB8ZsqFBMjJEw",
+      "developer": "Niantic, Inc.",
+      "currency": "KRW",
+      "price": 0,
+      "free": true,
+      "summary": "전 세계 트레이너들과 함께 포켓몬 세계를 탐험하고 새로운 포켓몬을 발견하세요. 세상의 게임 업계에서 혁명을 가져온 “Pokémon GO”는 10억 건 이상 다운로드되며,  「The Game Developers Choice Awards」의 「Best Mobile Game」을 수상했고, 「TechCrunch」의 「Best App of the Year」 등 수 많은 상을 받았습니다.<br>_______________<br><br>포켓몬 세계를 모험: 언제 어디서든 포켓몬을 찾아보세요!<br><br>포켓몬을 더 많이 잡고 「포켓몬 도감」을 완성하세요!<br> <br>파트너 포켓몬과 함께 여행하며 포켓몬을 강화하고 보상을 받으세요!<br><br>불꽃 튀는 「체육관 배틀」을 하거나...<br><br>다른 트레이너들과 협력하여 강력한 포켓몬이 등장하는 「레이드배틀」에 도전하세요!<br><br>지금이 바로 모험의 시간입니다! “Pokémon GO” 세계로 떠나요!<br>_______________<br><br>“Pokémon GO” 대응 환경:<br>- 이 앱은 무료로 즐길 수 있으며 앱 내 과금이 가능합니다. 스마트폰에 최적화되어 있습니다.<br>- 대응 OS 및 단말기: Android OS 6.0 ~ 10.0+ 버전, RAM 2GB 이상 탑재된 Android 단말기<br>- GPS 미탑재 단말기나 Wi-Fi 회선만 접속한 단말기의 동작은 보증하지 않습니다.<br>- 대응 단말 정보는 수시로 변경될 수 있습니다.<br>- 일부 단말기에서는 대응 OS버전 이상이어도 동작하지 않는 경우가 있습니다.<br>- 정확한 위치 정보를 얻기 위해 네트워크 연결이 안정된 곳에서 플레이하는 것을 권장합니다.<br>- 태블릿 단말기에서의 동작은 보증하지 않습니다.<br>- 자세한 대응 정보는 “Pokemon GO” 공식 사이트에서 확인하세요.<br>- 2020년 10월 20일 현재 대응 환경입니다.",
+      "scoreText": "3.8",
+      "score": 3.820933
+    },
+    {
       "title": "꿈의 마을 (Township)",
       "appId": "com.playrix.township",
       "url": "https://play.google.com/store/apps/details?id=com.playrix.township",
@@ -1281,7 +1281,7 @@
       "free": true,
       "summary": "나만의 꿈의 마을을 만들자!<br><br>꿈의 마을에 오신 것을 환영합니다!<br>직접 시장이 되어 나만의 도시를 건설하고 농장을 운영하는 흥미진진한 시뮬레이션 게임입니다.<br>집과 공장, 각종 공공건물을 세우고 농작물을 재배하며, 나만의 스타일로 마을을 꾸며보세요! 기간 한정 이벤트에 참여하고, 짜릿한 레가타에서 경쟁하며 특별한 보상을 획득하세요!<br><br>도시 계획이 잠시 지루하게 느껴질 땐, 편안하게 즐길 수 있는 매치3 퍼즐로 휴식을 취하고 보상도 챙기세요. 오프라인에서도 즐길 수 있어요!<br>꿈의 마을은 도시 건설, 농장 운영, 퍼즐 플레이가 완벽하게 조화를 이루는 특별한 게임이랍니다.<br><br>게임 특징:<br>● 무한한 창의력: 상상 속 대도시를 직접 디자인하고 건설하세요!<br>● 재미있는 매치3 퍼즐: 퍼즐을 풀고 보상을 받아 도시 발전에 박차를 가해요!<br>● 신나는 대회: 전 세계 플레이어와의 경쟁에서 승리하여 상품도 받고 멋진 추억을 만들어 보세요!<br>● 한정 컬렉션: 희귀한 유물과 골동품, 화려한 프로필 사진을 모아 성취를 자랑해 보세요!<br>● 오프라인 플레이: 언제 어디서든, 인터넷 연결 없이도 계속 꿈의 마을을 즐겨요!<br>● 개성 넘치는 주민들: 다양한 매력을 지닌 캐릭터들과 교류하세요!<br>● 소셜 기능: Facebook 친구들과 함께 플레이하거나, 꿈의 마을 커뮤니티에서 새로운 친구를 만나보세요!<br><br>꿈의 마을을 좋아하게 될 이유:<br>● 도시 건설, 농사, 퍼즐을 한 번에 즐길 수 있는 독특한 재미<br>● 아름다운 그래픽과 귀여운 애니메이션<br>● 다양한 콘텐츠와 이벤트가 가득한 정기 업데이트<br>● 수많은 장식 아이템으로 자유롭게 마을 꾸미<br><br>꿈의 마을은 무료로 플레이할 수 있지만, 일부 게임 아이템(랜덤 아이템 포함)은 유료 구매할 수 있습니다. <br><br>Wi-Fi나 인터넷 연결 없이 플레이할 수 있습니다.<br> *대회 및 추가 기능을 사용하려면 인터넷 연결이 필요합니다.<br><br>꿈의 마을이 마음에 드시나요? 팔로우하세요!<br>Facebook: facebook.com/TownshipMobile<br>Instagram: instagram.com/township_mobile/<br><br>문제가 발생했거나 질문이 있으신가요? 게임의 설정 &gt; 도움 및 지원을 통해 지원팀에 문의하세요. 게임에 접속할 수 없는 경우, 다음 웹사이트 오른쪽 하단의 채팅 아이콘을 클릭해 웹 채팅으로 문의하세요: https://playrix.helpshift.com/hc/ko/3-township/<br><br>개인정보 처리방침:<br>https://playrix.com/privacy/index_ko.html<br>사용 약관:<br>https://playrix.com/terms/index_ko.html",
       "scoreText": "4.8",
-      "score": 4.779062
+      "score": 4.779109
     },
     {
       "title": "Travel Town - 결합 어드벤처",
@@ -1307,7 +1307,7 @@
       "free": true,
       "summary": "🏆「도전! 열정의 드래곤컵!」테마 이벤트 6월 10일 정식 개막! 🏆<br>신규 SSR+ 환령[사성수·현무] 한정 등장! <br><br>⚽️다양한 축구 테마 스킨과 미니게임 [승부차기] 등장! <br>열정의 경기장, 뜨거워지는 설렘!💓 승리의 트로피와 당신, 모두 거머쥘 시간!​<br><br>폭력 공주가 난관을 부수고 드래곤 둥지에 도착했더니, 악룡이 능력을 상실한 &quot;찌질이&quot;라니??!! <br><br>가슴이 두근두근거리는 이세계를 확인해보세요: <br><br><font color=\"#Occ0df\"><b>「💥폭소&amp;러브 난장판! 이번은 당신이 하렘물 남주!💘」</b></font> <br>3-5분 가벼운 스토리, 공주와 드래곤의 독설 티키타카, 미소녀들의 기상천외 대시 퍼레이드, 자신도 모르게 &quot;다음 화&quot;로 넘어가는 기대만땅 시나리오!<br><br><font color=\"#Occ0df\"><b>「🌊로그인으로 바다의 신 포세이돈 획득! 최강 보상을 당신 손 안에!🎁」</b></font><br>포세이돈 획득 가능! 잠들기 전 8시간 자동 사냥, 아침에 눈뜨면 넘쳐나는 육성 자원들! 정기적 수령만 해도, &quot;주 1 SSR&quot; 보급 확정!<br><br><font color=\"#Occ0df\"><b>「🎯100% 픽업 캐릭터 보장! 50회 안에 반드시 겟!🎉」</b></font><br>원하는 캐릭터가 안 나온다? 무조건 겟!  50회 안에 소원 캐릭터 반드시 겟, 모두가 행운의 주인공!<br><br><font color=\"#Occ0df\"><b>「💎3만 다이아 획득! 빠르게 최강 전투력 달성! 무제한 자원 파티!✨」</b></font><br>자동 사냥으로 30000+ 다이아가 우수수! 육성은 가볍게, 전투는 빠르게!<br><br><font color=\"#Occ0df\"><b>「💌고백하라! 두근두근 MAX! 특별한 상호작용으로 심쿵 전용 스토리 개방❤️」</b></font><br>쓰다듬으면 빨개진 얼굴로 피하려 하지만, 계속 장난치면…? 공주의 정의 주먹 출동! 심쿵 전용 스토리 오픈! <br><br>오키!  즐길 준비 완료!<br>곧 시작될 우리의 모험을 위하여! 건배!<br><br>[스마트폰 앱 접근 권한 안내]<br><br>[선택] 저장공간(기기사진, 미디어, 파일) 엑세스 허용 (EXTERNAL_STORAGE)<br>▸ 게임을 실행하는데 필요한 파일을 단말기에 저장하기 위해 해당 권한이 필요합니다.<br>▸ 리소스 다운로드를 위해 SD카드 쓰기/읽기권한을 요청하며, 권한을 허용하면 용량 부족 상황 시 외장 메모리에 게임을 설치할 수 있습니다.<br>※ 고객님의 사진과 파일에는 접근하지 않으니 안심해주시기 바랍니다.<br><br>[선택] 카메라 엑세스 허용 (CAMERA)<br>▸ QR 코드를 통해 로그인 하는 데 필요합니다.<br>▸ 모바일 앱 내 로그인 화면에 위치한 ‘스캔’ 버튼을 통해 PC 클라이언트의 QR코드를 스캔하면 로그인 할 수 있습니다.<br>※ 선택권한의 허용에 동의하지 않아도 서비스의 이용이 가능합니다.<br><br>[선택] 알림 엑세스 허용<br>▸ 앱이 서비스와 관련된 알림을 게시하도록 허용할 수 있습니다.<br><br>[접근권한 철회 방법]<br>▸ 안드로이드 6.0 이상: 설정 &gt; 애플리케이션 &gt; 권한 &gt; 권한 목록 &gt; 접근권한 철회 설정<br>▸ 안드로이드 6.0 미만: 운영체제를 업그레이드하여 접근권한을 철회하거나 애플리케이션 삭제<br>※ 안드로이드 6.0 미만 버전을 사용하시는 경우에는 선택적 접근권한을 개별적으로 설정하실 수 없어 6.0 이상의 버전으로 업데이트하는 것을 권장 드립니다.",
       "scoreText": "4.7",
-      "score": 4.6635714
+      "score": 4.6640515
     },
     {
       "title": "리니지2M",
@@ -1346,7 +1346,7 @@
       "free": true,
       "summary": "▶ 올림포스 테마 모드 ◀<br>배틀그라운드 모바일에 올림포스 테마 모드가 추가됩니다.<br>Yasnaya Polyana, Ruins, Ferry Pier, Mylta 지역이 그리스풍의 새로운 테마 건축물과 구조로 변화합니다.<br>Ruins와 Ferry Pier는 전체적으로 그리스풍 도시로 변화하며 Yasnaya Polyana와 Mylta는 시련 중심 지역으로 변화합니다.<br>그 밖에 하늘 섬으로 올림포스 신전이 추가되어 불씨를 모아 태양 전차에 탑승해 최종 보스와 전투를 통해 보상을 획득할 수 있습니다.<br>그리스풍으로 새롭게 변화된 이번 올림포스 테마 모드에서 승리를 쟁취해보세요!<br><br>▶ 올림포스 테마 모드 시련 ◀<br>올림포스 테마 모드에는 아킬레스의 시련, 스파르타 시련, 프로메테우스의 시련, 이카로스의 시련, 그리핀의 시련을 진행할 수 있습니다.<br>일부 시련을 통과하면 다양한 보상을 획득할 수 있으며, 프로메테우스의 시련은 명성 포인트를 대량으로 획득할 수 있습니다.<br>명성 포인트를 많이 획득한 상위 4개 팀은 올림포스 신전으로 이동할 수 있습니다.<br>다양한 시련을 통해 자신의 팀을 승리로 이끌어보세요!<br><br>▶ 클래식 업데이트 ◀<br>신규 2인승 컨버터블 차량으로 터보차저가 특징인 Roadster가 에란겔, 미라마, 사녹, 리빅, 누사, 론도, 테마 모드에 추가됩니다.<br>판처파우스트가 에란겔, 미라마, 론도, 비켄디, 테마 모드에 추가되며, 신규 근접 무기 태양의 불꽃-카람빗이 추가됩니다.<br>태양의 불꽃-카람빗은 특정 카드를 통해 획득이 가능하며 설정에서 해당 근접 무기 사용 ON/OFF 설정이 가능합니다.<br>새롭게 추가되는 차량과 무기로 다양한 전술을 펼쳐보세요!<br><br><br>▶배틀그라운드 (PUBG) 모바일 게임 소개◀<br>배그 모바일 게임은 다수의 유저들이 배틀로얄 전장에서 총기 및 각종 전투 아이템을 활용하여 각자의 전략으로 최후의 승자를 가려내는 서바이벌 형식의 fps 배틀로얄 모바일 게임입니다.<br> <br>배틀그라운드 (PUBG) 모바일 게임의 리얼한 서바이벌 배틀로얄 전장<br>배그 모바일 게임은 언리얼 엔진 4를 기반으로 한 HD 그래픽과 3D 사운드로 리얼한 전장을 구현했습니다.<br>실존하는 다양한 서바이벌 무기와 전투 장비들, 실제 총기 사운드 등을 통해 모배는 생생한 fps 배틀로얄 전투 체험감을 선사합니다.<br> <br>▶배틀그라운드 (PUBG) 모바일은 유료 아이템 구매 시 별도의 요금이 부과됩니다.<br><br>▶배틀그라운드 (PUBG) 모바일 게임 App은 한국 지역에서 제공되는 컨텐츠에 한해 이용 가능합니다.<br> <br>▶배틀그라운드 (PUBG) 모바일 접근권한 안내◀<br><br>[모배 필수권한]<br>- 없음<br><br>[모배 선택권한]<br>- 근처 기기: 주변 기기들을 연결하기 위해 사용<br>- 사진 및 동영상(저장 공간): 기기에 사진, 동영상, 파일 전송하거나 저장하기 위해 사용<br>- 알림: 서비스 관련 업데이트 및 게임 정보 관련 안내하기 위해 사용<br>- 마이크: 게임 중 음성 채팅 서비스를 제공하기 위해 사용<br>- 카메라: 게임 화면을 촬영하기 위해 사용<br>- 로컬 네트워크: 같은 네트워크에 연결된 다른 기기들과 통신할 수 있도록 허용<br><br>* 선택 접근 권한은 해당 기능을 사용할 때 사용자의 허용이 필요하며, 거부 시에도 해당 기능 외 서비스 이용은 가능합니다.<br>* 선택 접근 권한은 이용자분께서 재설정하거나 철회할 수 있습니다.<br><br>[모배 접근권한 철회 방법]<br>- 안드로이드 6.0 이상 버전<br>1. 모배 게임 접근 권한 별 철회 방법: 설정 &gt; 모배 앱 &gt; 더보기(설정 및 제어) &gt; 앱 설정 &gt; 앱 권한 &gt; 접근권한 선택 &gt; 접근권한 동의 또는 철회 선택<br>2. 앱 별 철회 방법: 설정&gt; 앱 &gt; 모배 게임 앱 선택 &gt; 권한 선택 &gt; 접근권한 동의 또는 철회 선택<br><br>- 안드로이드 6.0 미만 버전<br>운영체제 특성 상 접근 권한 별 철회가 불가능하므로, 모배 게임 앱을 삭제하는 경우에만 접근 권한 철회가 가능합니다.<br><br>▶ 배틀그라운드 (PUBG) 모바일 공식 홈페이지 URL◀ <br>https://battlegroundsmobile.kr/<br><br>▶ 배틀그라운드 (PUBG) 모바일 공식 문의 URL◀<br>https://pubgmobile.helpshift.com<br> <br>▶ 배틀그라운드 (PUBG) 모바일 개인정보 처리방침◀<br>https://esports.pubgmobile.kr/ko/policy/privacy/latest<br> <br>▶ 배틀그라운드 (PUBG) 모바일 서비스 이용 약관◀<br>https://esports.pubgmobile.kr/ko/policy/privacy/latest<br>----<br>개발자 연락처 :<br>KRAFTON, Inc. 231 Teheran-ro<br>강남구, 서울특별시 06142<br>South Korea 220-87-45316 2021-서울강남-04663\t 서울특별시 강남구",
       "scoreText": "4.1",
-      "score": 4.058292
+      "score": 4.058243
     },
     {
       "title": "한게임 신맞고 : 대한민국 원조 고스톱",
@@ -1411,7 +1411,7 @@
       "free": true,
       "summary": "손에 착착 감기는 고스톱! 짜릿하게 즐기는 <font color=\"#F29661\"><b>피망 뉴맞고!</b></font> <br><br>국민 고스톱 게임 피망 뉴맞고와 함께! 오늘 맞고 한게임 어떠세요?<br>실시간으로 유저들과 플레이하고 즐겁게 스트레스를 날려보세요!<br><br><font color=\"#41AF39\"><b>▶ 많을 수록 더 재밌다! 이제는 3명이서 즐기세요!</b></font><br>원조 고스톱의 등장, 3인 고스톱 모드 신규 추가!<br>3점을 먼저 내는 사람이 승리! 짜릿한 승부를 즐겨보세요!<br><br><font color=\"#41AF39\"><b>▶ 오직 피망 뉴맞고에서만 경험 가능한 다양한 컨텐츠에 빠져보세요! </b></font><br>- 보너스피의 피뺏기, 2장 폭탄 삭제가 포함된 원조 맞고 룰로 진정한 승부를 겨뤄보세요!<br>- 친구초대해서 보상받고 친구대전을 통해 실시간 으로 유저들과 맞고 한게임 해보세요!<br>- 매일 진행되는 일일 퀘스트 달성하고 풍성한 보상 받아 가세요~<br>- 게임 내 미션 달성을 통해 대박의 쾌감을 느껴보세요!<br><br><font color=\"#41AF39\"><b>▶ 머니 걱정은 NO! NO! 무제한 머니로 피망 뉴맞고를 즐겨주세요~!</b></font><br>- 초이스3광, 도리도리 뱅뱅 등 구슬월드의 미니게임을 통해 대박찬스를 노려보세요!<br>- 매일 리필 최대 20회, 동영상 시청 등 아낌없이 주는 고스톱 머니 받아가세요!<br>- 레벨 상승으로 푸짐한 보너스를 받을 수 있으니, 적극적인 게임 플레이를 통해 경험치를 획득하세요!<br><br><font color=\"#41AF39\"><b>▶ 게임 내 여러 가지 기능으로 고스톱의 재미를 두배 더 UP! UP! </b></font><br>- 게임 플레이 중 이모티콘 사용으로 여러 가지 감정을 표현해 주세요~<br>- 골드, 우드 화투패 등 다양한 화투패로 기분 좋게 맞고 한게임 즐겨보세요<br>- 패속도 조절을 통해 자신에게 맞는 스타일로 신 나는 맞고 플레이가 가능합니다.<br><br>[게임팁]<br>1. 피망 뉴맞고는 선택에 따라 일부 게임 아이템을 유료로 구매할 수 있습니다.<br>2. 구슬은 출석체크, 구슬나무, 게임플레이 등에서 획득이 가능하며 구슬월드에서 사용이 가능합니다.<br>3. 피망 뉴맞고에서 받은 모든 선물은 선물함에 보관되며, &#39;받기&#39;클릭 시 수령이 가능합니다.<br><br>“피망 뉴맞고: 고스톱 대표 맞고 게임”은 원활한 서비스 제공을 위하여 아래 권한을 필수/선택적으로 필요로 합니다.<br>선택적 권한은 동의하지 않으셔도 서비스 이용이 가능하며, 접근권한 동의 후 접근권한을 재설정 하거나 철회할 수 있습니다.<br><br>[필수 권한]<br>1. 주소록 : 구글 계정 확인과 친구 초대 목록을 불러오기 위한 권한입니다.<br>2. 통화 (휴대전화 상태) : 사용하시는 기기의 상태 값을 확인하는 권한입니다.<br>3. 저장 공간(사진, 미디어, 파일) : 게임 설치 및 데이터를 저장하고 읽어오기 위해 사용하는 권한입니다.<br><br>[선택 권한] <br>- 알림 : 인게임 정보성 알림 및 광고성 알림 수신을 위한 권한입니다.<br><br>[접근권한 설정 방법]<br>1. 접근권한별 철회 방법: 기기 설정 &gt; 개인정보 보호 선택 &gt; 권한 관리자 선택 &gt; 해당 접근권한 선택 &gt; “피망 뉴맞고: 고스톱 대표 맞고 게임” 선택 &gt; 접근권한 동의 또는 철회<br>- 안드로이드 6.0 이상: 설정 &gt; 앱(또는 애플리케이션 관리자) &gt; 앱 선택 &gt; 앱 권한 &gt; 접근 권한 해제로 철회 가능<br>- 안드로이드 6.0 미만: 개별 접근 권한 철회가 불가능하므로 앱 삭제 시 철회 가능 (안드로이드 6.0 이상으로 업그레이드 하는 것을 권장 드립니다.)<br>2. 앱별 철회 방법: 기기 설정 &gt; 앱 &gt; “게임제목” 선택 &gt; 권한 선택 &gt; 접근권한 동의 또는 철회<br><br>[안내사항]<br>- 문의사항은 게임 내 [설정 &gt; 고객센터&gt; 문의하기]에서 문의가 가능합니다.<br>- 확률형 아이템이 포함되어 있습니다.<br><br>공식 홈페이지: https://m.pmang.com<br>공식 페이스북: https://www.facebook.com/Pmanggame<br><br>* 본 게임은 만 19세 이상의 성인을 대상으로 하며, 미성년자는 이용할 수 없습니다.<br>* 본 게임은 오락 목적으로만 제공되는 시뮬레이션 게임입니다.<br>* 본 게임은 실제 금전을 이용한 도박 기능을 제공하거나 조장하지 않습니다. <br>* 본 게임은 게임 결과에 따라 현금 또는 현물 가치가 있는 경품/보상을 제공하지 않습니다. <br><br>언제 어디서나 스마트한 즐거움, 네오위즈가 만들어갑니다.<br>© NEOWIZ All rights reserved.<br><br>게임물 등급분류번호:<br>- 제 CC-OM-160519-013호<br>- 제 CC-OM-221117-010호<br>- 제 CC-OM-221117-012호<br>----<br>개발자 연락처 :<br>NEOWIZ Corporation 14 Daewangpangyo-ro 645beon-gil,<br>분당구, 성남시, 경기도 13487<br>South Korea 120-87-14245 2010-경기성남-0562 경기도 성남시",
       "scoreText": "3.6",
-      "score": 3.615711
+      "score": 3.6156337
     },
     {
       "title": "eFootball™",
@@ -1437,7 +1437,7 @@
       "free": true,
       "summary": "거상, 임진록을 만든 김태곤 디렉터의 귀환.<br>임진왜란 7년, 그 거대한 전장의 한 가운데로!<br><br>이순신, 김시민, 류성룡 등 전설이 된 이름들과 함께<br>당신이 역사의 흐름을 바꿀 차례입니다.<br><br>※ 게임 특징 ※<br>▶ 실존 영웅과 함께하는 1592년 임진왜란<br>✔ 이순신, 김시민, 류성룡 등 실존 영웅 총집결<br>✔ 조선, 일본, 명 3국 장수 조합으로 완성하는 전략 부대<br>✔ 성우 ‘김기현’님의 나레이션으로 더욱 완성된 몰입감<br>✔ 한국어, 일본어, 중국어 3개 국어와 지역 사투리까지 풀 더빙<br><br>▶ 바다와 육지를 가르는 입체적 전투<br>✔ 거북선, 판옥선, 화차(신기전) 등 실존 병기 직접 운용<br>✔ 육상전, 해상전, 저격전, 난사전 등 다양한 전투 모드<br>✔ 전략과 조합에 따라 매번 달라지는 전투 흐름<br><br>▶ 거래소 기반의 순환 구조 경제 시스템<br>✔ 사냥, 채집, 제조로 대부분의 자원 직접 획득 <br>✔ 전 서버 통합 거래소로 필요에 따른 수요/공급<br>✔ 생산→거래→전투로 이어지는 전략적 경제 순환 구조 <br><br>▶ 상단과 함께하는 대규모 전투와 영토 경쟁<br>✔ 소속된 상단원들과 함께 세력을 펼치는 대규모 공성전<br>✔ 정복전, 상단 대전 등 협력과 경쟁이 공존하는 상단 중심 전쟁 구조<br>✔ 조선으로 시작해 일본까지 확장되는 영토 점령 정복전<br><br><br><br>공식 웹 사이트와 소셜 미디어 페이지를 확인해보세요 <br>◆ 공식 홈페이지 : https://imjinwar.joycity.com/<br>◆ 공식 라운지 : https://game.naver.com/lounge/Imjin_War<br><br>이용약관 및 개인정보 처리방침에 따라 15세 이상만 플레이할 수 있습니다<br>◆ 이용약관 : https://policy.joycity.com/provision<br>◆ 개인정보 처리방침 : http://policy.joycity.com/privacy<br>◆ 고객지원 : https://joycity.oqupie.com/portals/3260<br><br><br>■ 필수적 접근권한<br>- 없음<br><br>■ 선택적 접근권한<br>1. 저장공간<br>- 사진, 미디어, 파일 엑세스 권한으로 사용자가 고객센터 1:1 문의하기를 통해 첨부 파일을 업로드하기 위한 목적으로 사용합니다.<br><br>※ 단, 게임 앱 내에서 웹 브라우저를 통해 고객센터 1:1 문의하기를 이용할 경우 브라우저 자체에서 카메라, 저장공간에 대한 접근권한 요청이 있을 수 있습니다. 이러한 경우 게임 앱 내에서 선택적 접근권한이 요구되지 않을 수 있습니다.<br>※ 선택적 접근권한에 동의하지 않아도 게임 서비스 이용은 가능하나, 미 동의 시 제공되는 기능의 일부가 제한될 수 있습니다. <br><br>■ 앱 접근권한 철회 방법<br>- 안드로이드 6.0 미만 버전의 모바일 기기에서는 게임 앱의 선택적 접근권한에 대해 사용자가 선택적으로 동의할 수 없는 문제(설치 시 동의한 것으로 간주되는 문제)가 있습니다. 따라서 가능하다면 사용자의 모바일 기기 내에 소프트웨어 업데이트 기능을 통해 모바일 기기의 운영체제를 안드로이드 6.0 이상으로 업그레이드하는 것이 좋습니다. 또한, 운영체제가 업그레이드 되더라도 기존 게임 앱에서 동의한 접근권한이 자동으로 변경되지 않기 때문에 접근권한을 다시 설정하기 위해 이미 설치한 게임 앱을 삭제한 후 재 설치하시길 권고 드립니다. <br><br>[안드로이드 6.0 이상 버전]<br>1. 접근권한 별 철회 방법 <br>- 단말기 설정 &gt; 개인정보보호 선택 &gt; 권한 관리자 선택 &gt; 해당 접근권한 선택 &gt; 해당 앱 선택 &gt; 접근권한 동의 또는 철회 선택<br><br>2. 앱별 철회 방법<br>- 단말기 설정 &gt; 애플리케이션 &gt; 해당 앱 선택 &gt; 권한 선택 &gt; 접근권한 동의 또는 철회 선택<br><br>[안드로이드 6.0 미만 버전]<br>- 운영체제 특성상 접근권한 별 철회가 불가능하므로 앱의 삭제를 통해 접근권한을 철회할 수 있습니다.<br><br>※ 설명에 사용된 문구는 단말기 또는 OS 버전에 따라 일부 상이할 수 있습니다.<br>----<br>개발자 연락처 :<br>Joycity Corporation 25 Hwangsaeul-ro 258beon-gil<br>분당구, 성남시, 경기도 13595<br>South Korea 116-81-54101 2007-경기성남-0129 경기도 성남시",
       "scoreText": "4.7",
-      "score": 4.677203
+      "score": 4.674286
     },
     {
       "title": "냥코 대전쟁",
@@ -1502,7 +1502,7 @@
       "free": true,
       "summary": "▣게임 소개▣<br><br>■ 세상의 패권을 거머쥘 자<br>대륙의 패권을 가진 9명의 로드를 중심으로 한 대서사시<br>오르페의 부름을 받아 이세계로 온 당신은 과연<br>10번째 로드로 거듭날 수 있을 것인가!<br><br>■ MMORPG 최초, 커스터마이징 성장 방식<br>자유도 높은 무기 선택 성장 및 그에 따른 전투 스타일 변화<br>어빌리티와 태그 조합으로 전략적인 추가 스킬 활용<br>다양한 직업을 마음대로 선택&amp;변경 가능!<br><br>■ 퀄리티 높은 그래픽과 강력한 호환성<br>모션 캡처, 3D 포토스캔을 활용한 정교한 그래픽 구현<br>유니티 엔진으로 보다 넓은 기기 호환성 구축<br>크로스플랫폼 지원으로 PC에서도 원활한 플레이!<br><br>▣로드나인 공식 채널▣<br><br>* 공식 홈페이지: https://l9.onstove.com/ko<br>* 카카오톡 채널: http://pf.kakao.com/_npxdaG<br>* 공식 커뮤니티: https://page.onstove.com/L9/global<br><br>▣접근권한 안내▣<br>[선택적 접근권한]<br>알림: 로드나인에서 보내는 푸시 및 기타 알림을 수신하기 위해 사용됩니다.<br>* 선택적 접근권한은 허용에 동의하지 않으셔도 서비스 이용이 가능합니다.<br><br>▶접근권한 철회방법<br>접근 권한 동의 후, 다음과 같이 접근권한을 재설정하거나 철회할 수 있습니다.<br><br>[운영체제 7.0 이상]<br>설정 &gt; 애플리케이션 관리 &gt; 해당 앱선택 &gt; 권한 &gt; 접근권한 동의 또는 철회 선택<br><br>[운영체제 7.0 미만]<br>운영체제를 업그레이드하여 접근권한을 철회하거나, 앱을 삭제<br><br>*확률형 아이템 포함<br>------------------------------------<br>상호명 : 주식회사 스마일게이트<br>대표자명 : 성준호<br>주소 :경기도 성남시 분당구 판교역로 220, 5층 (삼평동, 쏠리드)<br>전화번호 : 1670-0399<br>전자우편주소 : help@smilegate.com<br>사업자번호 : 132-81-60298<br>통신판매업신고번호 : 제 2022-성남분당A-1071 호<br>통신판매업신고기관 : 성남시<br><br>※ 유료아이템 구매 시 별도의 요금이 부과됩니다.<br>----<br>개발자 연락처 :<br>Smilegate, Inc. 분당구 판교역로 220, 5층(삼평동, 쏠리드스페이스 빌딩)<br>성남시, 경기도 13493<br>South Korea 1328160298 제 2022-성남분당A-1071 호 성남시",
       "scoreText": "4.7",
-      "score": 4.656056
+      "score": 4.6561894
     },
     {
       "title": "서머너즈 워: 천공의 아레나",
@@ -1528,7 +1528,7 @@
       "free": true,
       "summary": "최대 8명이 함께 즐기는 실시간 온라인 모바일 게임!<br><br>아닛! 좀비고등학교 학생들에게 무슨 일이 생긴 거죠?<br>이 친구들은 한창 공부하고 연애할 나이인 고등학생인데!<br>게다가 세계 최고 수준의 사립학교라고 소문이 자자해서 왔더니!<br>학교에 좀비라니? 이게 웬 말입니까!<br><br>그런데 자세히 들여다보니 학교에 좀비가 퍼지게 된 것은<br>우연이 아닌 계획된 일이라고 합니다.<br><br>여러분은 좀비고의 학생이 되어 위험을 감수한 채<br>진실을 파헤치고 학교를 다시 원래대로 되돌려주셔야 합니다!<br><br>좀비고 안에서 좀비와 숨 막히는 추격전을 하거나<br>치열하고 위험한 전투가 벌어질 수도 있습니다.<br><br>감당하실 자신이 있으신 분이라면 입학하셔도 좋습니다.<br><br><br>▶ 감염모드 (2~8인)<br>플레이어들 중 한명이 숙주좀비로 변신합니다<br>좀비에게 감염되지 않게 도망치셔야 합니다<br>맵에는 비밀통로와 숨을공간이 존재합니다<br><br>감염되지 않고 생존하여 많은 보상을 얻으세요!<br><br><br>▶ 진격의 좀비2 모드 (4인)<br>좀비고의 비밀을 파헤치는 시나리오를 진행합니다<br>플레이어들은 각자 무기를 들고 진격해오는 좀비를<br>대항해 맞써 싸워야 합니다!<br><br>협력! 그리고 서로간의 믿음만이 해결의 열쇠입니다! <br><br><br>▶ 경찰과도둑 모드 (2~8인 팀전)<br>전략이 필요한 4:4 팀전은 바로 경찰과 도둑모드!<br>좀비가 경찰이 되어 스위치를 파괴하려는 인간을<br>잡아 감옥에 집어넣습니다.<br><br>감옥에 갇힌 인간은 구출될 수 있으니 방심하지마세요!<br><br><br>▶ 커뮤니티 채널, 좀비고 광장<br>광장 서버로 접속하면 최대 100명이 함께 이야기를<br>나누며 놀 수 있는 공간을 제공합니다!<br><br>아 물론 이 곳은 좀비가 출현하기 전 시점의 학교 모습을<br>담고 있으니 안심하고 맘껏 뛰어놀아도 됩니다.<br><br>광장에서는 채팅뿐 아니라 미니게임도 즐길 수 있습니다!<br><br><br>지금 좀비고등학교로 입학하세요!<br><br><br>오류와 버그는 기종 및 안드로이드 버전을 기재하여<br>문의 메일로 보내주시면 빠르게 처리해드리겠습니다.<br><br>----------------------<br>[&#39;구글 계정 로그인&#39; 시 필수 접근 권한 안내]<br><br>연락처<br>&#39;구글 계정 로그인&#39; 시 구글 계정 연동을 위해 사용합니다.<br><br>[선택 접근 권한 안내]<br><br>알림<br>앱에서 발송하는 푸시 팝업을 알림으로 발송하기 위해 사용합니다.<br><br>저장공간 <br>기기 사진 미디어 파일 접근 권한으로, 게임 내에서 스크린샷 촬영 시 기기에 저장하기 위해 사용합니다.<br><br>※ 선택적 접근 권한은 해당 기능을 사용할 때 사용자의 허용이 필요하며, 비 허용 시에도 해당 기능 외 서비스 이용이 가능합니다.<br><br>----------------------<br>공식카페<br>http://cafe.naver.com/onimobile<br><br>유튜브<br>https://www.youtube.com/c/Awesomepiece<br><br>좀비고등학교 문의 메일<br>SNS@awesomepiece.com<br>----<br>개발자 연락처 : <br>서울시 관악구 봉천동<br>----<br>개발자 연락처 :<br>(주)어썸피스 대한민국 서울특별시 관악구<br>관악구 남부순환로 1926, 7층(봉천동, 경동제약빌딩)<br>08793 1108191224 2012-서울관악-0553 본인 직접 신청",
       "scoreText": "4.0",
-      "score": 4.0199
+      "score": 4.0198684
     },
     {
       "title": "갓깨비 키우기-999뽑기 증정",
@@ -1541,7 +1541,7 @@
       "free": true,
       "summary": "<b><font color=\"red\">999뽑기, 한정판 진령 등 다양한 서버오픈 선물 증정!  </font></b><br><br>----------------------------------------------------<br>도깨비가 되어 떠나는 고된 대마왕 수련길!<br>자유롭게 방치하고 손쉽게 전투할 수 있는 도깨비 다크 판타지 RPG!<br><br>뜻밖의 죽음으로 도깨비가 되어 그들의 세계로 향한 주인공!<br>끝없는 도깨비 추격에 맞서 이 세상의 최강자인 대마왕이 될 때까지 수련하세요!<br>----------------------------------------------------<br>🌟신비로운 색채로 가득한 동양 판타지 세계🌟<br>동양 신화의 배경이 3D 게임 엔진과 2D의 정교한 입체 그림으로 완벽하게 표현되어<br>신비로운 색채로 가득한 섬세한 판타지 세계를 만나보실 수 있습니다.<br><br>✨나의 부름에 응답하라! 소울소환!✨<br>수많은 영혼이 당신의 소환을 기다립니다!<br>신화 속 인물과 어깨를 나란히 하고 숨겨진 능력을 해제하여 당신만의 이야기를 써 내려갈 수 있습니다.<br><br>🐾 귀여운 고대 요괴가 나의 파트너?! 🐾<br>귀여운 고대 요괴를 직접 부화시켜 도감 속 신들의 총애를 활성화하고<br>그들을 충실한 파트너로 삼아 함께 모험을 떠나보세요!<br><br>💎자유롭게 놓아두면 차곡차곡 쌓이는 수익💎<br>귀찮고 번거로운 조작은 이제 그만! 별도의 조작 없이도 게임 내 재화가 쌓여갑니다!<br>온라인/오프라인에서 쌓여만 가는 재화를 어떻게 쓸지만 고민하세요!<br><br>🎁무한 장비, 딸-깍! 으로 한방에 해결🎁<br>장비 100개를 한 번에! 번거로운 클릭 없이 고급 장비를 손쉽게 수확하세요!<br><br>⚔️자동전투와 무한 성장⚔️<br>멈추지 않는 치열한 전투! 도깨비에게 자동으로 대항하여 바쁜 와중에도 끝없이 강력해지세요!<br><br>🛡️도깨비 보스전, 내 동료가 되어줘🛡️<br>다른 플레이어를 초대하면 혼자서 상대하기 버거운 적도 손쉽게 제압할 수 있어요!<br>너! 내 동료가 되어라!<br><br>🏰가족으로 맺어지는 따뜻한 동맹🏰<br>가족 동맹에 가입하여 풍부한 혜택을 누리고, 가족들과 함께 싸우며 더욱 강해지세요!<br><br>----------------------------------------------------<br>▣ 이용약관:https://privacy.joynetgame.com/termsandservice/kr<br>▣ 개인정보 처리방침: https://privacy.joynetgame.com/privacy/kr<br><br>▣ 원활한 게임 플레이를 위해 아래의 권한을 필요로 하고 있습니다. <br>선택적 권한은 동의하지 않으셔도 게임 이용이 가능하며, 접근 권한 동의 후 접근 권한을 재설정하거나 철회할 수 있습니다.<br><br>[선택 접근 권한]<br>①저장 공간 (사진/미디어/파일): 게시판, 프로필 사진 등록/변경/저장, 영상 녹화 저장하기 위한 권한<br>②마이크: 보이스 채팅 이용, 화면 녹화 시 음성 녹음 이용을 위한 권한<br>③알림: 게임 앱에서 발송되는 정보성 알림 및 광고성 Push 알림 수신하기 위한 권한<br>④카메라 : 게임 내의 프로필 설정 기능을 사용하기 위한 권한<br>⑤음악 및 오디오 : 게임 중 기기의 음악 파일 재생기능을 위한 권한<br>※ 선택 접근 권한은 동의하지 않아도 게임 이용이 가능합니다.<br><br>[필수 접근 권한]<br>없음",
       "scoreText": "4.8",
-      "score": 4.780923
+      "score": 4.7809567
     },
     {
       "title": "호드 워:어벤저의 소환",
@@ -1554,7 +1554,7 @@
       "free": true,
       "summary": "야성이 깨어난다. 복수의 전장이 열린다.<br>어둠이 뒤덮은 ‘한밤의 시대’,<br>흩어진 부족 영웅들을 소환하고 호드의 진격을 이끌어라.<br>지금, 당신은 전설을 다시 쓰는 지휘관이다.<br><br>■ 1. 전설의 귀환: 부족 영웅 소환<br>전장을 지배할 진짜 영웅들을 불러내라.<br>부족의 힘: 오크, 타우렌, 트롤… 각기 다른 능력과 개성 <br>영웅 수집: 소환을 통해 강력한 영웅들을 획득 <br>압도적 스킬: 전장을 뒤흔드는 화려한 전투 연출 <br> <br>■ 2. 전략 전투의 핵심: 최강 전대<br>조합이 곧 승리다.<br>포지션 전략: 탱커 / 딜러 / 서포터 완벽 배치 <br>종족 시너지: 부족 조합으로 추가 능력 발동 <br>전략 승부: 단순 전투력 그 이상, 진짜 전략 게임 <br> <br>■ 3. 끝없는 전쟁: 실시간 PVP<br>전 세계 유저들과 진짜 전투를 펼쳐라.<br>실시간 아레나: 전략으로 승부하는 PvP <br>랭킹 경쟁: 정상에 오르는 자는 단 한 명 <br>시즌 보상: 강자만이 획득하는 특별 보상 <br> <br>■ 4. 함께 싸워라: 길드 &amp; 레이드<br>혼자가 아닌, 함께하는 전쟁<br>길드 시스템: 동료와 함께 성장 <br>월드 보스: 협동으로 공략하는 초대형 보스 <br>전리품 획득: 전설 장비와 희귀 자원 <br> <br>■ 5. 멈추지 않는 성장: 방치형 시스템<br>접속하지 않아도 강해진다.<br>방치 보상: 자동으로 쌓이는 성장 자원 <br>초고속 육성: 누구나 쉽게 강해지는 시스템 <br>부담 없는 플레이: 언제 어디서나 편하게 <br> <br>지휘관이여, 소환의 시간이 도래했다.<br>지금 바로 호드 워: 어벤저의 소환에서<br>당신의 부족을 승리로 이끌어라!",
       "scoreText": "4.8",
-      "score": 4.8097343
+      "score": 4.808059
     },
     {
       "title": "쿠키런: 킹덤",
@@ -1567,7 +1567,7 @@
       "free": true,
       "summary": "◼︎ 모두가 사랑하는 쿠키런: 킹덤의 주인공, 쿠키<br>화려한 성우진이 참여한 각양각색의 다양한 매력을 가진 쿠키!<br>멋진 스킬, 몰입감 넘치는 쿠키의 목소리, 패셔너블한 스킨까지!<br>쿠키런: 킹덤에서 귀여운 쿠키를 만나보세요. <br><br>◼︎ 어썸브레드 대륙에서 펼쳐지는 쿠키들의 대서사시!<br>태초에 부흥했던 고대 왕국과 고대 쿠키들의 숨겨진 이야기,<br>그리고 쿠키 세계를 위협하는 어둠 마녀 쿠키와 악의 군단에 맞선 용감한 쿠키와 그 친구들의 모험!<br>앞으로 펼쳐질 쿠키런: 킹덤만의 재미있는 스토리를 기대해주세요.<br><br>◼︎ 계속해서 꾸미고 싶은 달콤한 왕국<br>다양한 테마 데코로 나만의 왕국을 꾸며보세요!<br>왕국에서 만들어지는 수많은 생산품과 다양한 왕국 활동들.<br>왕국에서 펼쳐지는 고소한 쿠키들의 일상을 만나보세요. <br><br>◼︎ 전략적이고 박진감 넘치는 전투!<br>다양한 보물과 토핑 조합으로 최상의 쿠키 덱을 구성해보세요!<br>아레나, 수호의 성전, 대난투, 길드 토벌전 등 다양한 전투모드에서 화려하고 멋진 전투를 느껴보세요.<br>쿠키런: 킹덤의 전투에선 끊임없는 새로운 전략이 필요합니다! <br><br>■ 모든 영광은 길드원과 함께!<br>길드원과 함께 길드의 명예를 높이세요.<br>길드 영토를 개척하고, 박물관의 유물을 수집해서 더욱 더 강한 길드를 만들어 보세요. <br><br>※ 서비스 접근 권한 안내<br>[필수적 접근 권한]<br>없음<br><br>[선택 접근 권한]<br>- 알림 : 게임 내 정보에 대한 알림(이벤트, 혜택 등)에 필요한 기능으로 해당 기능 접근 권한을 요청합니다.<br>- 선택 접근 권한은 동의하지 않아도 게임 서비스를 이용하실 수 있습니다.<br>- 선택 접근 권한 미동의 시 서비스의 일부 기능을 정상적으로 사용하지 못할 수 있으니 참고 바랍니다.<br><br>[접근권한 철회 방법]<br>- 설정 &gt; 개인정보보호 &gt; 해당 접근권한 선택 &gt; 접근권한 동의 또는 철회 선택<br><br>※ 게스트로 게임을 이용 중인 경우, 앱 삭제 시 게임 정보가 삭제됩니다.<br>----<br>개발자 연락처 :<br>데브시스터즈(주) 대한민국 서울특별시 강남구<br>강남구 도산대로 327(신사동, 에스지에프청담타워)<br>06019 2118797881 1729215126274312 강남구청장",
       "scoreText": "4.8",
-      "score": 4.79443
+      "score": 4.7946453
     },
     {
       "title": "변신 키우기",
@@ -1593,7 +1593,7 @@
       "free": true,
       "summary": "<font color=\"#005BAC\"><b>▶ 레전드, 프랜차이즈, 몬스터 등급 선수를 모두 직접 선택해 획득할 수 있는 특별한 기회!</b></font><br><br>2026 프로야구GO!에서 전설의 구단과 레전드 선수들을 다시 만나보세요.<br>KBO 리그의 역사 속 명장면과 뉴트로 감성을 현대적인 스타일로 재해석한 새로운 야구 경험.<br>쉽게 키우고, 편하게 즐기고, 팬들과 함께 성장하는 방치형 × 수집형 × 소통형 야구를 지금 시작해보세요!<br><br>🎉 <font color=\"#005BAC\"><b>1. KBO 공식 라이선스 탑재!</b></font><br>KBO 리그 10개 구단 &amp; 실제 선수 데이터 완전 반영<br>현역부터 레전드까지 총망라된 선수 수집<br>구단별 고유 유니폼 &amp; 응원 문화까지 그대로 구현<br><br>🕰️ <font color=\"#005BAC\"><b>2. 전설의 선수들과 다시 만나는 ‘뉴트로 야구’</b></font><br>추억의 스타 선수 재등장<br>당시 유니폼, 경기장, 명장면까지 감성 복원<br>야구팬의 추억을 자극하는 클래식 감성 제공<br><br>⚾ <font color=\"#005BAC\"><b>3. 켜두기만 해도 성장! ‘방치형 야구의 맛’</b></font><br>자동 경기/자동 훈련 지원<br>방치 시간만큼 선수 능력치가 상승<br>누구나 부담 없이 즐기는 야구게임<br><br>💬 <font color=\"#005BAC\"><b>4. 팬끼리 뭉치는 &#39;팬클럽&#39;!</b></font><br>실제 야구 커뮤니티처럼 운영되는 팬 소통 허브<br>두근두근 승부 예측 이벤트를 통한 특별 보상 교환의 기회!<br><br>🔥 <font color=\"#005BAC\"><b>5. 타자·투수 모두 수집하고 키우는 &#39;나만의 드림팀&#39;</b></font><br>포지션별 선수 카드 수집 &amp; 개성 있는 덱 구성<br>다양한 육성 루트를 자유롭게 선택<br>전략적인 포메이션 구성으로 최강 팀 완성<br><br>📆 <font color=\"#005BAC\"><b>6. 매일매일 다양한 야구 모드</b></font><br>끊임없이 제공되는 다양한 게임 모드<br>최고의 구단을 가리는 PvP 모드<br><br>[주의사항]<br>* 이 게임은 부분 유료 아이템 구매가 가능합니다. 부분 유료 아이템 구매시 추가 비용이 발생할 수 있으며, 아이템 종류에 따라 청약철회가 제한될 수도 있습니다. (부가세 포함)<br>* 이 게임의 이용과 관련된 조건(계약해지/청약철회 등)은 게임 내 이용약관에서 확인하실 수 있습니다.<br><br>※ 불법 프로그램 사용, 앱 변조, 기타 비정상적인 방법을 통해 게임을 이용할 경우, 이용 약관에 의거하여 서비스 제한, 계정 및 관련 정보 삭제, 손해배상 청구 등의 조치를 취할 수 있습니다.<br><br>- 공식 라운지: https://game.naver.com/lounge/2026baseballgo<br>- 공식 인스타그램: https://www.instagram.com/2026baseballgo<br>- 공식 유튜브: https://www.youtube.com/@2026baseballgo<br>- 게임 관련 문의: https://help-baseballgo.haegin.kr/hc/ko<br><br>이용약관 - https://www.haegin.kr/management_view.php?type=ToS&amp;ca_name=KOR<br><br>▶스마트폰 앱 접근권한 안내◀<br>앱 이용 시 아래와 같은 서비스를 제공하기 위해 접근 권한을 요청하고 있습니다.<br><br>[필수적 접근권한]<br>기기 사진/미디어/파일 엑세스 : 게임 실행 관련 파일 저장과 플레이 동영상/스크린샷 저장 시 사용합니다.<br><br>[선택적 접근권한]<br>알림 : 해당 게임에 대한 정보성 메시지를 받기 위한 권한입니다.<br>*선택적 접근권한의 허용에 동의하지 않아도 게임 서비스의 이용이 가능합니다.<br><br>[접근권한 철회 방법]<br>▶ 안드로이드 6.0 이상: 설정 &gt; 앱 &gt; 권한 항목 선택 &gt; 권한 목록 &gt; 접근권한 동의 또는 철회 선택<br>▶ 안드로이드 6.0 미만: 운영체제를 업그레이드하여 접근권한을 철회하거나, 앱을 삭제<br>※ 앱이 개별 동의 기능을 제공하지 않을 수 있으며 위의 방법으로 접근 권한을 철회할 수 있습니다.<br>※ 안드로이드 6.0 미만 버전을 사용하시는 경우에는 선택적 접근권한을 개별적으로 설정하실 수 없으므로, 6.0 이상으로 업그레이드 하는 것을 권장 드립니다.<br><br>[주의사항]<br>필수적 접근권한 철회 시 리소스 중단 혹은 게임 접속 불가 현상이 발생할 수 있습니다.<br>----<br>개발자 연락처 :<br>(주)해긴 구로구 경인로 662 디큐브시티 오피스<br>39F<br>구로구, 서울특별시 08209<br>South Korea 514-88-00619 2022-서울구로-2292 서울특별시 구로구",
       "scoreText": "4.6",
-      "score": 4.5828876
+      "score": 4.5851064
     },
     {
       "title": "메이플스토리M",
@@ -1606,7 +1606,7 @@
       "free": true,
       "summary": "내 손안에 쏙~ 들어온 새로운 메이플 세상!<br>더욱 매력적인 메이플스토리M 전용 캐릭터와, 자동전투를 통한 쾌적한 성장으로 쉽고 편리한 육성까지!<br>늘 가득한 이벤트로 레벨업만 해도 귀여운 펫과 강력한 장비가 와르르!<br><br>=====================================================================<br><br>■【언제, 어디서나 간편한 접속】■<br>내 손안에 펼쳐지는 방대한 메이플 월드!<br>모바일에 최적화된 UI와 콘텐츠로 어디서든 플레이 가능!<br>메이플스토리M은 언제나 용사님과 함께 해요!<br><br>■【자동전투를 통한 쉽고 쾌적한 육성】■<br>게임을 종료해도 내 캐릭터는 성장중?!<br>나만의 성장 전략과 자동전투가 만나면 내가 잠든 사이에도 캐릭터는 쑥! 쑥!<br>바쁜 일상 속 맞춤형 성장 방식으로 효율적인 육성과 자원 관리를 경험해 보세요!<br><br>■【유니크한 매력이 돋보이는 다양한 캐릭터】■<br>각자의 매력이 넘치는 원작 메이플스토리 캐릭터들은 물론,<br>메이플스토리M에서만 플레이 할 수 있는 오리지널 캐릭터도 준비 완료!<br>유니크한 스토리와 개성 넘치는 캐릭터를 직접 확인해 보세요!<br><br>■【함께여서 즐거운 보스 전투】■<br>원작의 다양한 보스를 넘어 메이플스토리M 오리지널 보스까지!<br>최강의 파티를 꾸려 강력한 보스에게 대적하라!<br>다 함께 힘을 합쳐 메이플 월드를 위기에서 구해주세요!<br><br>■【아기자기한 나만의 캐릭터 꾸미기】■<br>머리부터 발끝까지 내 마음에 쏘옥~<br>나만의 스타일로 완성하는 특별한 순간!<br>귀여운 펫과 캐릭터 꾸미기로 새로운 즐거움을 만나보세요~!<br><br>=====================================================================<br> <br>■【공식 채널】■<br>【홈페이지】 : http://maplestorym.nexon.com/<br>【공식 유튜브】 : https://www.youtube.com/@MaplestoryM<br> <br>=====================================================================<br><br>■【스마트폰 앱 접근권한 안내】■<br>앱 이용 시 아래와 같은 서비스를 제공하기 위해 접근 권한을 요청하고 있습니다.<br><br>▶[선택적 접근권한]<br>* 사진/미디어/파일 저장: 영상 저장, 사진 및 동영상 업로드 하는데 필요합니다.<br>* 카메라: 사진 및 동영상 업로드를 위한 촬영하는데 필요합니다.<br>* 전화: 광고성 문자 전송을 위한 휴대폰번호를 수집하는데 필요합니다.<br>* 알림: 앱이 서비스와 관련된 알림을 게시하도록 허용합니다.<br>- 선택적 접근권한의 허용에 동의하지 않아도 서비스 이용이 가능합니다.<br><br>▶[접근권한 철회 방법]<br>- 안드로이드 6.0 이상: 설정 &gt; 애플리케이션 &gt; 해당 애플리케이션 선택 &gt; 권한 &gt; 허용 안함 선택<br>- 안드로이드 6.0 미만: 운영체제를 업그레이드하여 접근권한을 철회하거나, 앱을 삭제<br>※ 앱이 개별 동의 기능을 제공하지 않을 수 있으며 위의 방법으로 접근 권한을 철회할 수 있습니다.<br><br>- 이 게임은 부분유료 아이템 구매가 가능합니다. 부분유료 아이템 구매 시 추가 비용이 발생할 수 있습니다.<br>- 이 게임의 이용과 관련된 제반사항은 넥슨 통합 서비스 이용약관 (https://m.nexon.com/terms/234) 및 넥슨 개인정보 처리방침 (https://m.nexon.com/terms/7) 을 통해 확인할 수 있습니다.<br><br>■【개발자 연락처】■<br>1588-7701<br>----<br>개발자 연락처 :<br>Nexon Korea Corporation 판교로256번길 7 (삼평동)<br>분당구, 성남시, 경기도 13487<br>South Korea 220-87-17483 2013-경기성남-1659 성남시청",
       "scoreText": "4.6",
-      "score": 4.56761
+      "score": 4.567633
     },
     {
       "title": "블레이드&소울 레볼루션",
@@ -1671,7 +1671,7 @@
       "free": true,
       "summary": "이 무서운 세계는 곳곳에 위기가 도사리고 있습니다. 조심하세요! 이 세계에 발을 내딛는 순간, 무시무시한 좀비가 당신을 공격해 올 거예요.<br>영웅으로서 끊임없이 탐색하고 진실을 파헤치면서 동료를 당신의 파티로 끌어들이세요.<br>최선을 다해 이 무서운 세계에서 살아남아 보세요!<br>무기를 들고 앞을 가로막는 좀비를 쓰러뜨리면서 머나먼 희망을 향해 나아가세요!<br><br>게임 특징:<br>-한 손으로 무서운 좀비를 마음껏 물리쳐보세요.<br>-백 가지가 넘는 로그라이크 스킬 조합과 화려한 궁극기까지 있습니다.<br>-현실감 넘치는 다양한 맵을 즐겨보세요.<br>-당신의 앞을 가로막는 강력한 보스들을 쓰러뜨리세요.<br><br><br>서포트:<br>Facebook: https://www.facebook.com/ZombieWavesGame<br>Facebook 팬 그룹: https://www.facebook.com/groups/zombiewaves<br>Discord: https://discord.gg/zombiewaves<br>고객 서비스: service.zombiewaves@gmail.com",
       "scoreText": "4.5",
-      "score": 4.472941
+      "score": 4.4728513
     },
     {
       "title": "피쉬돔 (Fishdom)",
@@ -1697,7 +1697,7 @@
       "free": true,
       "summary": "<b><font color=\"\">오픈월드에서 키우는 3D 방치형 MMORPG ⚡️<br>🔥 스페셜 혜택 🔥 1234뽑기와 한정 펫 증정!</font></b><br><br><br>●세계관:<br>정체를 숨기고 살아가는 용사들이여! 영광을 위해 집결하라! ⚔️<br>최전방에서 돌격하는 탱커부터 후방에서 아군을 지원하는 든든한 프리스트,<br>원소의 힘으로 강력한 마법을 사용하는 위저드 ✨, 은밀하고 신속하게 전장을 누비는 어쌔신,<br>긴 사정거리를 이용해 적을 제거하는 아쳐 🎯, 그리고 정체를 알 수 없는 자들까지…<br>모두 부름에 따라 신비로운 대륙으로 모여 암흑 세력과 맞서고, 우리만의 이야기를 만들어 보세요! 🌍<br><br>●게임 특징<br>1. 다섯 가지 고유 클래스🌟<br>다채로운 스킬 구성으로 각기 다른 매력을 가지고 있습니다. <br>2. 보스 리젠 시간 X! 무한한 장비 파밍💎<br>개인별로 적용되는 보스 리젠 시간! 파티 플레이 시 무한 파밍 가능! <br>3. 흰 눈을 가진 히어로!😎<br>3D 코믹한 디자인의 개성 넘치는 히어로 등장! <br>4. 자유로운 월드 탐험🗺️<br>끝없이 펼쳐진 맵을 탐험하고 숨겨진 보상을 획득하세요! <br>5.무한 경쟁 스피드런!⏱️🔥<br>다양한 전략으로 던전을 공략하고 스피드런 최강자가 되어 보세요! <br>6. 연맹 대전쟁🛡️⚔️<br>1000명 이상이 함께 하는 대전장, 리그 간 벌어지는 치열한 격전! 지금 연맹과 함께하세요! <br><br>----------------------------------------------------<br>▣ 이용약관:https://privacy.joynetgame.com/termsandservice/kr<br>▣ 개인정보 처리방침: https://privacy.joynetgame.com/privacy/kr<br>▣개발자 전화번호: +85244293112<br>▣개발자 이메일 주소: cskr@joynetgame.com<br><br>▣ 앱 접근 권한 안내<br>&quot;우와 모험단&quot;은 고객님의 원활한 게임 이용을 위해 다음과 같은 접근 권한을 사용합니다. 아래 권한들은 선택 사항이며, 동의하지 않으셔도 게임 플레이 및 모든 기본 기능을 이용하는 데 전혀 지장이 없습니다.<br><br>[필수 접근 권한]<br>없음<br><br>[선택 접근 권한]<br>①저장 공간 (사진/미디어/파일): 게시판, 프로필 사진 등록/변경/저장, 영상 녹화 저장하기 위한 권한<br>②마이크: 보이스 채팅 이용, 화면 녹화 시 음성 녹음 이용을 위한 권한<br>③알림: 게임 앱에서 발송되는 정보성 알림 및 광고성 Push 알림 수신하기 위한 권한<br>④카메라 : 게임 내의 프로필 설정 기능을 사용하기 위한 권한<br>⑤음악 및 오디오 : 게임 중 기기의 음악 파일 재생기능을 위한 권한<br>※ 선택 접근 권한은 동의하지 않아도 게임 이용이 가능합니다.<br><br>[접근 권한 설정 방법]<br>안드로이드 6.0 이상 버전:<br>- 접근 권한별 철회 방법: 단말기 설정 &gt; 개인정보 보호 선택 &gt; 권한 관리자 선택 &gt; 해당 접근 권한 선택 &gt; 해당 앱 선택 &gt; 접근 권한 동의 또는 철회 선택<br>- 앱별 철회 방법: 단말기 설정 &gt; 앱 &gt; 해당 앱 선택 &gt; 권한 선택 &gt; 접근 권한 동의 또는 철회 선택",
       "scoreText": "4.8",
-      "score": 4.7946005
+      "score": 4.7948036
     },
     {
       "title": "Yu-Gi-Oh! Master Duel",
@@ -1710,7 +1710,7 @@
       "free": true,
       "summary": "「유희왕」을 본격 디지털 카드 게임으로!<br>25년 이상의 시간에 걸쳐 지금도 진화하고 있는 전략성 카드 게임의 결정판!<br>사상 최고봉의 듀얼이 당신을 기다린다!<br>이 결투에 당신은 따라올 수 있을까?!<br><br>ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br>【「Yu-Gi-Oh! Master Duel」이란】<br>대 인기 카드 게임 「유희왕OCG」를 온라인으로 즐길 수 있는 디지털 카드 게임<br>호화로운 그래픽, 매력적인 사운드, 경쾌한 템포로 듀얼이 펼쳐진다!<br>전 세계의 듀얼리스트들과 「유희왕」을 본격적으로 플레이 해 보자!<br><br>◇일단 듀얼로 실전이다!<br>처음 받는 덱으로 일단 듀얼을 시작해보자!<br>물론, 오랜만에 플레이 하는 사람이나 처음 시작하는 사람도 안심하고 플레이 할 수 있게 충실한 튜토리얼 요소도 준비되어 있다.<br>게임을 진행하여 다양한 카드를 모아보자!<br><br>◇다양한 규칙의 이벤트와 대회 실시!<br>듀얼리스트 라이프를 풍족하게! 누구든 즐길 수 있는 다양한 이벤트와 대회를 준비!<br>10,000종류가 넘게 수록된 카드로, 다양한 덱과 다양한 듀얼을 즐겨보자!<br>당신이 자신 있는 규칙의 대회에서 최고를 노려보자!<br><br>◇카드 일러스트에 담겨있는 이야기!<br>혼자서도 느긋하게 꼼꼼한 플레이가 가능한 솔로 모드 탑재!<br>카드에 얽힌 다양한 이야기와 세계를 따라가며 게임을 클리어 하면, 듀얼 실력도 착실하게 스텝 업!<br>유희왕의 세계를 보다 깊이 알고 싶은 사람은 물론, 처음 플레이 하는 사람이나 오랜만에 플레이 하는 사람에게도 추천!<br><br>◇다양한 기능으로 듀얼을 서포트!<br>모바일 앱 「Yu-Gi-Oh! Neuron」과도 연동!<br>전 세계 듀얼리스트들의 수많은 덱을 참조하여 오리지널 덱을 만들자!<br>시험 드로우 기능을 사용하여 듀얼 시작 시의 패를 확인하는 것도 가능! 덱의 정확도를 높이자!<br><br>[유희왕에 대하여]<br>「유희왕」은 1996년도부터 주식회사 슈에이샤의 「주간 소년 점프」에 연재된 타카하시 카즈키 선생 원작의 인기 만화이며, 코나미 디지털 엔터테인먼트에서는 원작 만화를 영상화 한 애니메이션 「유희왕」시리즈를 소재로 한 트레이딩 카드 게임(TCG)과 가정용 게임을 전 세계의 고객 여러분께 제공하고 있습니다.<br><br>【이런 분들에게 추천!】<br>「Yu-Gi-Oh! OCG」를 즐기시는 분<br>「Yu-Gi-Oh! Duel Links」를 즐기시는 분<br>인기 대전 게임을 즐기시고 싶은 분<br>ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー<br><br>본 게임은 랜덤 배출되는 게임 내 아이템을 획득하기 위해 사용되는 가상화폐를 게임 내에서 구입할 수 있는 기능을 포함합니다.<br>=====<br><br>【동작환경】<br>대응OS：Android 7.0이상<br>대응기기：메모리(RAM)4GB 이상의 기기<br>작동 환경을 충족하는 기기라도, 기기의 성능이나 사양, 기기 고유의 앱 사용현황 등에 따라 정상적으로 동작하지 않는 경우가 있습니다.",
       "scoreText": "4.3",
-      "score": 4.320308
+      "score": 4.320682
     },
     {
       "title": "에이지 오브 제트: 타워 디펜스",
@@ -1788,7 +1788,7 @@
       "free": true,
       "summary": "「헐! 저거 뭔데!」<br>「쉿! <b>조용히 해!」<br>「어…떡…해…！」<br>「살아남고 싶으면 종말 생존 지침을 숙지해야 돼.」<br><br>——종말 생존 지침——<br>※퍼즐과 전략의 조화※<br>- 퍼즐와 좀비 요소의 이색적인 결합👤<br>- 인간와 좀비의 대결, 지혜와 전략의 시대<br>- 캐주얼 퍼즐과 전략 시뮬레이션의 완벽한 조화<br>- 요란스레 떠들어대는 세상에서 인류 문명의 새 판을 여세요!<br><br>※세계 최대 피난소를 건설하라※<br>- 피난소, 인류 문명이 남아 있는 유일한 거점.<br>수호자가 되어 생존자 서식지를 재건설하여 인류 문명 최후의 씨앗을 지키세요!🌆<br>- 분발하여 좀비 군단을 물리치세요! 성지를 탈환하여🏰<br> 문명을 전파세요. 무기를 업그레이드하여 전쟁 자원을 획득하세요!<br><br>※초능력 영웅을 모집하라!※<br>- 바이러스☠에 감염된 후 행운한 자는 초능력을 갖게 되며, 불행한 자는 좀비가 된다.<br>- 생존자를 구하는 길에 타고난 재능을 지닌 영웅들을 만날 수 있습니다.<br>- 그들을 휘하에 두고 문명 부흥의 길을 찾아 모험을 떠나세요!<br><br>※냉혹한 인간들을 조심하라!💔※<br>- 종말의 날이 오자 문명이 무너지고 인간 DNA에 내재된 악이 서서히 모습을 드러냈습니다.<br>- 생명보다 자원이 소중한 종말의 날, 악과 선 그 사이, 운명의 룰렛을 돌리세요!<br><br><b>생존자 연맹에 가입하여 함께 미지의 영역을 탐색합시다!<br>한국: https://www.facebook.com/puzzleofZ.KR/<br>CAFE: https://cafe.naver.com/puzzleofz<br><br>개인정보 보호정책：<br>https://gpassport.blancozone.com/center/ServicePrivicy/privicy<br>서비스 이용약관：<br>https://gpassport.blancozone.com/center/ServicePrivicy/service</b></b>",
       "scoreText": "4.6",
-      "score": 4.5994196
+      "score": 4.5986166
     },
     {
       "title": "ASURA: 블러드 앤 소울",
