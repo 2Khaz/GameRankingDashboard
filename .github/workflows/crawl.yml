@@ -2,8 +2,8 @@ name: Daily Game Rank Crawler
 
 on:
   schedule:
-    # 매일 한국 시간 기준 아침 9시 정각에 실행 (UTC 00:00)
-    - cron: '0 0 * * *'
+    # 매일 한국 시간 기준 아침 8시 50분에 실행 (UTC 23:50) - 정각 병목 회피
+    - cron: '50 23 * * *'
   workflow_dispatch: # 버튼 클릭으로 수동 실행 가능하도록 설정
 
 jobs:
@@ -32,6 +32,8 @@ jobs:
         run: echo '${{ secrets.GCP_CREDENTIALS }}' > credentials.json
 
       - name: Run Crawler (Update Google Sheet & Local JSON)
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: node crawler.js
 
       - name: Commit and Push Updated data.json
