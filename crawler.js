@@ -33,13 +33,14 @@ async function fetchSteamGlobal(retries = 3) {
                 games.push({
                     name: title,
                     appId: appId,
-                    developer: '-'
+                    developer: '-',
+                    genre: '기타' // 기본값 추가
                 });
             });
 
             if (games.length === 0) throw new Error("스팀 데이터가 0건입니다.");
             
-            console.log(`[Steam] 데이터 ${games.length}건 성공! 개발사 정보 추가 중 (약 10~15초 소요)...`);
+            console.log(`[Steam] 데이터 ${games.length}건 성공! 개발사/장르 정보 추가 중 (약 10~15초 소요)...`);
             const batchSize = 10;
             for (let i = 0; i < Math.min(100, games.length); i += batchSize) {
                 const batch = games.slice(i, i + batchSize);
@@ -51,10 +52,12 @@ async function fetchSteamGlobal(retries = 3) {
                             });
                             const appData = await appRes.json();
                             if (appData && appData[game.appId] && appData[game.appId].success) {
-                                const devs = appData[game.appId].data.developers;
-                                if (devs && devs.length > 0) {
-                                    game.developer = devs[0];
-                                }
+                                const detail = appData[game.appId].data;
+                                const devs = detail.developers;
+                                if (devs && devs.length > 0) game.developer = devs[0];
+                                
+                                const genres = detail.genres;
+                                if (genres && genres.length > 0) game.genre = genres[0].description;
                             }
                         } catch (err) {}
                     }
@@ -65,6 +68,7 @@ async function fetchSteamGlobal(retries = 3) {
             return games.slice(0, 100);
         } catch (e) {
             console.error(`[Steam] 데이터 오류 (시도 ${attempt}/${retries}):`, e.message);
+            await sendDiscordAlert(`🚨 **[Steam] 데이터 수집 오류!**\n\`${e.message}\``);
             if (attempt < retries) await delay(3000); // 3초 대기 후 재시도
         }
     }
@@ -84,15 +88,64 @@ async function fetchPlayStore(country = 'kr', lang = 'ko', retries = 3) {
             });
             if (data && data.length > 0) {
                 console.log(`[PlayStore] 데이터 ${data.length}건 성공!`);
-                return data;
+                return data.map(item => ({
+                    title: item.title,
+                    developer: item.developer,
+                    icon: item.icon,
+                    genre: item.genre || '기타'
+                }));
             }
             throw new Error("구글 플레이 데이터가 0건입니다.");
         } catch (e) {
             console.error(`[PlayStore] 데이터 오류 (시도 ${attempt}/${retries}):`, e.message);
+            await sendDiscordAlert(`🚨 **[PlayStore] 데이터 수집 오류!**\n\`${e.message}\``);
             if (attempt < retries) await delay(3000); // 3초 대기 후 재시도
         }
     }
     return [];
+}
+
+function enrichDataWithRankAndStreak(currentList, platformName, previousData, streaks) {
+    const previousRanks = {};
+    if (previousData) {
+        previousData.forEach((g, index) => {
+            const name = g.title || g.name;
+            previousRanks[name] = index + 1;
+        });
+    }
+
+    currentList.forEach((game, index) => {
+        const name = game.title || game.name;
+        const currentRank = index + 1;
+        
+        if (previousRanks[name]) {
+            game.rankChange = previousRanks[name] - currentRank; // 양수면 상승, 음수면 하락
+        } else {
+            game.rankChange = 'new'; // 새로 진입
+        }
+
+        const streakKey = `${platformName}_${name}`;
+        if (streaks[streakKey]) {
+            streaks[streakKey] += 1;
+        } else {
+            streaks[streakKey] = 1;
+        }
+        game.streak = streaks[streakKey];
+    });
+
+    return currentList;
+}
+
+function cleanupStreaks(currentSteam, currentPlay, streaks) {
+    const activeKeys = new Set();
+    currentSteam.forEach(g => activeKeys.add(`steam_${g.name}`));
+    currentPlay.forEach(g => activeKeys.add(`play_${g.title}`));
+
+    for (let key in streaks) {
+        if (!activeKeys.has(key)) {
+            delete streaks[key];
+        }
+    }
 }
 
 async function writeToGoogleSheets(nowStr, steamGlobal, playKr, retries = 5) {
@@ -106,7 +159,7 @@ async function writeToGoogleSheets(nowStr, steamGlobal, playKr, retries = 5) {
         const credsRaw = fs.readFileSync(SERVICE_ACCOUNT_FILE, 'utf8');
         creds = JSON.parse(credsRaw);
     } catch (e) {
-        console.error("❌ 치명적 오류: credentials.json 파싱 실패 (열쇠 내용이 올바르지 않습니다):", e.message);
+        console.error("❌ 치명적 오류: credentials.json 파싱 실패:", e.message);
         return;
     }
 
@@ -174,9 +227,10 @@ async function writeToGoogleSheets(nowStr, steamGlobal, playKr, retries = 5) {
             console.log("데이터를 구글 시트에 기록하는 중...");
             await sheet.saveUpdatedCells();
             console.log("✅ 구글 시트 저장 완료!");
-            return; // 성공 시 함수 종료
+            return;
         } catch (e) {
             console.error(`[Google Sheets] 저장 실패 (시도 ${attempt}/${retries}):`, e.message);
+            await sendDiscordAlert(`🚨 **[Google Sheets] 기록 오류!**\n\`${e.message}\``);
             if (attempt < retries) await delay(5000); // 5초 대기 후 재시도
         }
     }
@@ -199,8 +253,8 @@ async function saveHistory(nowStr, steamGlobal, playKr) {
         fs.mkdirSync(historyDir);
     }
     
-    // YYYY-MM-DD 만 추출 (예: '2026-06-15 23' -> '2026-06-15')
-    const dateStr = nowStr.split(' ')[0];
+    // YYYY-MM-DD_HH 형태로 시간 단위까지 포함하여 저장
+    const dateStr = nowStr.replace(' ', '_'); 
     const historyFile = path.join(historyDir, `${dateStr}.json`);
     fs.writeFileSync(historyFile, JSON.stringify(dashboardData, null, 2), 'utf8');
     
@@ -214,10 +268,25 @@ async function saveHistory(nowStr, steamGlobal, playKr) {
         historyList.push(dateStr);
     }
     // 최신 날짜가 맨 위로 오게 정렬
-    historyList.sort((a, b) => new Date(b) - new Date(a));
+    historyList.sort((a, b) => new Date(b.replace('_', ' ')) - new Date(a.replace('_', ' ')));
     fs.writeFileSync(listFile, JSON.stringify(historyList, null, 2), 'utf8');
 
     console.log(`✅ 대시보드 데이터 저장 완료! (data.json 및 history/${dateStr}.json)`);
+}
+
+async function sendDiscordAlert(message) {
+    const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
+    if (!webhookUrl) return;
+
+    try {
+        await fetch(webhookUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ content: message })
+        });
+    } catch (e) {
+        console.error("디스코드 알림 전송 실패:", e.message);
+    }
 }
 
 async function main() {
@@ -226,15 +295,56 @@ async function main() {
     const nowStr = kst.toISOString().replace(/T/, ' ').substring(0, 13); // 'YYYY-MM-DD HH'
 
     const [steamGlobal, playKr] = await Promise.all([
-        fetchSteamGlobal(3), // 3회 재시도
-        fetchPlayStore('kr', 'ko', 3) // 3회 재시도
+        fetchSteamGlobal(3),
+        fetchPlayStore('kr', 'ko', 3)
     ]);
 
-    // 1. 구글 시트 저장 (실패 시 5회 재시도, 치명적 인증 에러는 로깅)
+    // ------ 장르/순위변동/장기흥행 처리 (구글 시트에 영향 안 줌) ------
+    const historyDir = path.join(process.cwd(), 'history');
+    if (!fs.existsSync(historyDir)) fs.mkdirSync(historyDir);
+
+    let previousSteam = [];
+    let previousPlay = [];
+    
+    const listFile = path.join(historyDir, 'history_list.json');
+    if (fs.existsSync(listFile)) {
+        try {
+            const historyList = JSON.parse(fs.readFileSync(listFile, 'utf8'));
+            if (historyList.length > 0) {
+                const lastHistoryName = historyList[0];
+                const lastHistoryFile = path.join(historyDir, `${lastHistoryName}.json`);
+                if (fs.existsSync(lastHistoryFile)) {
+                    const lastData = JSON.parse(fs.readFileSync(lastHistoryFile, 'utf8'));
+                    previousSteam = lastData.steamGlobal || [];
+                    previousPlay = lastData.playKr || [];
+                }
+            }
+        } catch(e) { console.error("이전 기록 로딩 실패:", e); }
+    }
+
+    const streaksFile = path.join(historyDir, 'game_streaks.json');
+    let streaks = {};
+    if (fs.existsSync(streaksFile)) {
+        try {
+            streaks = JSON.parse(fs.readFileSync(streaksFile, 'utf8'));
+        } catch(e) {}
+    }
+
+    enrichDataWithRankAndStreak(steamGlobal, 'steam', previousSteam, streaks);
+    enrichDataWithRankAndStreak(playKr, 'play', previousPlay, streaks);
+    cleanupStreaks(steamGlobal, playKr, streaks);
+
+    fs.writeFileSync(streaksFile, JSON.stringify(streaks, null, 2), 'utf8');
+    // -------------------------------------------------------------
+
+    // 1. 구글 시트 저장
     await writeToGoogleSheets(nowStr, steamGlobal, playKr, 5);
 
     // 2. 히스토리 데이터 로컬 저장
     await saveHistory(nowStr, steamGlobal, playKr);
+
+    // 3. 성공 알림 전송
+    await sendDiscordAlert(`✅ **크롤링 성공!**\n시간: \`${nowStr}\`\n데이터 수집 및 저장이 무사히 완료되었습니다.`);
 
     console.log("✅ 모든 크롤링 프로세스가 완료되었습니다!");
 }
