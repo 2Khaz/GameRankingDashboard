@@ -1,5 +1,4 @@
-{
-  "lastUpdated": "2026-06-23 08",
+{  "lastUpdated": "2026-06-23 08",
   "steamGlobal": [
     {
       "name": "PUBG: BATTLEGROUNDS",
@@ -8,7 +7,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1781659328",
       "rankChange": 1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "MECCHA CHAMELEON",
@@ -17,7 +16,7 @@
       "genre": "캐주얼",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1781108224",
       "rankChange": -1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Cyberpunk 2077",
@@ -26,7 +25,7 @@
       "genre": "RPG",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/26b96fa9c8af43189cbecbbc329ade29d9c9cf3e/header_koreana.jpg?t=1769690377",
       "rankChange": 60,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Counter-Strike 2",
@@ -35,7 +34,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1780435263",
       "rankChange": 1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "이터널 리턴",
@@ -44,7 +43,7 @@
       "genre": "인디",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1049590/47b68758157f3607fc00d8a81604e9544c4491da/header.jpg?t=1779936416",
       "rankChange": -1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "데이브 더 다이버",
@@ -53,7 +52,7 @@
       "genre": "어드벤처",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/3f5b136a2a0284a02bdc03533a4041d358c4d7b2/header_alt_assets_2.jpg?t=1781777209",
       "rankChange": 0,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "DJMAX RESPECT V",
@@ -62,7 +61,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960170/header.jpg?t=1772009068",
       "rankChange": 6,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "사이버펑크 2077: 팬텀 리버티",
@@ -80,7 +79,7 @@
       "genre": "RPG",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1004640/2d8e4389e157b62f07bdc7c9468bf04010d574c0/header.jpg?t=1781662166",
       "rankChange": 59,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "데이브 더 다이버 - 인 더 정글 Content Pack",
@@ -89,7 +88,7 @@
       "genre": "어드벤처",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4394810/5a2a3fa9dba5b2a5b733ea5bccf91c14694caba5/header.jpg?t=1781967852",
       "rankChange": 2,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Limbus Company",
@@ -98,7 +97,7 @@
       "genre": "기타",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1781875403",
       "rankChange": -1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "젠레스 존 제로",
@@ -116,7 +115,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2074920/d6ab480d5d08d13363287bfc103ce62e2bb28c65/header.jpg?t=1781267897",
       "rankChange": 30,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Once Human",
@@ -125,7 +124,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2139460/c3ae7dbfae97aba9fce9c6e78e0dd2fc8d143462/header.jpg?t=1780649341",
       "rankChange": -6,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Wuthering Waves",
@@ -134,7 +133,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3513350/dee36c0324fc7def716a2506fe15c0e40511f2f2/header_koreana.jpg?t=1780863406",
       "rankChange": -6,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Dead by Daylight",
@@ -143,7 +142,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/66727e8249aae119400352d4b1d84928f924939c/header_alt_assets_8.jpg?t=1781795618",
       "rankChange": 10,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Football Manager 26",
@@ -152,7 +151,7 @@
       "genre": "시뮬레이션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3551340/0b251456ded934f0f78613dcc89bfaa6f06866f5/header_alt_assets_0.jpg?t=1781176251",
       "rankChange": 8,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Forza Horizon 6",
@@ -161,7 +160,7 @@
       "genre": "레이싱",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/744a52b2f79bb03825dea2c0fcfa29e330bb2f1e/header_alt_assets_1.jpg?t=1781815797",
       "rankChange": -11,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "붉은사막",
@@ -170,7 +169,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/905a27028fe2cb3bfbffb7ae006847e8ee4eec53/header_koreana.jpg?t=1781661893",
       "rankChange": -1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "GrandChase",
@@ -179,7 +178,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/985810/e19ca81345073cd8531beaf354280d01808b6407/header.jpg?t=1779945167",
       "rankChange": 3,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "eFootball™",
@@ -197,7 +196,7 @@
       "genre": "어드벤처",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3557620/a43191451225d3122c224a7349f2fc232f46b3d0/header_koreana.jpg?t=1779773548",
       "rankChange": -19,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Apex 레전드™",
@@ -206,7 +205,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/0bd74245b869287a2dc7f682e6013f7ed08d98e3/header.jpg?t=1778502442",
       "rankChange": 8,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "EA SPORTS FC™ 26",
@@ -215,7 +214,7 @@
       "genre": "시뮬레이션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/64d362e71693f1ec7023f52ab94026f9a0d4fbed/header.jpg?t=1781720918",
       "rankChange": -5,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Split Fiction",
@@ -224,7 +223,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001120/header.jpg?t=1763484567",
       "rankChange": -1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Warframe",
@@ -233,7 +232,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/a000b4bf98dde5d51cd44206f1ac21d04841017e/header.jpg?t=1781709800",
       "rankChange": 1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "성세천하: 여제의 탄생 II",
@@ -242,7 +241,7 @@
       "genre": "어드벤처",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4148240/7f34882b17a2a3e8bba067f2e1a0f281c320fd23/header_koreana.jpg?t=1781677683",
       "rankChange": -11,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "연운",
@@ -251,7 +250,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3564740/57c4616f97e270b88a947ea18682c27af9ae3874/header_koreana.jpg?t=1780895522",
       "rankChange": -14,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Yu-Gi-Oh! Master Duel",
@@ -260,7 +259,7 @@
       "genre": "시뮬레이션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1449850/6ad0cd0c355a0072e2492c3c4d17e615ac085c02/header.jpg?t=1778872856",
       "rankChange": -14,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "FINAL FANTASY VII REMAKE INTERGRADE",
@@ -269,7 +268,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1462040/header.jpg?t=1773895755",
       "rankChange": 0,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "두근두근타운",
@@ -278,7 +277,7 @@
       "genre": "캐주얼",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4025700/3dc3eb2daa56bacb84f32f186aa50710014212bf/header_alt_assets_0.jpg?t=1781233208",
       "rankChange": -9,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Slay the Spire 2",
@@ -287,7 +286,7 @@
       "genre": "인디",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/b0958d387dc366211e0f353443710cfcf9fdb020/header.jpg?t=1776735385",
       "rankChange": 7,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Dead Space",
@@ -305,7 +304,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/058bd87dc17a7179e07c446aa64d0574ca43ab9d/header.jpg?t=1780702171",
       "rankChange": -1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Don't Starve Together",
@@ -314,7 +313,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/7026cb87b2bfc1e92e72a7875ccbdfd0acd5b3df/header_alt_assets_50.jpg?t=1781363712",
       "rankChange": 1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "호라이즌 포비든 웨스트 컴플리트 에디션",
@@ -341,7 +340,7 @@
       "genre": "시뮬레이션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/67bbd0057627fc2244793bcdd09260c2539499cf/header.jpg?t=1781595476",
       "rankChange": -18,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "It Takes Two Friend's Pass",
@@ -368,7 +367,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/217c51ee328bb2f97c66776bb92b1ddb3d8333fe/header_alt_assets_21.jpg?t=1781633091",
       "rankChange": 1,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Battlefield™ 6",
@@ -413,7 +412,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3932890/e1367f10d469137a2ced522b642a9b1ee10450da/header.jpg?t=1779703783",
       "rankChange": 7,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "The Witcher 3: Wild Hunt",
@@ -431,7 +430,7 @@
       "genre": "인디",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/76e0613b8197327299d5dbabb0a7fd7828a689a2/header.jpg?t=1780420333",
       "rankChange": -3,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "디아블로® IV",
@@ -449,7 +448,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/a12c92856b71315da885924ea5e1d5290c8025b8/header_alt_assets_2.jpg?t=1778158882",
       "rankChange": 19,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Morimens",
@@ -494,7 +493,7 @@
       "genre": "레이싱",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2399420/f510badbf573eecdf529ae735a49331f4b9919be/header.jpg?t=1780055402",
       "rankChange": -8,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "The Artisan of Glimmith",
@@ -512,7 +511,7 @@
       "genre": "시뮬레이션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/281990/c0375b9dd954cb466652114212d3fe67567deb2d/header_alt_assets_12_koreana.jpg?t=1782139685",
       "rankChange": -40,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "철권 8",
@@ -521,7 +520,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1778820/8518523e6bea615ba8127c6fc215fd1eac966501/header.jpg?t=1779923026",
       "rankChange": -6,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "미메시스",
@@ -539,7 +538,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/header.jpg?t=1780480581",
       "rankChange": 15,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Rust",
@@ -548,7 +547,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1781536981",
       "rankChange": 12,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Dead as Disco",
@@ -566,7 +565,7 @@
       "genre": "RPG",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3105440/1b4d6c4d876197e9806177e9853ccb8a13fb8274/header_koreana.jpg?t=1779786083",
       "rankChange": -13,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "스텔라 블레이드™",
@@ -593,7 +592,7 @@
       "genre": "어드벤처",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3892270/395e6d7972474333a698b26f8aa5597bf38109a1/header.jpg?t=1778274309",
       "rankChange": -28,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Escape the Backrooms",
@@ -602,7 +601,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1943950/f3dac53a5d3e68a4bb67786872b4693260049b26/header.jpg?t=1782122172",
       "rankChange": "new",
-      "streak": 10
+      "streak": 8
     },
     {
       "name": "서브노티카 2",
@@ -611,7 +610,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/header.jpg?t=1780372044",
       "rankChange": -8,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "에코스 오브 아인크라드",
@@ -629,7 +628,7 @@
       "genre": "전략",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg?t=1740607040",
       "rankChange": 7,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "SAND: Raiders of Sophie",
@@ -647,7 +646,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4077430/cbef157d119f021ae4af89356437cf54fd8e2131/header.jpg?t=1766031327",
       "rankChange": "new",
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Mass Effect™ Legendary Edition",
@@ -665,7 +664,7 @@
       "genre": "인디",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/header.jpg?t=1781198471",
       "rankChange": -42,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "톰 클랜시의 레인보우식스 시즈",
@@ -737,7 +736,7 @@
       "genre": "시뮬레이션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2958130/5d0e48e90bbf775d6d3f98edab2ff56b357204da/header_koreana.jpg?t=1781616104",
       "rankChange": "new",
-      "streak": 8
+      "streak": 7
     },
     {
       "name": "HELLDIVERS™ 2",
@@ -746,7 +745,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/c30971376c20594452d25bb1d7d6346961bbeefa/header_koreana.jpg?t=1779899567",
       "rankChange": 17,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "007 퍼스트 라이트",
@@ -755,7 +754,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/8ddb6405b2fba0de9acaa145232d53be09fe7259/header_koreana.jpg?t=1780990824",
       "rankChange": -47,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "프랫폴",
@@ -773,7 +772,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/1b43b29d30d31ec134f876d30ed1a13706875a25/header_koreana.jpg?t=1781711477",
       "rankChange": -42,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "Battlefield™ V",
@@ -800,7 +799,7 @@
       "genre": "액션",
       "icon": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2445690/f6619cdbb283b34d8fc5bdd12472127a2efd0866/header.jpg?t=1781770203",
       "rankChange": -6,
-      "streak": 12
+      "streak": 8
     },
     {
       "name": "PRAGMATA",
@@ -919,7 +918,7 @@
       "icon": "https://play-lh.googleusercontent.com/cs59HOM5uSmSzgnmMyFpqYw9sMtQkYxMUTRZ1TSCZK6t6T-cjluQW_9krAcgeEozBYQWKl2DmUTeETdYtKhq",
       "genre": "전략",
       "rankChange": 3,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "WOS: 화이트아웃 서바이벌",
@@ -928,7 +927,7 @@
       "icon": "https://play-lh.googleusercontent.com/tNMaMiJ4wTQy_TeZSWHdSlP5qH0PGig9g9sDJu2QFvCHdnrbo2u17pX55W4i6KITo56v_ZyICkqLgA2svH9ycQ",
       "genre": "전략",
       "rankChange": -2,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "리니지M",
@@ -937,7 +936,7 @@
       "icon": "https://play-lh.googleusercontent.com/xy6xR7NsdX81HpwWu8CoVkseQECAug3pLvvpdBGtls12xwiQy3Qw5hvQ51fc3oTXPmI8xyOArPnm70t8395Mmdw",
       "genre": "롤플레잉",
       "rankChange": 4,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "라스트 워: 서바이벌",
@@ -946,7 +945,7 @@
       "icon": "https://play-lh.googleusercontent.com/pugw09Lkr4dsuVQWRFVp82xe9YXD1ST5wPJRS-aj2Msr5oq297sR0KESQUHLgwR-e5IyHwnqTe_f00FAokXlGMc",
       "genre": "전략",
       "rankChange": 1,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "메이플 키우기",
@@ -955,7 +954,7 @@
       "icon": "https://play-lh.googleusercontent.com/iqpY1xJzA5iIQdnHxk-IOfQFESViwUyTQ1AIwF1_i3kd8sQTTQDrkMLys26QqSb9tG35M5FTw2VjQuCcoe3MJA",
       "genre": "롤플레잉",
       "rankChange": -4,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "로얄 매치 Royal Match",
@@ -964,7 +963,7 @@
       "icon": "https://play-lh.googleusercontent.com/RBnqZ3q_jjOREX6v49DGe4BzKGNwJMcv8aBNDeDuMRFQdyX6rA7S-k5N39ggj43XeKFGLmxuH1jOYONfbUHmYA",
       "genre": "퍼즐",
       "rankChange": 0,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "가십하버: 합성 & 스토리 게임",
@@ -973,7 +972,7 @@
       "icon": "https://play-lh.googleusercontent.com/PmMSCDLMab3nn0wj14BFZNqPncr1C14M5VmUrM3aXNmeRa1zEhNI4N3L1F1oO3qDYRPOQigQOyXxwDuQZZvTwA",
       "genre": "퍼즐",
       "rankChange": 2,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "로블록스 (Roblox)",
@@ -982,7 +981,7 @@
       "icon": "https://play-lh.googleusercontent.com/QqZj22aXblAyYDxLQw-Gg0ycW0QkKhrDnwqgERZU9BMRXZnMlgXfq-94sikG5mEpt_I0lzZxcUzfLblmQgwYzUE",
       "genre": "어드벤처",
       "rankChange": 2,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "명조:워더링 웨이브 × 사이버펑크 콜라보",
@@ -991,7 +990,7 @@
       "icon": "https://play-lh.googleusercontent.com/kP-iYZI3TL5GzvDKjtjtu2P_POG8sz7NZaP3hOw3WqDcZeZ7YcAQuY-aH8C_4tAPOk7W9rhi4OSZCWIK_e3FA0s",
       "genre": "액션",
       "rankChange": -7,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "운빨존많겜",
@@ -1000,7 +999,7 @@
       "icon": "https://play-lh.googleusercontent.com/FB_eWLkgLjZAb4F16ga2d2iiQdndxd_Zdela2peb65KhPt8R4iBhLkdvzjYn-uHpKrXjMwiYos94zkcBHzzpYAY",
       "genre": "캐주얼",
       "rankChange": 1,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "승리의 여신: 니케",
@@ -1009,7 +1008,7 @@
       "icon": "https://play-lh.googleusercontent.com/JK5mejs0bVT_9613gCxNfCjRw_m3JiQ4wC8B8Kt471yu7ThFQazVkCLTfPZ81hnenft7ilaE-qSwVGpQT6sEFcY",
       "genre": "롤플레잉",
       "rankChange": -8,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "오딘: 발할라 라이징",
@@ -1018,7 +1017,7 @@
       "icon": "https://play-lh.googleusercontent.com/65JquVIM391Il8M5oXrUzwTOFvFn72Yef4EJGWLBp190MflgritBJqiMuSjoK_ZeA2jF53OV9rRNgAXRm8_scQ",
       "genre": "롤플레잉",
       "rankChange": -4,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "젠레스 존 제로",
@@ -1036,7 +1035,7 @@
       "icon": "https://play-lh.googleusercontent.com/q6Mjymkm2z_8p3BVZq4jKpZbZIEVxVaCAZsaaBXSMjf9kexdpkYktJl46JBFfQp1RWh2n10BCbaP42CZWNwgmA",
       "genre": "전략",
       "rankChange": -1,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "씨사이드 익스케이프: 합성 & 스토리 게임",
@@ -1045,7 +1044,7 @@
       "icon": "https://play-lh.googleusercontent.com/np6AcsW5eFmNCHwVPsvdaPyVfQOJmiZIbusB3eiuvCfj1q0R4vzs-01iWLL2HYkcMpsJtWfVBKMJCOrqsQsZbg",
       "genre": "퍼즐",
       "rankChange": 0,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "우마무스메 프리티 더비",
@@ -1054,7 +1053,7 @@
       "icon": "https://play-lh.googleusercontent.com/RjBvh4GdUfXniVM5a0jyDkecYGypEG2oL9vIePLrK7wQv245uNVFbyhksw0mo_-wGTHyJs4Nt1SKyxB8kkwq",
       "genre": "시뮬레이션",
       "rankChange": 3,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "트릭컬 리바이브",
@@ -1063,7 +1062,7 @@
       "icon": "https://play-lh.googleusercontent.com/OCiuBv70Dnuw9wcGet3EtTUF2nEkS1vhYYkvOahe9-MmKg6EhxGkf-9ZVxnWIJXflQSmfOIjTcaSbwJSJyuzHA",
       "genre": "롤플레잉",
       "rankChange": 28,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "꿈의 정원 (Gardenscapes)",
@@ -1072,7 +1071,7 @@
       "icon": "https://play-lh.googleusercontent.com/Vu_BoGFdNORUCsqu8yyDPg7Re53M06VMyeBRq9a0tuRNLJWFV3glfdoI08mJuVLvwA_tokJqK3elHiK0yBFNGjo",
       "genre": "캐주얼",
       "rankChange": -2,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "한게임 포커",
@@ -1081,7 +1080,7 @@
       "icon": "https://play-lh.googleusercontent.com/Imi0dOs8mMcOxNvc4MGXbfdG1QNKgE70v1DYU4GTIXPlbCy5RGoC-XjBRdEwvb-jDGXAXFj9j43c7flORYphv7I",
       "genre": "카지노",
       "rankChange": -2,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "리니지W",
@@ -1090,7 +1089,7 @@
       "icon": "https://play-lh.googleusercontent.com/VvwlyO5rMOgeedcbDmvBQv-vDoCeHqxBdSHqTrA3xUZAEuRcAwTBznrJBwkj3_xvhUTkLJ4D98RT1fZTtu8W",
       "genre": "롤플레잉",
       "rankChange": 8,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "토이 삼국",
@@ -1099,7 +1098,7 @@
       "icon": "https://play-lh.googleusercontent.com/9iZHvfP7PP6Hc8kfL0dNANHzjaRQQzzDAiTbpAALAfMNNp5ink50ex2MlamkJtkm9NnqCsJtffC57lpwU_Shmg",
       "genre": "카드",
       "rankChange": 17,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "한게임포커 클래식 : 7포커 홀덤 섯다 훌라 슬롯",
@@ -1108,7 +1107,7 @@
       "icon": "https://play-lh.googleusercontent.com/Hv-D0Heegr2EW_eyGcfNv-HzI_WRrjxMqnN575pY17XaRfXA4wjmAtTwWsO_ON6WqVtTP0ajH2bKKRDx6CNXhQ",
       "genre": "카지노",
       "rankChange": -8,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "라스트 어사일럼: 페스트",
@@ -1117,7 +1116,7 @@
       "icon": "https://play-lh.googleusercontent.com/HOFXbIOJIZGru5_UM5hdGDmP7HIgxGJEx4dQAbPClmAtrNw3tVL9fY5NNHfa7VgIMFU-Sr3-s5FQGfaYJYhP",
       "genre": "전략",
       "rankChange": 0,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "테이스티 트레블: 합성 게임",
@@ -1126,7 +1125,7 @@
       "icon": "https://play-lh.googleusercontent.com/zGhriW_zOEdt1u68eybR53bC9kgIHNnsCPSrcf1e8eASpSLPXB9XrRqU25851GV6KmbwOHvVdMMJTE1h5EjD",
       "genre": "캐주얼",
       "rankChange": 2,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "컴투스프로야구V26",
@@ -1135,7 +1134,7 @@
       "icon": "https://play-lh.googleusercontent.com/m0ee9LIppykg3JqKBftJwZPIV0Pl13IVQgeKcSJfDo-zoC2yAFaGbYFFK_k-Z-OXkHO_cV4xITZKrHHVUbzU1A",
       "genre": "스포츠",
       "rankChange": -4,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "뱀피르",
@@ -1144,7 +1143,7 @@
       "icon": "https://play-lh.googleusercontent.com/O3AtBJqCPmOHow-d2tskDjwXGWpYpgz2bPEJC5s-FQ1BzmtxnFTQ4h6OTTJ74pyih8KBs78UsTk7w6PAHkbt",
       "genre": "롤플레잉",
       "rankChange": 11,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "로얄 킹덤 (Royal Kingdom)",
@@ -1153,7 +1152,7 @@
       "icon": "https://play-lh.googleusercontent.com/O83j-W51jyftL_iGe0uXLg_aMWlXBDrdN1sbTK6VJ9uYui4lfs6rA1CYXb1SDMFJjZU7LOMygNxySQnBZ9A5Bg",
       "genre": "퍼즐",
       "rankChange": 0,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "냥코 대전쟁",
@@ -1162,7 +1161,7 @@
       "icon": "https://play-lh.googleusercontent.com/zWr_DqNTx3s9JnvARIkAv4_putVB35TpXp0RaTYFpUTvgrYUxgJ8wOdlDwU_zJZ4MDH0J93zbr6HPPaGId19lQ",
       "genre": "캐주얼",
       "rankChange": 46,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "작혼: 리치 마작",
@@ -1180,7 +1179,7 @@
       "icon": "https://play-lh.googleusercontent.com/IFACylsXgbKgfNXcLbFrzlNhkB6_5LH3IGNA-frTpTPNolzQxL8mI2B_4jnXe5lTCnQYZYIv9zNTQGWn_8QwLA",
       "genre": "액션",
       "rankChange": -8,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "몬길: STAR DIVE",
@@ -1198,7 +1197,7 @@
       "icon": "https://play-lh.googleusercontent.com/vTxEJvWJq3cIbideJTNd9ZAYolS4ll7hUlMT3piDAsP6y84EPI-k1tPpoALoCwvmbJMn3LBW-sjzhHpERqfY",
       "genre": "전략",
       "rankChange": -14,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "AION2",
@@ -1207,7 +1206,7 @@
       "icon": "https://play-lh.googleusercontent.com/aqqsbPuYk-dU9f0qnyEkHje_IIchFrOhDQfDXozQbD5_n_Hxi18ja4GyEbNYuFD9inoFBUYfZFWK4zSOjsy8Aw",
       "genre": "롤플레잉",
       "rankChange": 11,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "FC 모바일",
@@ -1216,7 +1215,7 @@
       "icon": "https://play-lh.googleusercontent.com/VKo4cXzxFpu7d5ua0Exk9QB7B7wz8ePAON_Km1lkIowLCf4kpww9alW6HUy-kQ50Kimy86PG1ivGFhayc7hb",
       "genre": "스포츠",
       "rankChange": 0,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "호드 워:어벤저의 소환",
@@ -1225,7 +1224,7 @@
       "icon": "https://play-lh.googleusercontent.com/K7JJf--vW91aatwYH9vH5PgVkpCNfU7AcDIdupTNGE4f0bGB8IChrlH_o--yjZCaKusITeQ_ba9IbvHQbsSu7qE",
       "genre": "카드",
       "rankChange": 46,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "I9: 인페르노 나인",
@@ -1234,7 +1233,7 @@
       "icon": "https://play-lh.googleusercontent.com/jZ0P5ZxOE4VorYhs9QmbcxzXi7VYiNqh4I5YlO2JXUdh_5D80ymAagbYxjtP6pGnU_7f_W0gWUVWUm9mIkCI5A",
       "genre": "롤플레잉",
       "rankChange": -5,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "RF 온라인 넥스트",
@@ -1243,7 +1242,7 @@
       "icon": "https://play-lh.googleusercontent.com/IkNZqliSHoIRoWo-SFO0b8pzt53n1Epi-Tf9p8LbwczkafXbMcuQTpmgpdU-DIKeamrQoyqgRQTars9qnpe0Gg",
       "genre": "롤플레잉",
       "rankChange": 24,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "드래곤빌리지3",
@@ -1252,7 +1251,7 @@
       "icon": "https://play-lh.googleusercontent.com/Ub7Hbq1LusnGf9lR0Spth7mxCzByqE22z9MEBwK--PP1fuh96JazHOboiMADc7Yl1drd8axAa0kOoUyTDy0v",
       "genre": "롤플레잉",
       "rankChange": -13,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "캔디크러쉬사가 (Candy Crush Saga)",
@@ -1261,7 +1260,7 @@
       "icon": "https://play-lh.googleusercontent.com/JvMhIxuwArVmcMReJQB8PIEB1MIQNMGf9j5i914JtkBrHrA55K-nMUIVlYCa7SXAdHtzLtsycEo6NpXeHFxLwvI",
       "genre": "캐주얼",
       "rankChange": 3,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "EA SPORTS FC Online M",
@@ -1270,7 +1269,7 @@
       "icon": "https://play-lh.googleusercontent.com/g-kNZiGFSEWFlbQWfctVwFDGTZldjOP6qVktI_PKMqS-I4SwaOWNBegr_wvf2YOpItsdVDrhICW1VWY5IGD1Jg",
       "genre": "스포츠",
       "rankChange": 1,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "뮤 모나크2",
@@ -1279,7 +1278,7 @@
       "icon": "https://play-lh.googleusercontent.com/qnZL-Cen0ZiuBaJFSRkJsW1shxOLzMjGnZUDFRvnPit9WizZ3TiHrq2BFJwtDcnFO-Qk1M4wdxf4gVVZ0fta3g",
       "genre": "롤플레잉",
       "rankChange": -6,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "미스터리 타운: 합성 게임 (Mystery Town)",
@@ -1288,7 +1287,7 @@
       "icon": "https://play-lh.googleusercontent.com/uVjVMEJrhT-xRoUtKIUj8tOVSbCWw4IsRHaTDYICRNjQycUj6SucVpeoAPiNZWeJ5JuzIt_ZZRo1X1pW6XJFAQE",
       "genre": "퍼즐",
       "rankChange": 10,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "핫레스토랑: 머지&쿠킹",
@@ -1297,7 +1296,7 @@
       "icon": "https://play-lh.googleusercontent.com/DxEYTS_nNDbesjgAGulDTgl8V2cV42UUmeOGPei2c95XRW7GY_XgihSsaPF7rnRua18Egkd1-siIgbkVjq73Hg",
       "genre": "퍼즐",
       "rankChange": 4,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "Disney Solitaire",
@@ -1306,7 +1305,7 @@
       "icon": "https://play-lh.googleusercontent.com/BpyKPyeCiAoCtYP23WtOoHW1G_4IAGUyk4G6V_5YNmXomuBwNC5ZnSq5OfxejW-Ufuukma8-UYZirB2wz3m8UnM",
       "genre": "카드",
       "rankChange": 4,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "피망 포커 : 카지노 로얄 - 홀덤, 7포커, 바둑이",
@@ -1315,7 +1314,7 @@
       "icon": "https://play-lh.googleusercontent.com/MkI60z70bUF0YIi9loQzKm08WLinhruANPb6D7j1Gh1iPiLrfL1W-2ZQ0Q8ICCMdkFY0jDlTjx9_iZFVGOourg",
       "genre": "카지노",
       "rankChange": 1,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "꿈의 마을 (Township)",
@@ -1324,7 +1323,7 @@
       "icon": "https://play-lh.googleusercontent.com/R57nBnvKx2fcs-Ct1wKW2j85S4f8h2dPsn2L9jO4G0pxZIHRozdwPRZ_tAvT6Kh-P8I7A6CDJFu8cYuvBzccvIU",
       "genre": "캐주얼",
       "rankChange": 10,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "꿈의 집 (Homescapes)",
@@ -1333,7 +1332,7 @@
       "icon": "https://play-lh.googleusercontent.com/ft9OqNwpLaL45Jq3YuSYt0wm3y_j-YteTQqfq4Cu2PRWTrkFMuhlmUHmxggNxOP96gxR9Q3ML1Yt87iV3zD5fg",
       "genre": "캐주얼",
       "rankChange": 3,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "Dark War Survival",
@@ -1342,7 +1341,7 @@
       "icon": "https://play-lh.googleusercontent.com/gaanbGpciRZh801jTahoaImwr96KtBp2Uuez12ww9sIxFQhqieIZgTjB_dGzhCaR1ccM9Eku11FxhOWgoxifwdc",
       "genre": "전략",
       "rankChange": 10,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "탑 히어로즈",
@@ -1351,7 +1350,7 @@
       "icon": "https://play-lh.googleusercontent.com/hzgzep-uxHj_BmXtEsCg-STSs7QF6WfXegQ5ATExUHyY9TYdd4LB2vFFV9s2d_hc8k7jKT3XVvd6Dyw8cfSyJNc",
       "genre": "전략",
       "rankChange": -10,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "Pokémon GO",
@@ -1360,7 +1359,7 @@
       "icon": "https://play-lh.googleusercontent.com/N3ayE1feuNfItNVRR7m6tTk7Wqnn6tNy0elJ8kdV3ITwgKBvHH0dk1e_vup8yFfzvlwPclduzsB8ZsqFBMjJEw",
       "genre": "어드벤처",
       "rankChange": 7,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "컴투스프로야구2026",
@@ -1369,7 +1368,7 @@
       "icon": "https://play-lh.googleusercontent.com/E0h6-P9lKwA9s0i7ggU2ewrk8qAn2Y13d77ydsEm9mq9dAXjqE-ZKkBHr8SiVEUKZEDZDThfoD6rezD_dXF9X2s",
       "genre": "스포츠",
       "rankChange": 16,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "Pokémon Champions",
@@ -1387,7 +1386,7 @@
       "icon": "https://play-lh.googleusercontent.com/bh67_a9Z2UyAoJHcktORocXm_c25UcWz_diX4kuGbQ2W1tbWwzK1QqapGahZrlDmwWCAp-CFoy9NA2KMYojBAik",
       "genre": "롤플레잉",
       "rankChange": 11,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "마비노기 모바일",
@@ -1396,7 +1395,7 @@
       "icon": "https://play-lh.googleusercontent.com/JfGzWE_v-KjofJoJ9eo1oBixex2sHlrSbSte4UG2g6CWDkolbvxI1qV2M_E1JgbjNeDcOrvrTYS7ko1Bb7TPmA",
       "genre": "롤플레잉",
       "rankChange": -11,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "러브앤딥스페이스",
@@ -1414,7 +1413,7 @@
       "icon": "https://play-lh.googleusercontent.com/OmmrYyYORMkonxxUu7BR6sl7vdzLgT1mcoysiJUIrwb_6JmF8j7vjXQ7oC_HOTLsoUOIMPGmoHNHVBC8QbqTrQ",
       "genre": "롤플레잉",
       "rankChange": -20,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "한게임 섯다&맞고",
@@ -1423,7 +1422,7 @@
       "icon": "https://play-lh.googleusercontent.com/CqdDCCaoUKuuANbhIfbCWehb2UTPN6YPbucx6KUzurF6WebH10KPaG46AG-fBCl9w1hAnOqbr2psIJtQFoUOaHw",
       "genre": "카드",
       "rankChange": -4,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "Travel Town - 결합 어드벤처",
@@ -1432,7 +1431,7 @@
       "icon": "https://play-lh.googleusercontent.com/_YoJBEqLA6qZ0xiulFJWKfubaZmxzyphcW4BwMIXFapkO3ifyuVsnMaLkWQClMPuUnahVtIAtyU_baUHLOdP2A",
       "genre": "퍼즐",
       "rankChange": 1,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "레이븐2",
@@ -1441,7 +1440,7 @@
       "icon": "https://play-lh.googleusercontent.com/hEsBJTaH7At6ftH03ozxXvBxaeIVN_lAdlBIFGZJj-Yhozr7lDJtw4CAPvckCrw1elZZ3dVxx3mVpc7L7uy5_XY",
       "genre": "롤플레잉",
       "rankChange": -19,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "이환",
@@ -1450,7 +1449,7 @@
       "icon": "https://play-lh.googleusercontent.com/TGl3DdDbi4hty6ooOhEvv_2s5tkpGLbL6derP8y5hK-_Bw--Ve375b08ba9HHQ9ueRpoQ9oye1T_T24BJriLUmw",
       "genre": "롤플레잉",
       "rankChange": -28,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "S.O.S: 스테이트 오브 서바이벌",
@@ -1459,7 +1458,7 @@
       "icon": "https://play-lh.googleusercontent.com/WmiabVKJbL5xHsZU8SI5ITa2xBcHWgSapPdOcy5iTuFEqdTvwXjzcDqp8RYqmz5cPDUZote9sCEh1xDtwSZOxm4",
       "genre": "전략",
       "rankChange": -10,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "갓깨비 키우기-999뽑기 증정",
@@ -1468,7 +1467,7 @@
       "icon": "https://play-lh.googleusercontent.com/vre365L9Y_XIpaTg56Mqa3Oraobas7RMsHl52ZJuyyShZNWdPg8fbkQjWCHu1hTJ0TE4DaY_vbuDUkUi9u8P",
       "genre": "롤플레잉",
       "rankChange": 18,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "원신·공월의 노래",
@@ -1477,7 +1476,7 @@
       "icon": "https://play-lh.googleusercontent.com/YQqyKaXX-63krqsfIzUEJWUWLINxcb5tbS6QVySdxbS7eZV7YB2dUjUvX27xA0TIGtfxQ5v-tQjwlT5tTB-O",
       "genre": "어드벤처",
       "rankChange": -43,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "머지 쿠킹 테마 레스토랑",
@@ -1486,7 +1485,7 @@
       "icon": "https://play-lh.googleusercontent.com/eAeYjdl3YeCgqPktbVbMp5APjT1QaCwI1dNEnTXoM2bmcx1KJykj7GDTFuPwIYara9BItd22stpDtydbyenrbg",
       "genre": "시뮬레이션",
       "rankChange": 2,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "슬레이어 키우기",
@@ -1504,7 +1503,7 @@
       "icon": "https://play-lh.googleusercontent.com/87N6LsrOVj9wajrilYfvHlUbEnNCFTwlv95YYXbfM8-KdSQl2sooZFIuceNgd6tfg4yEeglne8MnHB4qHSjkBw",
       "genre": "어드벤처",
       "rankChange": -6,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "임진왜란: 조선의 반격",
@@ -1513,7 +1512,7 @@
       "icon": "https://play-lh.googleusercontent.com/lCe1gmPZFYWVAC9SART7Bm4AFDPNRmxteII5Qa417kZVxBgpKdbXbgDaGLLpRevIPyPcQj7W-dLvDdBMmm_ceA",
       "genre": "롤플레잉",
       "rankChange": 10,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "템빨용사: 픽셀 아이템 머지 RPG",
@@ -1522,7 +1521,7 @@
       "icon": "https://play-lh.googleusercontent.com/pq6TmQHE1UkFrAMGPfgMupWLZy2BQeQ8B5fPAQzuP6l5fSOrqpOyxfCCQzT71nPWcGsEl8eKEna68UdQytpdQg",
       "genre": "전략",
       "rankChange": -19,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "포지 마스터 (Forge Master)",
@@ -1531,7 +1530,7 @@
       "icon": "https://play-lh.googleusercontent.com/WGcdbzoUWweXOg3knrsZFyDCqODfblSjIsyDdsEnYot1DBdq4_p38QYN5z-vgS6LyphN5C8HPfSKQyEa6LGAUAk",
       "genre": "전략",
       "rankChange": 26,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "브라운더스트2 - 가슴 벅찬 RPG",
@@ -1540,7 +1539,7 @@
       "icon": "https://play-lh.googleusercontent.com/EU57oDE8N2ZfMo3ina1NN37ZKhrG5_OJ7a7a2R_DsLLRUHFQJI6vM3e780DCIJ43DpEeUi_r8c82bs7G-a7j",
       "genre": "롤플레잉",
       "rankChange": -16,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "한게임 신맞고 : 대한민국 원조 고스톱",
@@ -1549,7 +1548,7 @@
       "icon": "https://play-lh.googleusercontent.com/BmlHi1FAGn5ZWCM13EAAS5K9AToZ1i9Ok10HWoQgaoZMFttJrbHTZUb0Z5zvbxH3xSYVaJ0s4HMUaP2Ko7HKouE",
       "genre": "카드",
       "rankChange": -1,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "붕괴: 스타레일",
@@ -1558,7 +1557,7 @@
       "icon": "https://play-lh.googleusercontent.com/aWrGocSA7hEuk1qAPe7L4T57LvLKrwwH26cK2_LOqxRQMQX7j3uHYojC-EKWgYEV2PdrmE0ahqvvhLhXrAGk6Q",
       "genre": "어드벤처",
       "rankChange": -39,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "할리우드 머지",
@@ -1567,7 +1566,7 @@
       "icon": "https://play-lh.googleusercontent.com/5mzN7_uKeXNnloF-zlXGxiwKuepToEdRwbFUK_aQqk7ORLUGPsMwQK__J9IL9DBMWty-zuLvZ4FYHikK2xCttIw",
       "genre": "캐주얼",
       "rankChange": 16,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "피망 뉴맞고: 고스톱 대표 맞고 게임",
@@ -1576,7 +1575,7 @@
       "icon": "https://play-lh.googleusercontent.com/mmbQgY03HJqIAlBxGxYGj14vR4KCX7XSda7ocCfaoGHJHprsBBb5Wg300TpAiBlcNWBz-4QCw5vS54vjY8wvAA",
       "genre": "카드",
       "rankChange": -5,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "세븐나이츠 리버스",
@@ -1585,7 +1584,7 @@
       "icon": "https://play-lh.googleusercontent.com/_ocPd2cOaJUvE8cCFsq-co5DBJO6bcAXXmcp6PGyTh9DqIqvo0Tgtx_dnVTz2Edz7MhUJbX7wJcmiPUGxHDG310",
       "genre": "롤플레잉",
       "rankChange": -45,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "배틀그라운드",
@@ -1594,7 +1593,7 @@
       "icon": "https://play-lh.googleusercontent.com/bqliWUqt7QfpSC4EybIXMT_QZclpYN9ANItoMTXltshu8v0HTnFdfU_pboHzz7Zs7pqX1AfLE7eFVU8S0aSI",
       "genre": "액션",
       "rankChange": -14,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "전략적 팀 전투: 리그 오브 레전드 전략 게임",
@@ -1603,7 +1602,7 @@
       "icon": "https://play-lh.googleusercontent.com/wy8xCVA9q2_1cO6N8i3aVthK3U5BVUadpFAhW560Z-zTr6iU8eACjNkKVl1TX1VPzxsPpj2vz6pwDK682m16K1o",
       "genre": "전략",
       "rankChange": -48,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "삼국지 전략판",
@@ -1621,7 +1620,7 @@
       "icon": "https://play-lh.googleusercontent.com/R2aEIXiVL_Zs07_XCpViKsze6-BA8AneOvl3vVNHkzSBJ0ts3uA-xxAC9jyZYgFQUeiOd2PEcFoTaZEOXBcSd3w",
       "genre": "스포츠",
       "rankChange": 4,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "한게임 로얄홀덤",
@@ -1630,7 +1629,7 @@
       "icon": "https://play-lh.googleusercontent.com/XHtjYtNFcuJriJ9NiA_X_U6mGQDeViNj-sz0zheNPE4YpByJxXSH5b7JblGVfN7aVyPhdOt1rfIuYetBwTyx",
       "genre": "카지노",
       "rankChange": -4,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "블루 아카이브",
@@ -1639,7 +1638,7 @@
       "icon": "https://play-lh.googleusercontent.com/lrERcCoTm7m8XStnhTHZDVfemQc_vTzCRl4CCBKhvQoBXo-WvmrwiGqONB7daFIJJkT0znGB5EOfgbaNRgiTyQ",
       "genre": "롤플레잉",
       "rankChange": -69,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "변신 키우기",
@@ -1648,7 +1647,7 @@
       "icon": "https://play-lh.googleusercontent.com/32hdADT1diPHMRQB8Yc9hWNLeSKpUVAn1_289IXeYZ8IijrbPvvI-TlQIzN9Gyk2e_nONde2DaM9zKNyX_na4R4",
       "genre": "롤플레잉",
       "rankChange": -3,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "Limbus Company",
@@ -1657,7 +1656,7 @@
       "icon": "https://play-lh.googleusercontent.com/mnqUeIK2w48bqiVf9w3h-6w0SuHrwx1Xh5DFhHHjgcu9x29qGIzs4EO9QeWtmZ42YzPOC29uU2Q73h25Nz9PCQ",
       "genre": "전략",
       "rankChange": -59,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "카오스 제로 나이트메어",
@@ -1675,7 +1674,7 @@
       "icon": "https://play-lh.googleusercontent.com/RrpE9xexrHMDDOY6iel-UPFl-N8J-kL0wmbd1rYCP7Boq8_dPtnasme48dw7Ma1k2GYDsvmSuHqWeMCY_TqVCw",
       "genre": "레이싱",
       "rankChange": -20,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "퍼즐 오브 Z",
@@ -1684,7 +1683,7 @@
       "icon": "https://play-lh.googleusercontent.com/avcK8XZwrVNYHfRnPspGYRhO2WXQFLud9ksPRUEV3qguhCzgql-UoFOkAMrAyAu93dI3_eBtpiKSO_y36dxOZyo",
       "genre": "롤플레잉",
       "rankChange": 13,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "타일 서바이벌",
@@ -1693,7 +1692,7 @@
       "icon": "https://play-lh.googleusercontent.com/s0BYl3XzwvKGfma3ZftsmchXs7rCsyDKHJ7LTB6E3kY_WRorvEKg4cRawg0r2Ac0ZIbZ90VcEkI3UsUvdHlt4fg",
       "genre": "전략",
       "rankChange": -14,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "피쉬돔 (Fishdom)",
@@ -1702,7 +1701,7 @@
       "icon": "https://play-lh.googleusercontent.com/xCNnX62AirslBmOf5Zp2fySAT9S9XsMUAK3PUGeLVCO4uYHGvfG8lHEof253BQ2q1vS85qsySHt8imuLfIMw",
       "genre": "퍼즐",
       "rankChange": 2,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "Domino Dreams™",
@@ -1720,7 +1719,7 @@
       "icon": "https://play-lh.googleusercontent.com/2azYxmt1KWR-zcaD3AqkCmocsR5CeFIK_9iTJQxH1IE9ezytK5cL4cxB6KlhwijHUF1m8BgI8aly7Er4P0gUig",
       "genre": "롤플레잉",
       "rankChange": -6,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "두근두근타운",
@@ -1747,7 +1746,7 @@
       "icon": "https://play-lh.googleusercontent.com/-an3zySx6j39CpLwZkIH26KfCvJPGmp974714U9HshiCb1W9NwFwULhNANcUSic9n1Mb1GDkVP6gBpjwLDs5UA",
       "genre": "스포츠",
       "rankChange": -22,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "추노 키우기",
@@ -1765,7 +1764,7 @@
       "icon": "https://play-lh.googleusercontent.com/mHJqRu4jWQURdoJTkJYcqPvd1atYDkx4EGEuv3olhT8MFdDW1jYNGyFLmOkr8plJmQZmmSc7v744iYJk09Nc7A",
       "genre": "롤플레잉",
       "rankChange": -32,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "좀비 웨이브스",
@@ -1792,7 +1791,7 @@
       "icon": "https://play-lh.googleusercontent.com/RN9j8xmlp4mgSqYYJ9ZV2Tjm07kxwxOFlgm7o4FICph-7o_-Bt8yTxNV8TvadY9iUEZ4JXNN08AEGML9XEjdpQ",
       "genre": "롤플레잉",
       "rankChange": -26,
-      "streak": 12
+      "streak": 8
     },
     {
       "title": "디아블로 이모탈",
