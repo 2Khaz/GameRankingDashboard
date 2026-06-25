@@ -19,7 +19,11 @@ async function fetchSteamGlobal(retries = 3) {
         try {
             const res = await fetch("https://store.steampowered.com/search/results/?query&start=0&count=100&filter=topsellers&infinite=1&cc=kr&l=koreana", {
                 headers: {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    // [해결포인트 2번] 스팀 성인 게임 누락 문제 해결
+                    // 스팀 놀이공원의 성인 인증을 통과하기 위해, 크롤러에게 1980년생이라는 어른 신분증(쿠키)을 쥐여줍니다.
+                    // 이 쿠키 덕분에 '서큐버스 계승자' 같은 성인 게임도 숨겨지지 않고 정상적으로 긁어오게 됩니다!
+                    'Cookie': 'birthtime=283993201; lastagecheckage=1-January-1980; wants_mature_content=1; mature_content=1'
                 }
             });
             const data = await res.json();
