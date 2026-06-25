@@ -44,6 +44,13 @@
             <p class="text-gray-600 font-medium">데이터를 실시간으로 가져오는 중입니다...</p>
         </div>
 
+        <!-- [개선포인트 2번] 부드러운 에러 알림창 (기존 alert 경고창 대체) -->
+        <div id="error-container" class="hide flex flex-col items-center justify-center py-20 bg-white rounded-xl shadow-sm border border-red-100 mb-6">
+            <i class="fa-solid fa-triangle-exclamation text-red-400 text-5xl mb-4"></i>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">데이터를 불러오지 못했습니다</h3>
+            <p class="text-gray-500 text-sm">해당 날짜의 장부 파일이 아직 없거나, 일시적인 오류입니다.</p>
+        </div>
+
         <!-- 요약 대시보드 -->
         <div id="summary-dashboard" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 hide">
             <!-- 장르 인기순 -->
@@ -146,15 +153,12 @@
                 const res = await fetch('./history/history_list.json?t=' + new Date().getTime());
                 if (!res.ok) throw new Error("No history");
                 
-                // 크롤러가 준 장부(데이터)는 최신순으로 정렬되어 있습니다.
                 const dates = await res.json();
                 
                 const selector = document.getElementById('history-selector');
                 
                 // [해결포인트 1번] 대시보드 날짜 정렬 문제 해결
                 // dates(원본 장부)는 그대로 두고, slice()로 복사본을 만들어 reverse()로 완전히 순서를 뒤집습니다.
-                // 이렇게 하면 가장 오래된 날짜부터 차례대로 메뉴판에 꽂히게 됩니다.
-                // 첫 화면에는 무조건 상단에 고정된 '최신 (오늘)'이 선택되므로, 자연스럽고 완벽하게 동작합니다.
                 dates.slice().reverse().forEach(date => {
                     const option = document.createElement('option');
                     option.value = date;
@@ -175,8 +179,10 @@
         }
 
         async function fetchRankings(url) {
+            // [개선포인트 2번 적용] 화면을 처음 세팅할 때 기존 에러창도 확실히 숨겨줍니다.
             document.getElementById('dashboard').classList.add('hide');
             document.getElementById('summary-dashboard').classList.add('hide');
+            document.getElementById('error-container').classList.add('hide');
             document.getElementById('loading').classList.remove('hide');
             
             const lists = {
@@ -207,10 +213,13 @@
 
             } catch (error) {
                 console.error("대시보드 로딩 에러:", error);
-                alert("해당 날짜의 데이터를 불러오지 못했습니다.");
+                // [개선포인트 2번 적용] 에러 발생 시 기존 alert 경고창 대신 부드러운 HTML 에러창을 띄웁니다.
                 document.getElementById('loading').classList.add('hide');
-                document.getElementById('summary-dashboard').classList.remove('hide');
-                document.getElementById('dashboard').classList.remove('hide');
+                // 기존 대시보드 뼈대를 숨깁니다.
+                document.getElementById('summary-dashboard').classList.add('hide');
+                document.getElementById('dashboard').classList.add('hide');
+                // 예쁜 에러 안내판을 나타나게 합니다.
+                document.getElementById('error-container').classList.remove('hide');
             }
         }
 
