@@ -7,7 +7,7 @@ on:
 
 jobs:
   retry-sheets:
-    runs-on: macos-latest # 혹시 모를 구글의 우분투/윈도우 IP 차단을 회피하기 위해 맥 서버 사용
+    runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
