@@ -3,44 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>한국 게임 트렌드 대시보드</title>
+    <title>게임 인기/매출 순위 대시보드</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; }
-        .glass-panel { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(229, 231, 235, 0.5); }
-        .gradient-text { background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { font-family: 'Pretendard', sans-serif; background-color: #f3f4f6; }
+        .spinner { border: 4px solid rgba(0, 0, 0, 0.1); width: 36px; height: 36px; border-radius: 50%; border-left-color: #3b82f6; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .hide { display: none !important; }
     </style>
 </head>
-<body class="bg-slate-50 text-gray-800 min-h-screen pb-12">
-    <div class="max-w-6xl mx-auto px-4 pt-8">
-        <header class="mb-10 text-center relative">
-            <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-sm font-semibold tracking-wide shadow-sm">
-                Daily Game Ranking
-            </div>
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
-                <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 flex items-center justify-center">
-                    <i class="fa-solid fa-gamepad mr-3 text-indigo-500"></i>
-                    <span class="gradient-text">한국 게임 트렌드 대시보드</span>
+<body class="p-6">
+    <div class="max-w-7xl mx-auto">
+        <!-- 상단 헤더 -->
+        <header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-10 mb-6">
+            <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <h1 class="text-2xl font-black text-gray-900 tracking-tight flex items-center">
+                    <i class="fa-solid fa-trophy text-yellow-500 mr-3 text-3xl"></i>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+                        Game Rank Dashboard
+                    </span>
                 </h1>
                 <div class="flex items-center gap-4">
                     <div class="flex items-center bg-gray-50 rounded-lg px-3 py-1.5 border border-gray-200">
                         <i class="fa-regular fa-calendar-alt text-gray-500 mr-2"></i>
                         <select id="history-selector" class="bg-transparent border-none text-sm font-semibold text-gray-700 focus:ring-0 cursor-pointer outline-none">
-                            <option value="latest">최신 순위 보기</option>
+                            <option value="latest">최신 (오늘)</option>
                         </select>
                     </div>
                     <div class="text-sm font-medium text-gray-500 bg-gray-50 px-4 py-2 rounded-full border border-gray-100 flex items-center">
                         <i class="fa-regular fa-clock mr-2 text-indigo-500"></i>
-                        <span id="last-updated">업데이트 확인 중...</span>
+                        <span id="last-updated">업데이트 확인중..</span>
                     </div>
                 </div>
             </div>
-            <p class="text-gray-500 max-w-2xl mx-auto">스팀 글로벌 최고 매출 및 구글 플레이스토어 한국 지역 매출 순위를 한눈에 확인하세요.</p>
         </header>
 
-        <div id="loading" class="flex flex-col items-center justify-center py-20">
-            <i class="fa-solid fa-circle-notch fa-spin text-4xl text-indigo-500 mb-4"></i>
+        <div id="loading" class="hide flex flex-col items-center justify-center py-20">
+            <div class="spinner mb-4"></div>
             <p class="text-gray-600 font-medium">데이터를 실시간으로 가져오는 중입니다...</p>
         </div>
 
@@ -54,85 +54,86 @@
         <!-- 요약 대시보드 -->
         <div id="summary-dashboard" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 hide">
             <!-- 장르 인기순 -->
-            <div class="glass-panel rounded-2xl p-6 shadow-sm">
-                <div class="flex items-center gap-2 mb-4">
-                    <i class="fa-brands fa-steam text-xl text-gray-700"></i>
-                    <h2 class="text-sm font-bold text-gray-700 ml-auto">스팀 트렌드 요약</h2>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+                <h3 class="text-gray-800 font-bold mb-4 flex items-center">
+                    <i class="fa-solid fa-chart-pie text-blue-500 mr-2"></i> 플랫폼별 상위 장르 Top 3
+                </h3>
+                <div class="space-y-4">
                     <div>
-                        <h3 class="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider">주요 장르 분포</h3>
-                        <div id="steam-genre-summary" class="space-y-1.5"></div>
+                        <div class="text-xs font-semibold text-gray-500 mb-1">Steam (한국)</div>
+                        <div id="steam-genre-summary" class="flex flex-col gap-2"></div>
                     </div>
                     <div>
-                        <h3 class="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider flex items-center"><i class="fa-solid fa-crown text-yellow-400 mr-1"></i> 장기 흥행 명예의 전당</h3>
-                        <ul id="steam-hof-list" class="space-y-1.5 mt-2"></ul>
+                        <div class="text-xs font-semibold text-gray-500 mb-1">Play Store (한국)</div>
+                        <div id="play-genre-summary" class="flex flex-col gap-2"></div>
                     </div>
                 </div>
             </div>
 
-            <div class="glass-panel rounded-2xl p-6 shadow-sm">
-                <div class="flex items-center gap-2 mb-4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Google_Play_Store_logo_%282022%29.svg/1024px-Google_Play_Store_logo_%282022%29.svg.png" alt="PlayStore" class="h-5">
-                    <h2 class="text-sm font-bold text-gray-700 ml-auto">플레이스토어 트렌드 요약</h2>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
+            <!-- 명예의 전당 (장기 흥행) -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+                <h3 class="text-gray-800 font-bold mb-4 flex items-center">
+                    <i class="fa-solid fa-crown text-yellow-500 mr-2"></i> 명예의 전당 (최장 기간 100위 진입)
+                </h3>
+                <div class="space-y-4">
                     <div>
-                        <h3 class="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider">주요 장르 분포</h3>
-                        <div id="play-genre-summary" class="space-y-1.5"></div>
+                        <div class="text-xs font-semibold text-gray-500 mb-1">Steam (한국)</div>
+                        <ul id="steam-hof-list" class="space-y-2 text-sm"></ul>
                     </div>
                     <div>
-                        <h3 class="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider flex items-center"><i class="fa-solid fa-crown text-yellow-400 mr-1"></i> 장기 흥행 명예의 전당</h3>
-                        <ul id="play-hof-list" class="space-y-1.5 mt-2"></ul>
+                        <div class="text-xs font-semibold text-gray-500 mb-1">Play Store (한국)</div>
+                        <ul id="play-hof-list" class="space-y-2 text-sm"></ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="dashboard" class="grid grid-cols-1 lg:grid-cols-2 gap-8 hide">
-            <!-- 스팀 글로벌 -->
-            <div class="glass-panel rounded-2xl shadow-sm overflow-hidden flex flex-col">
-                <div class="bg-gray-800 text-white p-5 flex items-center justify-between">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-brands fa-steam text-2xl"></i>
-                        <div>
-                            <h2 class="font-bold text-lg leading-tight">Steam 최고 매출</h2>
-                            <p class="text-gray-400 text-xs mt-0.5">한국 지역 기준 TOP 100</p>
-                        </div>
-                    </div>
+        <!-- 2개 분류로 나뉜 메인 테이블 -->
+        <div id="dashboard" class="grid grid-cols-1 lg:grid-cols-2 gap-6 hide">
+            
+            <!-- 1. Steam (한국) -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col h-[600px]">
+                <div class="bg-slate-800 p-4 text-white flex items-center justify-between">
+                    <h2 class="font-bold text-lg"><i class="fa-brands fa-steam mr-2"></i>Steam (한국)</h2>
+                    <span class="text-xs bg-slate-700 px-2 py-1 rounded">Top 100</span>
                 </div>
-                <div class="overflow-y-auto flex-1 h-[800px] bg-white scrollbar-hide">
+                <div class="overflow-y-auto flex-1 p-0">
                     <table class="w-full text-left border-collapse">
+                        <thead class="bg-gray-50 sticky top-0 shadow-sm z-10">
+                            <tr>
+                                <th class="p-3 text-xs font-semibold text-gray-600 w-16 text-center">순위</th>
+                                <th class="p-3 text-xs font-semibold text-gray-600">게임명 / 장르</th>
+                                <th class="p-3 text-xs font-semibold text-gray-600 text-right">가격 / 할인</th>
+                                <th class="p-3 text-xs font-semibold text-gray-600 text-right">개발사</th>
+                            </tr>
+                        </thead>
                         <tbody id="steam-global-list" class="divide-y divide-gray-100"></tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- 플레이스토어 한국 -->
-            <div class="glass-panel rounded-2xl shadow-sm overflow-hidden flex flex-col">
-                <div class="bg-white border-b border-gray-100 p-5 flex items-center justify-between">
-                    <div class="flex items-center gap-3">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Google_Play_Store_logo_%282022%29.svg/1024px-Google_Play_Store_logo_%282022%29.svg.png" alt="PlayStore" class="h-6">
-                        <div>
-                            <h2 class="font-bold text-lg text-gray-800 leading-tight">Google Play 최고 매출</h2>
-                            <p class="text-gray-500 text-xs mt-0.5">한국 지역 기준 TOP 100</p>
-                        </div>
-                    </div>
+            <!-- 2. Play Store (한국) -->
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 flex flex-col h-[600px]">
+                <div class="bg-green-500 p-4 text-white flex items-center justify-between">
+                    <h2 class="font-bold text-lg"><i class="fa-brands fa-google-play mr-2"></i>Play Store (한국)</h2>
+                    <span class="text-xs bg-green-600 px-2 py-1 rounded">Top 100</span>
                 </div>
-                <div class="overflow-y-auto flex-1 h-[800px] bg-white scrollbar-hide">
+                <div class="overflow-y-auto flex-1 p-0">
                     <table class="w-full text-left border-collapse">
+                        <thead class="bg-gray-50 sticky top-0 shadow-sm z-10">
+                            <tr>
+                                <th class="p-3 text-xs font-semibold text-gray-600 w-16 text-center">순위</th>
+                                <th class="p-3 text-xs font-semibold text-gray-600">게임명 / 장르</th>
+                                <th class="p-3 text-xs font-semibold text-gray-600 text-right">개발사</th>
+                            </tr>
+                        </thead>
                         <tbody id="play-kr-list" class="divide-y divide-gray-100"></tbody>
                     </table>
                 </div>
             </div>
+
         </div>
     </div>
-
-    <style>
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-        .hide { display: none !important; }
-    </style>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -145,8 +146,6 @@
                     fetchRankings(`./history/${e.target.value}.json`);
                 }
             });
-            
-            fetchRankings('./data.json');
         });
 
         async function loadHistoryList() {
@@ -174,8 +173,9 @@
                     selector.appendChild(option);
                 });
             } catch (e) {
-                console.log("히스토리 목록을 불러올 수 없습니다:", e);
+                console.log("히스토리 목록이 아직 없습니다.");
             }
+            fetchRankings('./data.json');
         }
 
         async function fetchRankings(url) {
@@ -194,7 +194,7 @@
             try {
                 const res = await fetch(url + '?t=' + new Date().getTime());
                 if (!res.ok) {
-                    throw new Error("데이터를 불러올 수 없습니다.");
+                    throw new Error("데이터 파일을 찾을 수 없습니다.");
                 }
                 const data = await res.json();
 
@@ -203,13 +203,9 @@
                 const steamData = data.steamGlobal || [];
                 const playData = data.playKr || [];
 
-                if (steamData.length === 0) renderSteamTable(lists.steamGlobal, generateMockData('Steam'));
-                else renderSteamTable(lists.steamGlobal, steamData);
-
-                if (playData.length === 0) renderPlayStoreTable(lists.playKr, generateMockData('PlayStore'));
-                else renderPlayStoreTable(lists.playKr, playData);
-
                 renderSummary(steamData, playData);
+                renderPlayStoreTable(lists.playKr, playData.length ? playData : generateMockData('Play Store (한국)'));
+                renderSteamTable(lists.steamGlobal, steamData.length ? steamData : generateMockData('Steam (한국)'));
 
                 document.getElementById('loading').classList.add('hide');
                 document.getElementById('summary-dashboard').classList.remove('hide');
@@ -228,10 +224,10 @@
         }
 
         function getRankChangeHtml(change) {
-            if (change === 'NEW' || change === 'new') return `<span class="text-[10px] font-bold text-indigo-500 bg-indigo-50 px-1.5 py-0.5 rounded">NEW</span>`;
-            if (change > 0) return `<span class="text-[11px] font-bold text-red-500 flex items-center justify-center"><i class="fa-solid fa-caret-up mr-0.5"></i>${change}</span>`;
-            if (change < 0) return `<span class="text-[11px] font-bold text-blue-500 flex items-center justify-center"><i class="fa-solid fa-caret-down mr-0.5"></i>${Math.abs(change)}</span>`;
-            return `<span class="text-[11px] font-medium text-gray-400">-</span>`;
+            if (change === 'new') return `<span class="text-[10px] font-bold text-pink-500 bg-pink-50 px-1 rounded">NEW</span>`;
+            if (change > 0) return `<span class="text-xs font-bold text-red-500 flex items-center justify-center"><i class="fa-solid fa-caret-up mr-0.5"></i>${change}</span>`;
+            if (change < 0) return `<span class="text-xs font-bold text-blue-500 flex items-center justify-center"><i class="fa-solid fa-caret-down mr-0.5"></i>${Math.abs(change)}</span>`;
+            return `<span class="text-xs font-bold text-gray-400">-</span>`;
         }
 
         function renderSummary(steamData, playData) {
@@ -245,8 +241,8 @@
                 });
                 return Object.entries(counts)
                     .sort((a, b) => b[1] - a[1])
-                    .slice(0, 5)
-                    .map(([name, count]) => ({ name, percent: Math.round((count/total)*100) }));
+                    .slice(0, 3)
+                    .map(([name, count]) => ({ name, percent: Math.round((count/Math.max(1, total))*100) }));
             }
 
             function renderGenreBars(containerId, topGenres, colorClass) {
@@ -260,13 +256,13 @@
                             <div class="flex-1 ml-2 bg-gray-100 rounded-full h-2">
                                 <div class="${colorClass} h-2 rounded-full transition-all duration-1000" style="width: ${g.percent}%"></div>
                             </div>
-                            <span class="w-8 text-right text-xs font-medium text-gray-500">${g.percent}%</span>
+                            <span class="w-8 text-right text-xs font-bold text-gray-500">${g.percent}%</span>
                         </div>
                     `);
                 });
             }
 
-            renderGenreBars('steam-genre-summary', getTopGenres(steamData), 'bg-indigo-500');
+            renderGenreBars('steam-genre-summary', getTopGenres(steamData), 'bg-slate-600');
             renderGenreBars('play-genre-summary', getTopGenres(playData), 'bg-green-500');
 
             function getHallOfFame(data) {
@@ -291,7 +287,7 @@
                                 <span class="mr-2 text-lg">${icon}</span>
                                 <span class="truncate text-gray-700 font-medium text-sm" title="${g.title || g.name}">${g.title || g.name}</span>
                             </div>
-                            <span class="text-xs font-bold text-orange-600 bg-orange-100 px-1.5 py-0.5 rounded shrink-0 shadow-sm">${g.streak}일 연속</span>
+                            <span class="text-xs font-bold text-orange-600 bg-orange-100 px-1.5 py-0.5 rounded shrink-0 shadow-sm">${g.streak}회 연속</span>
                         </li>
                     `);
                 });
@@ -305,7 +301,7 @@
             const slice = data.slice(0, 100);
             slice.forEach((game, index) => {
                 const rankChangeHtml = getRankChangeHtml(game.rankChange);
-                const streakHtml = game.streak >= 5 ? `<span class="ml-2 text-[10px] bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded border border-orange-200" title="${game.streak}일 연속 100위 진입"><i class="fa-solid fa-fire mr-0.5"></i>${game.streak}</span>` : '';
+                const streakHtml = game.streak >= 5 ? `<span class="ml-2 text-[10px] bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded border border-orange-200" title="${game.streak}회 연속 100위 진입"><i class="fa-solid fa-fire mr-0.5"></i>${game.streak}</span>` : '';
                 const genreHtml = `<span class="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded border border-gray-200 mt-1 inline-block">${game.genre || '기타'}</span>`;
 
                 const row = `
@@ -335,7 +331,7 @@
             const slice = data.slice(0, 100);
             slice.forEach((game, index) => {
                 const rankChangeHtml = getRankChangeHtml(game.rankChange);
-                const streakHtml = game.streak >= 5 ? `<span class="ml-2 text-[10px] bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded border border-orange-200" title="${game.streak}일 연속 100위 진입"><i class="fa-solid fa-fire mr-0.5"></i>${game.streak}</span>` : '';
+                const streakHtml = game.streak >= 5 ? `<span class="ml-2 text-[10px] bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded border border-orange-200" title="${game.streak}회 연속 100위 진입"><i class="fa-solid fa-fire mr-0.5"></i>${game.streak}</span>` : '';
                 const genreHtml = `<span class="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded border border-gray-200 mt-1 inline-block">${game.genre || '기타'}</span>`;
 
                 let priceHtml = `<span class="text-xs text-gray-400 font-medium">-</span>`;
