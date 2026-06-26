@@ -1,20 +1,20 @@
 name: Daily Game Rank Crawler
 
 on:
-  workflow_dispatch: # 수동 실행 버튼
-  repository_dispatch: # 외부 모닝콜 알바생(cron-job)이 전화를 걸 수 있는 '직통 전화' 개통
+  workflow_dispatch: 
+  repository_dispatch: 
     types: [trigger-crawler]
 
 jobs:
   crawl-and-deploy:
-    runs-on: windows-latest # 👈 핵심 변경: 구글 IP 차단을 우회하기 위해 윈도우 서버 사용
+    runs-on: macos-latest # 👈 구글의 우분투/윈도우 IP 차단을 회피할 확률이 높은 맥 서버 사용
     defaults:
       run:
-        shell: bash # 윈도우 서버에서도 기존 리눅스 명령어(bash)를 쓰도록 강제 설정
+        shell: bash 
     permissions:
-      contents: write # 리포지토리 쓰기 권한 (데이터 파일 커밋용)
-      pages: write    # GitHub Pages 권한 (웹 대시보드 호스팅)
-      id-token: write # Pages 배포 인증
+      contents: write 
+      pages: write    
+      id-token: write 
     
     steps:
       - name: Checkout Repository
@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24' # 👈 가장 안정적인 최신 LTS 버전으로 세팅 완료
 
       - name: Install Dependencies
         run: npm install
@@ -40,8 +40,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json history/
-          # 변경사항이 있을 때만 커밋
+          git add data.json history/ game_streaks.json pending_sheets.json # 👈 엑셀 실패 대비 보관함 파일 추가
           git diff --quiet && git diff --staged --quiet || git commit -m "🚀 Auto-update game rankings & history"
           git pull --rebase origin main || true
           git push
@@ -52,7 +51,7 @@ jobs:
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # 모든 파일을 대시보드 웹으로 업로드
+          path: '.' 
 
       - name: Deploy to GitHub Pages
         id: deployment
