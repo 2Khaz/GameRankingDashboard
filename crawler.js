@@ -1,15 +1,16 @@
-import { GoogleSpreadsheet } from 'google-spreadsheet';
-import { JWT } from 'google-auth-library';
-import fs from 'fs';
-import path from 'path';
-import gplay from 'google-play-scraper';
-import * as cheerio from 'cheerio';
+require('dotenv').config();
+const fs = require('fs');
+const path = require('path');
+const { GoogleSpreadsheet } = require('google-spreadsheet');
+const { JWT } = require('google-auth-library');
+const cheerio = require('cheerio');
+const gplay = require('google-play-scraper');
 
-const SERVICE_ACCOUNT_FILE = './credentials.json';
-const SPREADSHEET_URL = 'https://docs.google.com/spreadsheets/d/1ONFeWZTqMXIsWtx9xoRYxcW7lTde56yfvyKUXDi8c3c/edit?gid=1490331569#gid=1490331569';
-const spreadsheetId = SPREADSHEET_URL.match(/\/d\/([a-zA-Z0-9-_]+)/)[1];
+const SERVICE_ACCOUNT_FILE = path.join(__dirname, 'credentials.json');
+const spreadsheetId = process.env.SPREADSHEET_ID;
+const DASHBOARD_URL = "https://hyg92.github.io/game-rank-dashboard/";
 
-function delay(ms) { return new Promise(res => setTimeout(res, ms)); }
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function fetchSteamGlobal(retries = 3) {
     console.log("스팀(한국) 최고 매출 데이터 가져오는 중...");
@@ -18,165 +19,166 @@ async function fetchSteamGlobal(retries = 3) {
             const res = await fetch("https://store.steampowered.com/search/results/?query&start=0&count=100&filter=topsellers&infinite=1&cc=kr&l=koreana", {
                 headers: {
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    // [해결포인트 2번] 스팀 성인 게임 누락 문제 해결
+                    // 스팀 놀이공원의 성인 인증을 통과하기 위해, 크롤러에게 1980년생이라는 어른 신분증(쿠키)을 쥐여줍니다.
+                    // 이 쿠키 덕분에 '서큐버스 계승자' 같은 성인 게임도 숨겨지지 않고 정상적으로 긁어오게 됩니다!
                     'Cookie': 'birthtime=283993201; lastagecheckage=1-January-1980; wants_mature_content=1; mature_content=1'
                 }
             });
             const data = await res.json();
             const $ = cheerio.load(data.results_html);
             
-            const games = [];
-            $('a.search_result_row').each((i, el) => {
-                const title = $(el).find('.title').text().trim();
-                const appIdRaw = $(el).attr('data-ds-appid');
-                const appId = appIdRaw ? appIdRaw.split(',')[0] : null;
-                games.push({ name: title, appId: appId, developer: '-', genre: '기본', price: null });
+            const results = [];
+            $('.search_result_row').each((i, el) => {
+                const name = $(el).find('.title').text().trim();
+                const appId = $(el).attr('data-ds-appid');
+                const priceHtml = $(el).find('.discount_final_price').text().trim();
+                const initialPriceHtml = $(el).find('.discount_original_price').text().trim();
+                const discountHtml = $(el).find('.discount_pct').text().trim();
+                const icon = $(el).find('img').attr('src');
+                
+                let price = null;
+                if (priceHtml) {
+                    if (priceHtml.includes('무료') || priceHtml.toLowerCase().includes('free')) {
+                        price = { isFree: true, final: '무료' };
+                    } else {
+                        price = {
+                            isFree: false,
+                            final: priceHtml,
+                            initial: initialPriceHtml || priceHtml,
+                            discountPercent: discountHtml ? parseInt(discountHtml.replace('-', '').replace('%', '')) : 0,
+                            isDiscounted: !!discountHtml
+                        };
+                    }
+                }
+
+                results.push({
+                    name,
+                    appId,
+                    price,
+                    icon,
+                    developer: '', 
+                    genre: ''
+                });
             });
 
-            if (games.length === 0) throw new Error("스팀 데이터가 0건입니다.");
-            
-            console.log(`[Steam] 데이터 ${games.length}건 성공! 개발사/장르/가격 정보 추가 중(약 10~15초 소요)...`);
-            const batchSize = 10;
-            for (let i = 0; i < Math.min(100, games.length); i += batchSize) {
-                const batch = games.slice(i, i + batchSize);
+            // 스팀 세부 정보 (개발사, 장르) 가져오기 - 5개씩 병렬 처리하여 속도 최적화
+            const batchSize = 5;
+            for (let i = 0; i < results.length; i += batchSize) {
+                const batch = results.slice(i, i + batchSize);
                 await Promise.all(batch.map(async (game) => {
                     if (game.appId) {
                         try {
                             const appRes = await fetch(`https://store.steampowered.com/api/appdetails?appids=${game.appId}&cc=kr&l=koreana`, {
-                                headers: { 
-                                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                                headers: {
                                     'Cookie': 'birthtime=283993201; lastagecheckage=1-January-1980; wants_mature_content=1; mature_content=1'
                                 }
                             });
                             const appData = await appRes.json();
-                            if (appData && appData[game.appId] && appData[game.appId].success) {
-                                const detail = appData[game.appId].data;
-                                const devs = detail.developers;
-                                if (devs && devs.length > 0) game.developer = devs[0];
-                                const genres = detail.genres;
-                                if (genres && genres.length > 0) game.genre = genres[0].description;
-                                if (detail.header_image) game.icon = detail.header_image;
-
-                                if (detail.is_free) {
-                                    game.price = { final: '무료 (Free)', isFree: true, isDiscounted: false };
-                                } else if (detail.price_overview) {
-                                    game.price = {
-                                        final: detail.price_overview.final_formatted,
-                                        isFree: false,
-                                        isDiscounted: detail.price_overview.discount_percent > 0,
-                                        discountPercent: detail.price_overview.discount_percent,
-                                        initial: detail.price_overview.initial_formatted
-                                    };
-                                }
+                            if (appData[game.appId] && appData[game.appId].success) {
+                                const details = appData[game.appId].data;
+                                game.developer = details.developers ? details.developers.join(', ') : '알 수 없음';
+                                game.genre = details.genres ? details.genres[0].description : '기타';
                             }
                         } catch(e) {}
                     }
                 }));
-                await delay(1500); 
+                if (i + batchSize < results.length) await delay(500); 
             }
-            return games.slice(0, 100);
-        } catch (error) {
-            console.error(`[Steam] 데이터 로드 실패 (시도 ${attempt}/${retries}):`, error.message);
-            if (attempt < retries) await delay(3000);
+
+            console.log(`[Steam] ${results.length}개 게임 가져오기 완료.`);
+            return results;
+        } catch (e) {
+            console.error(`[Steam] 실패 (시도 ${attempt}/${retries}):`, e.message);
+            if (attempt < retries) await delay(3000); // 3초 대기 후 재시도
         }
     }
-    console.error("[Steam] 모든 재시도 실패.");
     return [];
 }
 
-async function fetchPlayStore(country, lang, retries = 3) {
+async function fetchPlayStore(country = 'kr', lang = 'ko', retries = 3) {
     console.log(`구글 플레이스토어(${country}) 최고 매출 데이터 가져오는 중...`);
     for (let attempt = 1; attempt <= retries; attempt++) {
         try {
-            const results = await gplay.list({
-                collection: gplay.sort.GROSSING,
-                category: gplay.category.GAME,
-                num: 100,
-                country: country,
-                lang: lang
-            });
-            if (results.length === 0) throw new Error("데이터가 0건입니다.");
-            
-            console.log(`[PlayStore] 데이터 ${results.length}건 성공! 장르 정보 추가 중(약 10~15초 소요)...`);
-            const batchSize = 10;
-            for (let i = 0; i < Math.min(100, results.length); i += batchSize) {
-                const batch = results.slice(i, i + batchSize);
-                await Promise.all(batch.map(async (game) => {
-                    try {
-                        const detail = await gplay.app({ appId: game.appId, country: country, lang: lang });
-                        if (detail.genre) game.genre = detail.genre;
-                    } catch(e) { }
+            const data = await gplay.list({ collection: gplay.collection.GROSSING, category: gplay.category.GAME, num: 100, country: country, lang: lang });
+            if (data && data.length > 0) {
+                const results = data.map(app => ({
+                    title: app.title,
+                    developer: app.developer,
+                    icon: app.icon,
+                    appId: app.appId,
+                    genre: app.genre || '기타'
                 }));
-                await delay(1000);
+                console.log(`[PlayStore] ${results.length}개 게임 가져오기 완료.`);
+                return results;
             }
-            return results;
-        } catch (error) {
-            console.error(`[PlayStore] 데이터 로드 실패 (시도 ${attempt}/${retries}):`, error.message);
-            if (attempt < retries) await delay(3000);
+        } catch (e) {
+            console.error(`[PlayStore] 실패 (시도 ${attempt}/${retries}):`, e.message);
+            if (attempt < retries) await delay(3000); 
         }
     }
-    console.error("[PlayStore] 모든 재시도 실패.");
     return [];
 }
 
-function calculateRankChange(currentList, previousList, matchKey) {
-    if (!previousList || previousList.length === 0) return currentList;
-    return currentList.map((item, index) => {
-        const currentRank = index + 1;
-        const prevItemIndex = previousList.findIndex(p => p[matchKey] === item[matchKey]);
-        if (prevItemIndex !== -1) {
-            const prevRank = prevItemIndex + 1;
-            item.rankChange = prevRank - currentRank; 
-        } else {
-            item.rankChange = 'NEW';
-        }
-        return item;
-    });
-}
-
-function calculateStreaks(currentList, platformKey, matchKey, streaksObj) {
-    const todayTop10 = currentList.slice(0, 10).map(item => item[matchKey]);
-    
-    for (const id in streaksObj) {
-        if (streaksObj[id].platform === platformKey) {
-            if (!todayTop10.includes(id)) {
-                streaksObj[id].count = 0; 
-            }
-        }
+function enrichDataWithRankAndStreak(currentList, platformName, previousData, streaks) {
+    const previousRanks = {};
+    if (previousData) {
+        previousData.forEach((g, index) => {
+            // [해결포인트 1번-1] 이름 대신 고유 번호(appId)를 사용해 어제 순위를 기억합니다.
+            const id = g.appId || g.title || g.name;
+            previousRanks[id] = index + 1;
+        });
     }
-    
-    currentList.slice(0, 10).forEach(item => {
-        const id = item[matchKey];
-        if (!streaksObj[id]) {
-            streaksObj[id] = { count: 1, name: item.title || item.name, platform: platformKey };
+
+    currentList.forEach((game, index) => {
+        // [해결포인트 1번-2] 오늘 순위 변동 계산 시에도 고유 번호(appId)를 기준으로 찾습니다.
+        const id = game.appId || game.title || game.name;
+        const currentRank = index + 1;
+        
+        if (previousRanks[id]) {
+            game.rankChange = previousRanks[id] - currentRank; // 양수면 상승, 음수면 하락
         } else {
-            streaksObj[id].count += 1;
+            game.rankChange = 'new'; // 새로 진입
         }
-        item.streak = streaksObj[id].count;
+
+        // [해결포인트 1번-3] 기존 점수 마이그레이션 및 누적 로직
+        const newStreakKey = `${platformName}_${id}`;
+        const oldStreakKey = `${platformName}_${game.title || game.name}`;
+
+        // 혹시 단골 명단에 옛날 이름표(oldStreakKey)로 쌓은 점수가 있다면, 새 이름표(newStreakKey)로 고스란히 옮깁니다!
+        if (streaks[oldStreakKey] !== undefined && newStreakKey !== oldStreakKey) {
+            streaks[newStreakKey] = streaks[oldStreakKey];
+            delete streaks[oldStreakKey];
+        }
+
+        if (streaks[newStreakKey]) {
+            streaks[newStreakKey] += 1;
+        } else {
+            streaks[newStreakKey] = 1;
+        }
+        game.streak = streaks[newStreakKey];
     });
+
+    return currentList;
 }
 
-function enrichDataWithRankAndStreak(currentList, platformKey, previousList, streaksObj) {
-    const matchKey = platformKey === 'steam' ? 'appId' : 'appId';
-    calculateRankChange(currentList, previousList, matchKey);
-    calculateStreaks(currentList, platformKey, matchKey, streaksObj);
-}
+function cleanupStreaks(currentSteam, currentPlay, streaks) {
+    const activeKeys = new Set();
+    // [해결포인트 1번-4] 100위 밖으로 나간 게임들 점수를 지울 때도, 고유 번호(appId) 기준으로 확인합니다.
+    currentSteam.forEach(g => activeKeys.add(`steam_${g.appId || g.name}`));
+    currentPlay.forEach(g => activeKeys.add(`play_${g.appId || g.title}`));
 
-function cleanupStreaks(steamGlobal, playKr, streaksObj) {
-    const allCurrentIds = new Set([
-        ...steamGlobal.slice(0, 10).map(g => g.appId),
-        ...playKr.slice(0, 10).map(g => g.appId)
-    ]);
-    for (const id in streaksObj) {
-        if (!allCurrentIds.has(id) && streaksObj[id].count === 0) {
-            delete streaksObj[id];
+    for (let key in streaks) {
+        if (!activeKeys.has(key)) {
+            delete streaks[key];
         }
     }
 }
 
 async function writeToGoogleSheets(nowStr, steamGlobal, playKr, retries = 5) {
     if (!fs.existsSync(SERVICE_ACCOUNT_FILE)) {
-        console.error("❌ 치명적 오류: credentials.json 파일이 없습니다.");
-        return false;
+        console.error("경고: credentials.json 파일이 없습니다. 구글 시트 저장을 건너뜁니다.");
+        return;
     }
 
     let creds;
@@ -184,48 +186,70 @@ async function writeToGoogleSheets(nowStr, steamGlobal, playKr, retries = 5) {
         const credsRaw = fs.readFileSync(SERVICE_ACCOUNT_FILE, 'utf8');
         creds = JSON.parse(credsRaw);
     } catch (e) {
-        console.error("❌ 치명적 오류: credentials.json 파싱 실패:", e.message);
-        return false;
+        console.error("경고: credentials.json 파싱 실패:", e.message);
+        return;
     }
 
     const jwt = new JWT({
         email: creds.client_email,
         key: creds.private_key,
-        scopes: ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive.file']
+        scopes: [
+            'https://www.googleapis.com/auth/spreadsheets',
+            'https://www.googleapis.com/auth/drive.file'
+        ]
     });
 
     const doc = new GoogleSpreadsheet(spreadsheetId, jwt);
-
+    
     for (let attempt = 1; attempt <= retries; attempt++) {
         try {
-            console.log(`구글 시트 접속 중... (시도 ${attempt}/${retries})`);
+            console.log(`구글 시트 연결 중... (시도 ${attempt}/${retries})`);
             await doc.loadInfo(); 
-            const sheetTitle = nowStr; 
-            let sheet = doc.sheetsByTitle[sheetTitle];
-            if (!sheet) {
-                console.log(`'${sheetTitle}' 이름의 새 시트 생성 중...`);
-                sheet = await doc.addSheet({ 
-                    title: sheetTitle, 
-                    headerValues: ['스팀순위', '스팀게임명', '스팀제작사', '플레이스토어순위', '플레이게임명', '플레이제작사'],
-                    gridProperties: { rowCount: 105, columnCount: 10 } 
-                });
-            }
+            console.log(`시트 제목: ${doc.title}`);
 
-            await sheet.loadCells('A2:F101');
-            for(let c=0; c<6; c++) {
-                for(let r=1; r<=100; r++) {
-                    const cell = sheet.getCell(r, c);
-                    if (cell.value !== null && cell.value !== '') cell.value = '';
+            let sheet;
+            try {
+                sheet = doc.sheetsByTitle[nowStr];
+                if (sheet) {
+                    await sheet.delete();
                 }
+            } catch(e) {}
+
+            console.log(`'${nowStr}' 이름의 새 시트 생성 중...`);
+            sheet = await doc.addSheet({ title: nowStr, gridProperties: { rowCount: 105, columnCount: 10 } });
+            
+            await sheet.loadCells('A1:H102');
+
+            // 4번째 열에 '스팀 가격 / 할인율' 칼럼 추가
+            const headers = [
+                "순위", "스팀(한국) 게임명", "스팀(한국) 개발사", "스팀 가격 / 할인율",
+                "순위", "구글(한국) 게임명", "구글(한국) 개발사"
+            ];
+
+            const a1 = sheet.getCell(0, 0);
+            a1.formula = `=HYPERLINK("${DASHBOARD_URL}", "🖥️ 웹 대시보드 열기")`;
+            a1.textFormat = { bold: true, fontSize: 12 };
+            a1.backgroundColor = { red: 0.8, green: 0.9, blue: 1.0 };
+
+            for(let c=0; c<headers.length; c++) {
+                const cell = sheet.getCell(1, c);
+                cell.value = headers[c];
+                cell.textFormat = { bold: true };
+                cell.backgroundColor = { red: 0.9, green: 0.9, blue: 0.9 };
             }
 
-            const maxRows = Math.max(steamGlobal.length, playKr.length);
-            for (let i = 0; i < maxRows; i++) {
-                const rowIdx = i + 1; 
+            for (let i = 0; i < 100; i++) {
+                const rowIdx = i + 2;
                 if (i < steamGlobal.length) {
                     sheet.getCell(rowIdx, 0).value = i + 1;
                     sheet.getCell(rowIdx, 1).value = steamGlobal[i].name || '';
-                    sheet.getCell(rowIdx, 2).value = steamGlobal[i].publisher || '';
+                    sheet.getCell(rowIdx, 2).value = steamGlobal[i].developer || '';
+                    if (steamGlobal[i].price) {
+                        const p = steamGlobal[i].price;
+                        sheet.getCell(rowIdx, 3).value = p.isDiscounted ? `${p.final} (-${p.discountPercent}%)` : p.final;
+                    } else {
+                        sheet.getCell(rowIdx, 3).value = '-';
+                    }
                 }
                 if (i < playKr.length) {
                     sheet.getCell(rowIdx, 4).value = i + 1;
@@ -240,50 +264,55 @@ async function writeToGoogleSheets(nowStr, steamGlobal, playKr, retries = 5) {
             return true;
         } catch (e) {
             console.error(`[Google Sheets] 저장 실패 (시도 ${attempt}/${retries}):`, e.message);
-            // 🚨 여기서 사용자님 요청대로 마지막 5번째 실패에만 디스코드 알람을 보냅니다!!
-            if (attempt === retries) {
-                await sendDiscordAlert(`🚨 **[Google Sheets] 기록 오류!**\n\`${e.message}\``);
-            } else {
-                console.log("30초 후 재시도합니다...");
-                await delay(30000);
-            }
+            await sendDiscordAlert(`🚨 **[Google Sheets] 기록 오류!**\n\`${e.message}\``);
+            if (attempt < retries) await delay(5000); // 5초 대기 후 재시도
         }
     }
-    console.error("❌ 구글 시트 저장 최종 실패. 데이터를 임시 보관함에 저장합니다.");
+    console.error("❌ 구글 시트 저장 최종 실패. 대시보드 파일만 저장합니다.");
     return false;
 }
 
 async function saveHistory(nowStr, steamGlobal, playKr) {
-    const historyDir = path.join(process.cwd(), 'history');
-    if (!fs.existsSync(historyDir)) fs.mkdirSync(historyDir);
-
-    const dateStr = nowStr.substring(0, 10) + '_' + nowStr.substring(11, 13);
-    const historyFile = path.join(historyDir, `${dateStr}.json`);
-    const historyData = {
-        timestamp: nowStr,
+    const dashboardData = {
+        lastUpdated: nowStr,
         steamGlobal: steamGlobal,
         playKr: playKr
     };
-    fs.writeFileSync(historyFile, JSON.stringify(historyData, null, 2), 'utf8');
 
+    // 1. 현재 데이터 덮어쓰기 (기본용)
+    fs.writeFileSync('data.json', JSON.stringify(dashboardData, null, 2), 'utf8');
+    
+    // 2. history 폴더에 날짜별 저장
+    const historyDir = path.join(process.cwd(), 'history');
+    if (!fs.existsSync(historyDir)) {
+        fs.mkdirSync(historyDir);
+    }
+    
+    // YYYY-MM-DD_HH 형태로 시간 단위까지 포함하여 저장
+    const dateStr = nowStr.replace(' ', '_'); 
+    const historyFile = path.join(historyDir, `${dateStr}.json`);
+    fs.writeFileSync(historyFile, JSON.stringify(dashboardData, null, 2), 'utf8');
+    
+    // 3. history_list.json 업데이트
     const listFile = path.join(historyDir, 'history_list.json');
     let historyList = [];
     if (fs.existsSync(listFile)) {
-        try { historyList = JSON.parse(fs.readFileSync(listFile, 'utf8')); } catch(e) {}
+        historyList = JSON.parse(fs.readFileSync(listFile, 'utf8'));
     }
     if (!historyList.includes(dateStr)) {
-        historyList.unshift(dateStr);
-        fs.writeFileSync(listFile, JSON.stringify(historyList, null, 2), 'utf8');
+        historyList.push(dateStr);
     }
+    // 최신 날짜가 맨 위로 오게 정렬 (정상 시간 문자열 파싱 패치)
+    historyList.sort((a, b) => new Date(b.replace('_', 'T') + ':00') - new Date(a.replace('_', 'T') + ':00'));
+    fs.writeFileSync(listFile, JSON.stringify(historyList, null, 2), 'utf8');
 
-    const dataFile = path.join(process.cwd(), 'data.json');
-    fs.writeFileSync(dataFile, JSON.stringify(historyData, null, 2), 'utf8');
     console.log(`✅ 대시보드 데이터 저장 완료! (data.json 및 history/${dateStr}.json)`);
 }
 
 async function sendDiscordAlert(message) {
     const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
     if (!webhookUrl) return;
+
     try {
         await fetch(webhookUrl, {
             method: 'POST',
@@ -298,13 +327,14 @@ async function sendDiscordAlert(message) {
 async function main() {
     const now = new Date();
     const kst = new Date(now.getTime() + (9 * 60 * 60 * 1000));
-    const nowStr = kst.toISOString().replace(/T/, ' ').substring(0, 13);
+    const nowStr = kst.toISOString().replace(/T/, ' ').substring(0, 13); // 'YYYY-MM-DD HH'
 
     const [steamGlobal, playKr] = await Promise.all([
         fetchSteamGlobal(3),
         fetchPlayStore('kr', 'ko', 3)
     ]);
 
+    // ------ 장르/순위변동/장기흥행 처리 (구글 시트에 영향 안 줌) ------
     const historyDir = path.join(process.cwd(), 'history');
     if (!fs.existsSync(historyDir)) fs.mkdirSync(historyDir);
 
@@ -324,19 +354,25 @@ async function main() {
                     previousPlay = lastData.playKr || [];
                 }
             }
-        } catch(e) {}
+        } catch(e) { console.error("이전 기록 로딩 실패:", e); }
     }
 
     const streaksFile = path.join(historyDir, 'game_streaks.json');
     let streaks = {};
     if (fs.existsSync(streaksFile)) {
-        try { streaks = JSON.parse(fs.readFileSync(streaksFile, 'utf8')); } catch(e) {}
+        try {
+            streaks = JSON.parse(fs.readFileSync(streaksFile, 'utf8'));
+        } catch(e) {}
     }
 
     enrichDataWithRankAndStreak(steamGlobal, 'steam', previousSteam, streaks);
     enrichDataWithRankAndStreak(playKr, 'play', previousPlay, streaks);
     cleanupStreaks(steamGlobal, playKr, streaks);
 
+    fs.writeFileSync(streaksFile, JSON.stringify(streaks, null, 2), 'utf8');
+    // -------------------------------------------------------------
+
+    // 1. 구글 시트 저장
     const isSheetSuccess = await writeToGoogleSheets(nowStr, steamGlobal, playKr, 5);
 
     if (!isSheetSuccess) {
@@ -345,11 +381,6 @@ async function main() {
         if (fs.existsSync(pendingFile)) {
             try { pendingQueue = JSON.parse(fs.readFileSync(pendingFile, 'utf8')); } catch(e) {}
         }
-        
-        if (pendingQueue.length >= 10) {
-            pendingQueue.shift(); 
-        }
-        
         pendingQueue.push({
             timestamp: nowStr,
             steamGlobal: steamGlobal,
@@ -361,12 +392,14 @@ async function main() {
         console.error("❌ 구글 시트 저장 실패. 데이터를 임시 보관함에 저장하고 대시보드 업데이트를 진행합니다.");
     }
 
-    fs.writeFileSync(streaksFile, JSON.stringify(streaks, null, 2), 'utf8');
+    // 2. 히스토리 데이터 로컬 저장
     await saveHistory(nowStr, steamGlobal, playKr);
 
+    // 3. 성공 알림 전송
     if (isSheetSuccess) {
-        await sendDiscordAlert(`✅ **크롤링 완벽 성공!**\n시간: \`${nowStr}\`\n구글 시트 및 웹 대시보드 데이터 저장이 모두 무사히 완료되었습니다.`);
+        await sendDiscordAlert(`✅ **크롤링 완벽 성공!**\n시간: \`${nowStr}\`\n데이터 수집 및 저장이 무사히 완료되었습니다.`);
     }
+
     console.log("✅ 모든 크롤링 프로세스가 완료되었습니다!");
 }
 
