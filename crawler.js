@@ -333,10 +333,10 @@ async function main() {
     if (!isSheetSuccess) {
         await sendDiscordAlert(`🚨 **크롤링 전체 실패 (작업 롤백됨)**\n시간: \`${nowStr}\`\n구글 시트 저장에 실패하여 JSON 파일 및 역사 기록을 업데이트하지 않고 작업을 전면 취소했습니다.`);
         console.error("❌ 구글 시트 저장 실패로 인해 전체 프로세스를 중단합니다. (데이터 변경 없음)");
-        return; // 여기서 멈추므로 아래 로컬 기록(JSON, 히스토리 등)은 일절 저장되지 않음
+        return; // 여기서 return 하므로 아래 로컬 기록(JSON, 연승점수 등)은 절대 실행되지 않음
     }
 
-    // 3. 시트 저장이 완벽히 성공했을 때만 streaks 데이터와 로컬 히스토리 덮어쓰기
+    // 3. 시트 저장이 완벽히 성공했을 때만 streaks 데이터와 로컬 히스토리 파일 덮어쓰기
     fs.writeFileSync(streaksFile, JSON.stringify(streaks, null, 2), 'utf8');
     await saveHistory(nowStr, steamGlobal, playKr);
 
