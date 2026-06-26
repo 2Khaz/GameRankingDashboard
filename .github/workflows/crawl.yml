@@ -8,8 +8,6 @@ on:
 jobs:
   crawl-and-deploy:
     runs-on: ubuntu-latest
-    env:
-      # Node 버그 회피를 위해 22버전(안정된 LTS) 사용
     permissions:
       contents: write # 리포지토리 쓰기 권한 (데이터 파일 커밋용)
       pages: write    # GitHub Pages 권한 (웹 대시보드 호스팅)
