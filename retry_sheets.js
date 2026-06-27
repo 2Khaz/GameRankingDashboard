@@ -8,6 +8,7 @@ const SPREADSHEET_URL = 'https://docs.google.com/spreadsheets/d/1ONFeWZTqMXIsWtx
 const DASHBOARD_URL = 'https://2Khaz.github.io/game-rank-dashboard/';
 const spreadsheetId = SPREADSHEET_URL.match(/\/d\/([a-zA-Z0-9-_]+)/)[1];
 
+// 구글 API 과부하 및 지연 충돌을 막기 위한 딜레이 함수
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function sendDiscordAlert(message) {
@@ -79,110 +80,111 @@ async function writePendingData() {
 
             for (const item of pendingQueue) {
                 const nowStr = item.timestamp; 
-                let sheet;
+                const tempStr = `${nowStr}_temp_${Date.now().toString().slice(-4)}`; // 이름 충돌 원천 차단용 임시 탭
+                let tempSheet;
 
                 try {
-                    try {
-                        sheet = doc.sheetsByTitle[nowStr];
-                        if (sheet) {
-                            console.log(`[안내] 기존 '${nowStr}' 탭 발견. 삭제를 진행합니다.`);
-                            await sheet.delete();
-                            await delay(2000); 
-                        }
-                    } catch(e) {
-                        console.log(`[안내] 기존 탭 삭제 중 예외 발생 (무시하고 진행): ${e.message}`);
-                    }
+                    console.log(`[1단계] 충돌 방지용 임시 탭('${tempStr}') 생성 중...`);
+                    tempSheet = await doc.addSheet({ title: tempStr, gridProperties: { rowCount: 105, columnCount: 10 } });
+                    await delay(5000); // 생성 후 5초 넉넉히 대기
 
-                    console.log(`[복구 중] '${nowStr}' 이름의 새 시트 탭 생성 중...`);
-                    // 🚀 메인 크롤러와 100% 동일한 그리드 사이즈로 생성
-                    sheet = await doc.addSheet({ title: nowStr, gridProperties: { rowCount: 105, columnCount: 10 } });
-
-                    await delay(2000);
-
-                    // 🚀 메인 크롤러와 100% 동일한 셀 단위 정밀 로드
-                    await sheet.loadCells('A1:H102');
+                    await tempSheet.loadCells('A1:H102');
 
                     const headers = [
                         "순위", "스팀(한국) 게임명", "스팀(한국) 개발사", "",
                         "순위", "구글(한국) 게임명", "구글(한국) 개발사"
                     ];
 
-                    // 🚀 1행 A1 셀: 예쁜 대시보드 버튼 서식 완벽 복구
-                    const a1 = sheet.getCell(0, 0);
+                    const a1 = tempSheet.getCell(0, 0);
                     a1.formula = `=HYPERLINK("${DASHBOARD_URL}", "🖥️ 웹 대시보드 열기")`;
                     a1.textFormat = { bold: true, fontSize: 12 };
                     a1.backgroundColor = { red: 0.8, green: 0.9, blue: 1.0 };
 
-                    // 🚀 2행: 헤더 서식 및 연회색 배경 완벽 복구
                     for(let c = 0; c < headers.length; c++) {
-                        const cell = sheet.getCell(1, c);
+                        const cell = tempSheet.getCell(1, c);
                         cell.value = headers[c];
                         cell.textFormat = { bold: true };
                         cell.backgroundColor = { red: 0.9, green: 0.9, blue: 0.9 };
                     }
 
                     const steamData = item.steamGlobal || [];
-                    // 메인 크롤러 저장 방식(playKr)과 기존 펜딩 방식(googlePlay) 모두 완벽 호환되도록 방어
                     const googleData = item.playKr || item.googlePlay || [];
 
-                    // 🚀 3행~102행: 메인 크롤러와 100% 동일한 열 배치
                     for (let i = 0; i < 100; i++) {
                         const rowIdx = i + 2;
                         if (i < steamData.length) {
-                            sheet.getCell(rowIdx, 0).value = i + 1;
-                            sheet.getCell(rowIdx, 1).value = steamData[i].name || '';
-                            sheet.getCell(rowIdx, 2).value = steamData[i].developer || '';
+                            tempSheet.getCell(rowIdx, 0).value = i + 1;
+                            tempSheet.getCell(rowIdx, 1).value = steamData[i].name || '';
+                            tempSheet.getCell(rowIdx, 2).value = steamData[i].developer || '';
                         }
                         if (i < googleData.length) {
-                            sheet.getCell(rowIdx, 4).value = i + 1;
-                            // 구글 데이터의 게임명 필드(title 또는 name) 모두 완벽 커버
-                            sheet.getCell(rowIdx, 5).value = googleData[i].title || googleData[i].name || '';
-                            sheet.getCell(rowIdx, 6).value = googleData[i].developer || '';
+                            tempSheet.getCell(rowIdx, 4).value = i + 1;
+                            tempSheet.getCell(rowIdx, 5).value = googleData[i].title || googleData[i].name || '';
+                            tempSheet.getCell(rowIdx, 6).value = googleData[i].developer || '';
                         }
                     }
 
-                    console.log(`[복구 중] '${nowStr}' 탭에 셀 데이터 저장 중...`);
-                    await sheet.saveUpdatedCells();
-                    console.log(`[성공] '${nowStr}' 탭 복구 및 서식 적용 완료.`);
+                    console.log(`[2단계] 임시 탭에 셀 데이터 저장 중...`);
+                    await tempSheet.saveUpdatedCells();
+                    await delay(5000); // 데이터 저장 후 5초 넉넉히 대기
+
+                    // [3단계] 기존 탭 완전 삭제 및 10초 대기 (구글 DB 완전 커밋 보장)
+                    await doc.loadInfo();
+                    const existingSheet = doc.sheetsByTitle[nowStr];
+                    if (existingSheet) {
+                        console.log(`[3단계] 기존 탭('${nowStr}') 삭제 중... (완전 청소를 위해 10초 대기합니다)`);
+                        await existingSheet.delete();
+                        await delay(10000); // 🚀 [요구 1 완벽 보장] 무려 10초 대기하여 이름 충돌 원천 차단!!!
+                    }
+
+                    console.log(`[4단계] 임시 탭 이름을 펜딩 시트 날짜('${nowStr}')로 최종 변경합니다.`);
+                    await tempSheet.updateProperties({ title: nowStr });
+                    console.log(`[성공] '${nowStr}' 탭 이름 변경 완료.`);
                     successCount++;
 
-                    await delay(2000);
+                    await delay(5000); // 탭 이름 변경 후 서버 동기화 5초 대기
 
                 } catch (err) {
                     console.error(`[오류] '${nowStr}' 탭 복구 중 실패:`, err.message);
                 }
             }
 
-            // [시트 탭 오름차순 정렬 로직 (과거 ➔ 최신, 최신 탭 맨 우측)]
+            // ---------------------------------------------------------
+            // 🚀 [요구 2 완벽 보장] 전체 탭 완벽한 날짜순 오름차순 정렬 로직
+            // (가장 과거 탭은 왼쪽, 최신 탭은 오른쪽, 복구 탭은 자기 날짜 위치로!)
+            // ---------------------------------------------------------
             if (successCount > 0) {
                 try {
-                    console.log("시트 탭 정렬(오름차순: 과거 -> 최신) 작업을 시작합니다...");
-                    await doc.loadInfo(); 
+                    console.log("전체 시트 탭 날짜순 정렬(가장 예전 탭 -> 왼쪽, 최신 탭 -> 오른쪽)을 시작합니다...");
+                    await doc.loadInfo(); // 이름이 변경된 최종 문서 상태 새로고침
                     
                     const sheets = doc.sheetCount ? [...doc.sheetsByIndex] : [];
                     const parsedSheets = sheets.map(s => {
                         const title = s.title;
+                        // 날짜 문자열("2026-06-16 09")을 파싱 가능하도록 ":00" 부착
                         const cleanTitle = title.length === 13 ? `${title}:00` : title;
                         const time = new Date(cleanTitle).getTime();
+                        // 날짜가 아닌 탭이 있다면 맨 좌측(0)에 위치하도록 보정
                         return { sheet: s, time: isNaN(time) ? 0 : time };
                     });
 
+                    // 🚀 완벽한 시간순 오름차순 정렬 (과거 날짜가 작은 값, 최신 날짜가 큰 값)
                     parsedSheets.sort((a, b) => a.time - b.time);
 
                     for (let i = 0; i < parsedSheets.length; i++) {
                         const currentSheet = parsedSheets[i].sheet;
                         if (currentSheet.index !== i) {
+                            console.log(`[정렬 중] '${currentSheet.title}' 탭을 올바른 날짜 위치(${i + 1}번째)로 이동합니다...`);
                             await currentSheet.updateProperties({ index: i });
-                            await delay(1000);
+                            await delay(3000); // 🚀 구글 API 과부하를 막기 위해 탭 이동 시마다 3초씩 넉넉히 대기
                         }
                     }
-                    console.log("시트 탭 오름차순 정렬 완료.");
+                    console.log("전체 탭 날짜순 오름차순 정렬 완벽 완료.");
                 } catch (sortErr) {
                     console.error("시트 탭 정렬 중 오류 발생 (데이터는 유지됨):", sortErr.message);
                 }
             }
 
-            // [최종 청소 및 알림 조건 분기]
             if (successCount > 0) {
                 fs.writeFileSync(pendingFile, '[]');
                 console.log("Successfully wrote pending data and cleared local JSON.");
