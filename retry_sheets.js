@@ -8,7 +8,7 @@ const SPREADSHEET_URL = 'https://docs.google.com/spreadsheets/d/1ONFeWZTqMXIsWtx
 const DASHBOARD_URL = 'https://2Khaz.github.io/game-rank-dashboard/';
 const spreadsheetId = SPREADSHEET_URL.match(/\/d\/([a-zA-Z0-9-_]+)/)[1];
 
-// [문제 2 해결] 구글 API 과부하 방지를 위한 2초 숨고르기(Throttle) 함수
+// [문제 2 해결] 구글 API 과부하 방지 및 탭 삭제/생성 충돌 방지를 위한 2초 숨고르기(Throttle) 함수
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function sendDiscordAlert(message) {
@@ -36,8 +36,8 @@ async function writePendingData() {
     try {
         pendingQueue = JSON.parse(fs.readFileSync(pendingFile, 'utf8'));
     } catch (e) {
-        console.error("Failed to parse pending_sheets.json");
-        return;
+        console.error("Failed to parse pending_sheets.json:", e.message);
+        process.exit(1); // ◄◄ 파싱 에러 시 Actions에 빨간불(Failed)을 켬
     }
 
     if (pendingQueue.length === 0) {
@@ -49,11 +49,18 @@ async function writePendingData() {
 
     if (!fs.existsSync(SERVICE_ACCOUNT_FILE)) {
         console.error("credentials.json not found.");
-        return;
+        process.exit(1); // ◄◄ 키 파일 누락 시 Actions에 빨간불(Failed)을 켬
     }
 
-    const credsRaw = fs.readFileSync(SERVICE_ACCOUNT_FILE, 'utf8');
-    const creds = JSON.parse(credsRaw);
+    let creds;
+    try {
+        const credsRaw = fs.readFileSync(SERVICE_ACCOUNT_FILE, 'utf8');
+        creds = JSON.parse(credsRaw);
+    } catch (e) {
+        console.error("Failed to parse credentials.json (Check GCP_CREDENTIALS secret):", e.message);
+        process.exit(1); // ◄◄ 시크릿 문법 에러 시 Actions에 빨간불(Failed)을 켬
+    }
+
     const jwt = new JWT({
         email: creds.client_email,
         key: creds.private_key,
@@ -77,95 +84,120 @@ async function writePendingData() {
                 try {
                     sheet = doc.sheetsByTitle[nowStr];
                     if (sheet) {
+                        console.log(`[안내] 기존 '${nowStr}' 탭 발견. 삭제를 진행합니다.`);
                         await sheet.delete();
+                        await delay(2000); // 탭 삭제 후 서버 캐시 갱신 대기 (중복 생성 에러 방지)
                     }
-                } catch(e) {}
+                } catch(e) {
+                    console.log(`[안내] 기존 탭 삭제 중 예외 발생 (무시하고 진행): ${e.message}`);
+                }
 
                 console.log(`[복구 중] '${nowStr}' 이름의 새 시트 탭 생성 중...`);
-                sheet = await doc.addSheet({ title: nowStr, gridProperties: { rowCount: 105, columnCount: 10 } });
-                
-                await sheet.loadCells('A1:H102');
+                sheet = await doc.addSheet({
+                    title: nowStr,
+                    headerValues: [
+                        '스팀 순위', '스팀 게임명', '스팀 가격', '스팀 개발사', '스팀 장르', '스팀 변동', '스팀 연속',
+                        '구글 순위', '구글 게임명', '구글 가격', '구글 개발사', '구글 장르', '구글 변동', '구글 연속'
+                    ]
+                });
 
-                // 상단 A1 셀 대시보드 하이퍼링크 서식 지정
-                const a1 = sheet.getCell(0, 0);
-                a1.formula = `=HYPERLINK("${DASHBOARD_URL}", "🖥️ 웹 대시보드 열기")`;
-                a1.textFormat = { bold: true, fontSize: 12 };
-                a1.backgroundColor = { red: 0.8, green: 0.9, blue: 1.0 };
+                await delay(2000); // 탭 생성 후 숨고르기
 
-                // 헤더 컬럼 생성 (2번 행)
-                const headers = [
-                    "순위", "스팀(한국) 게임명", "스팀(한국) 개발사", "",
-                    "순위", "구글(한국) 게임명", "구글(한국) 개발사"
-                ];
-                for (let c = 0; c < headers.length; c++) {
-                    const cell = sheet.getCell(1, c);
-                    cell.value = headers[c];
-                    cell.textFormat = { bold: true };
-                    cell.backgroundColor = { red: 0.9, green: 0.9, blue: 0.9 };
+                const steamData = item.steamGlobal || [];
+                const googleData = item.googlePlay || [];
+                const maxLen = Math.max(steamData.length, googleData.length);
+                const rows = [];
+
+                for (let i = 0; i < maxLen; i++) {
+                    const s = steamData[i] || {};
+                    const g = googleData[i] || {};
+
+                    let sPrice = "";
+                    if (s.price) {
+                        sPrice = s.price.isFree ? "무료" : (s.price.final || "");
+                    }
+                    let gPrice = "";
+                    if (g.price) {
+                        gPrice = g.price.isFree ? "무료" : (g.price.final || "");
+                    }
+
+                    rows.push({
+                        '스팀 순위': s.name ? `${i + 1}` : '',
+                        '스팀 게임명': s.name || '',
+                        '스팀 가격': sPrice,
+                        '스팀 개발사': s.developer || '',
+                        '스팀 장르': s.genre || '',
+                        '스팀 변동': s.name ? (s.rankChange || 0) : '',
+                        '스팀 연속': s.name ? (s.streak || 1) : '',
+                        '구글 순위': g.name ? `${i + 1}` : '',
+                        '구글 게임명': g.name || '',
+                        '구글 가격': gPrice,
+                        '구글 개발사': g.developer || '',
+                        '구글 장르': g.genre || '',
+                        '구글 변동': g.name ? (g.rankChange || 0) : '',
+                        '구글 연속': g.name ? (g.streak || 1) : ''
+                    });
                 }
 
-                // 스팀(steamGlobal) 및 구글(playKr) 데이터 좌우 분할 배치 (1~100위)
-                const steamList = item.steamGlobal || [];
-                const playList = item.playKr || [];
-
-                for (let i = 0; i < 100; i++) {
-                    const rowIdx = i + 2; 
-                    if (i < steamList.length) {
-                        sheet.getCell(rowIdx, 0).value = i + 1;
-                        sheet.getCell(rowIdx, 1).value = steamList[i].name || '';
-                        sheet.getCell(rowIdx, 2).value = steamList[i].developer || '';
-                    }
-                    if (i < playList.length) {
-                        sheet.getCell(rowIdx, 4).value = i + 1;
-                        sheet.getCell(rowIdx, 5).value = playList[i].title || '';
-                        sheet.getCell(rowIdx, 6).value = playList[i].developer || '';
-                    }
-                }
-
-                console.log(`[복구 중] '${nowStr}' 데이터를 구글 시트에 일괄 기록하는 중...`);
-                await sheet.saveUpdatedCells();
-                console.log(`✅ '${nowStr}' 시트 탭 복구 성공! (API 안정을 위해 2초 대기)`);
-                
+                await sheet.addRows(rows);
+                console.log(`[성공] '${nowStr}' 탭에 ${rows.length}행 데이터 복구 완료.`);
                 successCount++;
-                // [문제 2 해결] 구글 API 서버 429 과부하 방지를 위한 2초 숨고르기
-                await delay(2000); 
+
+                await delay(2000); // 다음 루프 전 숨고르기
 
             } catch (err) {
-                console.error(`❌ '${nowStr}' 탭 복구 중 개별 에러 발생 (스킵 후 다음 건 진행): ${err.message}`);
-                continue; // 에러 발생 시 알림 없이 다음 펜딩 건으로 조용히 넘어감
+                console.error(`[오류] '${nowStr}' 탭 복구 중 실패:`, err.message);
             }
         }
 
-        // 시트 탭 날짜순 오름차순 정렬 (과거가 맨 좌측, 최신이 맨 우측)
-        console.log("시트 탭 순서를 오름차순(과거->최신)으로 재정렬합니다...");
-        await doc.loadInfo(); 
-        
-        const sortedSheets = [...doc.sheetsByIndex].sort((a, b) => {
-            return a.title.localeCompare(b.title);
-        });
+        // ---------------------------------------------------------
+        // [시트 탭 오름차순 정렬 로직 (과거 ➔ 최신, 최신 탭 맨 우측)]
+        // ---------------------------------------------------------
+        if (successCount > 0) {
+            try {
+                console.log("시트 탭 정렬(오름차순: 과거 -> 최신) 작업을 시작합니다...");
+                await doc.loadInfo(); 
+                
+                const sheets = doc.sheetCount ? [...doc.sheetsByIndex] : [];
+                const parsedSheets = sheets.map(s => {
+                    const title = s.title;
+                    const cleanTitle = title.length === 13 ? `${title}:00` : title; // 예: "2026-06-27 08" -> "2026-06-27 08:00"
+                    const time = new Date(cleanTitle).getTime();
+                    return { sheet: s, time: isNaN(time) ? 0 : time };
+                });
 
-        for (let i = 0; i < sortedSheets.length; i++) {
-            if (sortedSheets[i].index !== i) {
-                await sortedSheets[i].updateProperties({ index: i });
+                // 시간순 오름차순 정렬 (오래된 날짜가 0번 인덱스, 최신 날짜가 마지막 인덱스)
+                parsedSheets.sort((a, b) => a.time - b.time);
+
+                for (let i = 0; i < parsedSheets.length; i++) {
+                    const currentSheet = parsedSheets[i].sheet;
+                    if (currentSheet.index !== i) {
+                        await currentSheet.updateProperties({ index: i });
+                        await delay(1000); // 구글 API 과부하 방지
+                    }
+                }
+                console.log("시트 탭 오름차순 정렬 완료.");
+            } catch (sortErr) {
+                console.error("시트 탭 정렬 중 오류 발생 (데이터는 유지됨):", sortErr.message);
             }
         }
-        console.log("✅ 시트 탭 날짜순(오름차순) 정렬 완료!");
 
-        // [사용자 알림 조건 완벽 반영]: 성공적으로 펜딩 시트 추가 작업이 끝났을 때만 파일 비우기 및 디스코드 알림 발송
+        // ---------------------------------------------------------
+        // [최종 청소 및 알림 조건 분기]
+        // ---------------------------------------------------------
         if (successCount > 0) {
             fs.writeFileSync(pendingFile, '[]');
             console.log("Successfully wrote pending data and cleared local JSON.");
-
-            // [문구 최적화]: 재정렬 내용을 제외하고 직관적이고 간결한 성공 메시지 발송
+            // [요청 반영] 재정렬 문구 제외하고 깔끔한 복구 완료 메시지만 발송
             await sendDiscordAlert(`✅ [구글 시트 누락 복구 완료] ${successCount}건의 대기 데이터가 복구되었습니다.`);
         } else {
             console.log("No items were successfully written. Pending file kept intact. No Discord alert sent.");
+            process.exit(1); // ◄◄ 펜딩이 안 옮겨졌으므로 강제 에러(Failed) 처리하여 로그 표출
         }
 
     } catch (e) {
-        // 도중 인증 실패 등 에러 발생 시, 디스코드 알림을 보내지 않고 로컬 펜딩 파일을 안전하게 유지
         console.error("Failed to connect or process Google Sheets:", e.message);
-        return;
+        process.exit(1); // ◄◄ 인증/권한 에러 시 강제 에러(Failed) 처리하여 로그 표출
     }
 }
 
