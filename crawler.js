@@ -96,7 +96,21 @@ async function fetchPlayStore(country = 'kr', lang = 'ko', retries = 3) {
                 lang: lang
             });
             if (data && data.length > 0) {
-                console.log(`[PlayStore] 데이터 ${data.length}건 성공!`);
+                console.log(`[PlayStore] 목록 ${data.length}건 성공! 장르 정보 가져오는 중...`);
+                const batchSize = 5;
+                for (let i = 0; i < data.length; i += batchSize) {
+                    const batch = data.slice(i, i + batchSize);
+                    await Promise.all(batch.map(async (game) => {
+                        try {
+                            const details = await gplay.app({ appId: game.appId, lang: lang, country: country });
+                            game.genre = details.genre || '기타';
+                        } catch(e) {
+                            game.genre = '기타';
+                        }
+                    }));
+                    if (i + batchSize < data.length) await delay(500); 
+                }
+                console.log(`[PlayStore] ${data.length}개 게임 상세정보 가져오기 완료.`);
                 return data;
             }
             throw new Error("구글 플레이 데이터가 0건입니다.");
